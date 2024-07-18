@@ -10,6 +10,12 @@ const Home = () => {
         },
         {
 
+            title : "INWOOD-eCommerce LandingPage",
+            img : "/public/assets/INWOOD-eCommerce-LandingPage.png",
+            url : '/inwood-ecommerce-landingpage'
+        },
+
+         {
             title : "saaS-landingpage",
             img : "/public/assets/saaS-landingpage.png",
             url : '/saaS-landingpage'
@@ -28,7 +34,7 @@ const Home = () => {
       
         
 
-    ]
+   ]
     const navigate = useNavigate();
 
     return ( 
@@ -38,7 +44,7 @@ const Home = () => {
                     <div key={i} className="border border-slate-400 rounded-md cursor-pointer" onClick={()=>navigate(v.url)}>
                         <img src={v.img} alt="cover" className="w-[300px] mb-3"/>
                         <h2 className="text-center">{v.title}</h2>
-                    </div>
+                   </div>
                 ))}
             </div>
         </>
