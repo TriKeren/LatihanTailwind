@@ -1,4 +1,4 @@
-import Navbar from "../components/saaSComponent.jsx/Navbar";
+import Navbar from "../components/saaSComponent/Navbar";
 
 const SaaS = () => {
     return (
