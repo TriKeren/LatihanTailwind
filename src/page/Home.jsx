@@ -30,15 +30,10 @@ const Home = () => {
             url : '/corporate'
         },
         {
-            title : "Positivirus",
+            title : "Positivus",
             img : "/public/assets/positivirus.png",
-            url : '/positivirus'
+            url : '/positivus'
         },
-      {
-      title: "Zebb-Digital Agency",
-      img: "/public/assets/Zebb-Digital-Agency.png",
-      url: "/zebb-digital-agency",
-    },
     {
       title: "LandingPage For Dentist",
       img: "/public/assets/LandingPage-For-Dentist.png",
