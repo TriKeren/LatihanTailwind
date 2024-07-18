@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Route,Routes,BrowserRouter } from 'react-router-dom'
 import Home from './page/Home'
+import Corporate from './page/Corporate'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/corporate' element={<Corporate/>}/>
       </Routes>
     </BrowserRouter>
   )
