@@ -2,8 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Route,Routes,BrowserRouter } from 'react-router-dom'
-import Tes from './page/Tes'
-import Tes2 from './page/Tes2'
+import Home from './page/Home'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,12 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/tes' element={
-          <Tes/>
-        }/>
-        <Route path='/tes2' element={
-          <Tes2/>
-        }/>
+        <Route path='/' element={<Home/>}/>
       </Routes>
     </BrowserRouter>
   )
