@@ -3,7 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Route,Routes,BrowserRouter } from 'react-router-dom'
 import Home from './page/Home'
-import EcommercePaws from './page/EcommercePaws'
+import Inwood from './page/Inwood'
+import Positivirus from './page/Positivirus'
+import Corporate from './page/Corporate'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +15,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/responsive-ecommerce-landingpage' element={<EcommercePaws />}/>
+        <Route path='/inwood-ecommerce-landingpage' element={<Inwood/>}/>
+        <Route path='/positivirus' element={<Positivirus/>}/>
+        <Route path='/corporate' element={<Corporate/>}/>
       </Routes>
     </BrowserRouter>
   )

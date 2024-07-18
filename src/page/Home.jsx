@@ -9,11 +9,32 @@ const Home = () => {
             url : '/zebb-digital-agency'
         },
         {
-            title : "Responsive E-Commerce LandingPage",
-            img : "/public/assets/Responsive-E-Commerce-LandingPage.png",
-            url : "/responsive-ecommerce-landingpage"
+
+            title : "INWOOD-eCommerce LandingPage",
+            img : "/public/assets/INWOOD-eCommerce-LandingPage.png",
+            url : '/inwood-ecommerce-landingpage'
         },
-    ]
+
+         {
+            title : "saaS-landingpage",
+            img : "/public/assets/saaS-landingpage.png",
+            url : '/saaS-landingpage'
+        },
+        {
+            title : "Corporate",
+            img : "/public/assets/Corporate.png",
+            url : '/corporate'
+        },
+        {
+            title : "Positivirus",
+            img : "/public/assets/positivirus.png",
+            url : '/positivirus'
+
+        },
+      
+        
+
+   ]
     const navigate = useNavigate();
 
     return ( 
@@ -23,7 +44,7 @@ const Home = () => {
                     <div key={i} className="border border-slate-400 rounded-md cursor-pointer" onClick={()=>navigate(v.url)}>
                         <img src={v.img} alt="cover" className="w-[300px] mb-3"/>
                         <h2 className="text-center">{v.title}</h2>
-                    </div>
+                   </div>
                 ))}
             </div>
         </>
