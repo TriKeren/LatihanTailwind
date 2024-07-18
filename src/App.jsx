@@ -20,7 +20,7 @@ function App() {
         <Route path='/positivirus' element={<Positivirus/>}/>
         <Route path='/corporate' element={<Corporate/>}/>
         <Route path='/saaS-landingpage' element={<SaaS/>}/>
-        <Route path='/zebbdigital' element={<ZebbDigital/>}/>
+        <Route path='/zebb-digital-agency' element={<ZebbDigital/>}/>
         <Route path="landingpage-for-dentist" element={<Fordentist />} />
       </Routes>
     </BrowserRouter>
