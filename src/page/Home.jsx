@@ -8,6 +8,11 @@ const Home = () => {
             img : "/public/assets/Zebb-Digital-Agency.png",
             url : '/zebb-digital-agency'
         },
+        {
+            title : "INWOOD-eCommerce LandingPage",
+            img : "/public/assets/INWOOD-eCommerce-LandingPage.png",
+            url : '/inwood-ecommerce-landingpage'
+        },
     ]
     const navigate = useNavigate();
 
@@ -17,7 +22,7 @@ const Home = () => {
                 {data.map((v,i)=>(
                     <div key={i} className="border border-slate-400 rounded-md cursor-pointer" onClick={()=>navigate(v.url)}>
                         <img src={v.img} alt="cover" className="w-[300px] mb-3"/>
-                        <h2 className="text-center">{data[0].title}</h2>
+                        <h2 className="text-center">{v.url}</h2>
                     </div>
                 ))}
             </div>
