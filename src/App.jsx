@@ -24,7 +24,7 @@ function App() {
 
         <Route path='/saaS-landingpage' element={<SaaS/>}/>
 
-        <Route path='/zebbdigital' element={<ZebbDigital/>}/>
+        <Route path='/zebb-digital-agency' element={<ZebbDigital/>}/>
 
       </Routes>
     </BrowserRouter>
