@@ -26,9 +26,9 @@ const Home = () => {
             url : '/corporate'
         },
         {
-            title : "Positivirus",
+            title : "Positivus",
             img : "/public/assets/positivirus.png",
-            url : '/positivirus'
+            url : '/positivus'
 
         },
       
