@@ -19,10 +19,11 @@ const Home = () => {
             img : "/public/assets/Corporate.png",
             url : '/corporate'
         },
-        {            
+        {
             title : "Positivirus",
             img : "/public/assets/positivirus.png",
             url : '/positivirus'
+
         },
       
         
