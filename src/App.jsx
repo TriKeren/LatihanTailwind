@@ -3,7 +3,11 @@ import Home from './page/Home'
 import Inwood from './page/Inwood'
 import Positivirus from './page/Positivirus'
 import Corporate from './page/Corporate'
+
 import SaaS from './page/SaaS'
+
+import ZebbDigital from './page/ZebbDigital'
+
 
 
 function App() {
@@ -15,7 +19,11 @@ function App() {
         <Route path='/inwood-ecommerce-landingpage' element={<Inwood/>}/>
         <Route path='/positivirus' element={<Positivirus/>}/>
         <Route path='/corporate' element={<Corporate/>}/>
+
         <Route path='/saaS-landingpage' element={<SaaS/>}/>
+
+        <Route path='/zebbdigital' element={<ZebbDigital/>}/>
+
       </Routes>
     </BrowserRouter>
   )
