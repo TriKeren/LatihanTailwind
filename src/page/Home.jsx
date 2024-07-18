@@ -9,6 +9,11 @@ const Home = () => {
             url : '/zebb-digital-agency'
         },
         {
+            title : "Corporate",
+            img : "/public/assets/Corporate.png",
+            url : '/corporate'
+        },
+        {
             title : "Positivirus",
             img : "/public/assets/positivirus.png",
             url : '/positivirus'
