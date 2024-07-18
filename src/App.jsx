@@ -3,6 +3,7 @@ import Home from './page/Home'
 import Inwood from './page/Inwood'
 import Positivirus from './page/Positivirus'
 import Corporate from './page/Corporate'
+import EcommercePaws from './page/EcommercePaws'
 
 import SaaS from './page/SaaS'
 
@@ -16,6 +17,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/responsive-ecommerce-landingpage' element={<EcommercePaws />}/>
         <Route path='/inwood-ecommerce-landingpage' element={<Inwood/>}/>
         <Route path='/positivirus' element={<Positivirus/>}/>
         <Route path='/corporate' element={<Corporate/>}/>
