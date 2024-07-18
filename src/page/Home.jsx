@@ -8,6 +8,11 @@ const Home = () => {
             img : "/public/assets/Zebb-Digital-Agency.png",
             url : '/zebb-digital-agency'
         },
+        {
+            title : "saaS-landingpage",
+            img : "/public/assets/saaS-landingpage.png",
+            url : '/saaS-landingpage'
+        },
     ]
     const navigate = useNavigate();
 
