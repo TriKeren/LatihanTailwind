@@ -11,9 +11,9 @@ const Navbar = () => {
     }
 
     return ( 
-        <div className="bg-white absolute top-0 left-0 w-full flex sticky items-center z-18 py-2 shadow-xl">
+        <div className="lg:max-w-screen-xl mx-auto bg-white absolute top-0 left-0 w-full flex sticky items-center z-18 py-2 shadow-xl">
             <div className="w-full">
-                <div className="flex items-center justify-between relative w-full lg:px-20">
+                <div className="flex items-center justify-between relative w-full lg:px-10">
                     <div className="px-4 flex items-center gap-3">
                         <img src="/public/assets/ZebbDigitalAgency/Logo.svg" alt="" />
                         <p className="font-semibold text-2xl text-[#FF5678]">Zebb</p>
