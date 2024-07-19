@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ChevronDownIcon, ArrowRightIcon } from '@heroicons/react/solid';
 
 const Navbar = () => {
     const [mobile, setMobile] = useState(false);
