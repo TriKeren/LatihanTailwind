@@ -13,13 +13,13 @@ const Navbar = () => {
         <div className="flex items-center">
           <img src="/public/assets/positivus/logo.svg" alt="Logo" className="h-8" />
         </div>
-        <div className="hidden md:flex items-center space-x-4 gap-4 font-semibold">
-          <a href="#about" className="hover:text-[#B9FF66]">About Us</a>
-          <a href="#service" className="hover:text-[#B9FF66]">Service</a>
-          <a href="#price" className="hover:text-[#B9FF66]">Use Cases</a>
-          <a href="#price" className="hover:text-[#B9FF66]">Pricing</a>
-          <a href="#price" className="hover:text-[#B9FF66]">Blog</a>
-          <button className="border border-black hover:bg-[#B9FF66] hover:text-white px-4 py-2 rounded-[14px]">Request a quote</button>
+        <div className="hidden md:flex items-center space-x-4 gap-10 font-semibold">
+          <a href="#about" className="hover:text-[#191A23]">About Us</a>
+          <a href="#service" className="hover:text-[#191A23]">Service</a>
+          <a href="#price" className="hover:text-[#191A23]">Use Cases</a>
+          <a href="#price" className="hover:text-[#191A23]">Pricing</a>
+          <a href="#price" className="hover:text-[#191A23]">Blog</a>
+          <button className="border border-gray-500 hover:bg-[#191A23] hover:text-white px-4 py-2 rounded-[14px]">Request a quote</button>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-gray-700 focus:outline-none">
@@ -38,7 +38,7 @@ const Navbar = () => {
           <a href="#price" className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Use Cases</a>
           <a href="#price" className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Pricing</a>
           <a href="#price" className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Blog</a>
-          <button className="block w-full text-left bg-[#B9FF66] text-white px-4 py-2 rounded mt-2">Request a quote</button>
+          <button className="block w-full text-left bg-[#191A23] hover:bg-[#101116] text-white px-4 py-2 rounded mt-2">Request a quote</button>
         </div>
       )}
     </nav>
