@@ -50,7 +50,7 @@ const Navbar = () => {
                                     </li>
                                 </ul>
                             </nav>
-                            <button className="bg-[#1A75FF] text-white whitespace-nowrap px-4 py-2 text-sm rounded-lg mr-16 md:mr-0">Start Now</button>
+                            <button className="bg-[#1A75FF] text-white whitespace-nowrap px-4 py-2 text-sm rounded-lg mr-16">Start Now</button>
                         </div>
                     </div>
                 </div>
