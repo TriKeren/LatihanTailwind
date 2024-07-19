@@ -1,22 +1,34 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
     const [view, setView] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     const toggleMenu = () => {
         setView(!view);
-    }
+    };
+
+    const handleScroll = () => {
+        const offset = window.scrollY;
+        setScrolled(offset > 50);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <>
-            <header className="bg-transparent top-0 left-0 w-full shadow-md flex items-center z-10 py-4 lg:py-0 lg:px-24 lg:max-w-screen-xl lg:mx-auto">
-                <div className="container">
+            <header className={`fixed top-0 left-0 w-full z-10 py-4 lg:py-0 lg:px-24 lg:max-w-screen-xl lg:mx-auto transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-md shadow-md' : 'bg-transparent shadow-none'}`}>
+                <div className="container mx-auto">
                     <div className={`flex items-center justify-between ${view ? 'relative' : ''}`}>
                         <div className="px-4">
-                            <img className="h-6" src="/public/assets/corporate/logo.svg" alt="Logo" />
+                            <img className="h-6 md:h-8" src="/public/assets/corporate/logo.svg" alt="Logo" />
                         </div>
                         <div className="flex items-center px-4">
-                        
                             <button
                                 id="hamburger"
                                 name="hamburger"
@@ -50,7 +62,7 @@ const Navbar = () => {
                                     </li>
                                 </ul>
                             </nav>
-                            <button className="bg-[#1A75FF] text-white whitespace-nowrap px-4 py-2 text-sm rounded-lg mr-16">Start Now</button>
+                            <button className="bg-[#1A75FF] text-white whitespace-nowrap px-4 py-2 text-sm rounded-lg mr-16 lg:mr-4">Start Now</button>
                         </div>
                     </div>
                 </div>
