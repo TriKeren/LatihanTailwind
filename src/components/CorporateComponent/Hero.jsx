@@ -1,7 +1,7 @@
 const Hero = () => {
     return (
         <>
-            <section className="mt-20 lg:mt-16 lg:max-w-screen-xl lg:mx-auto">
+            <section className="mt-10 lg:mt-0 lg:max-w-screen-xl lg:mx-auto">
                 <div className="container">
                     <div className="w-full lg:flex items-center lg:px-24">
                         <div className="self-center w-full px-4 lg:w-1/2">
@@ -13,7 +13,7 @@ const Hero = () => {
                             </p>
                             <div className="mt-8 flex-col flex gap-4 md:flex-row md:mt-14">
                                 <button className="bg-[#1A75FF] md:w-fit w-full text-white whitespace-nowrap px-8 py-3 text-base rounded-lg">Learn More</button>
-                                <button className="bg-transparent md:w-fit w-full text-center flex flex-row text-[#344051] whitespace-nowrap px-[105px] md:px-4 py-3 text-base rounded-lg border-2 border-[#344051]"><img className="text-[#344051] mr-1" src="/public/assets/corporate/play.svg" width={20} alt="" />Watch Demo</button>
+                                <button className="bg-transparent md:w-fit w-full text-center flex flex-row text-[#344051] whitespace-nowrap px-[105px] md:px-4 py-3 text-base rounded-lg border-2 border-[#344051]"><img className="text-[#344051] mr-1 mt-1" src="/public/assets/corporate/play.svg" width={20} alt="" />Watch Demo</button>
                             </div>
                             <p className="font-normal mt-5 text-[#344051]">
                                 Trusted by over than 1M customers
