@@ -1,11 +1,15 @@
 const TestimonialZebb = () => {
     return ( 
-        <div className="max-w-screen-xl mx-auto flex justify-center items-center mt-28 lg:mt-44">
+        <div className="max-w-screen-xl mx-auto flex justify-center items-center mt-40 lg:mt-44">
             <div className="w-full">
-                <div className="w-full overflow-x-scroll p-4 cursor-pointer">
+                <div className="flex flex-col items-center gap-2">
+                    <h1 className="text-4xl font-bold">Testimonial</h1>
+                    <p>Over 18,000 happy clients.</p>
+                </div>
+ 
+                <div className="w-full overflow-x-scroll p-4 cursor-pointer mt-10">
                     <div className="flex space-x-8 w-max">
-
-                        <div className="bg-linear-hero text-black p-5 w-80 lg:w-64 rounded-md rounded-ss-3xl rounded-ee-3xl shadow-sm shadow-black">
+                        <div className="bg-linear-hero text-black p-5 w-80 lg:w-64 rounded-3xl shadow-sm shadow-black transition-transform duration-500 hover:scale-105">
                             <div className="flex flex-col items-center gap-3 py-2">
                                 <img className="w-16" src="/public/assets/ZebbDigitalAgency/User.png" alt="Avatar" />
                                 <div className="flex flex-col items-center gap-3">
@@ -19,7 +23,7 @@ const TestimonialZebb = () => {
                             </div>
                         </div>
 
-                        <div className="bg-linear-hero text-black p-5 w-80 lg:w-64 rounded-md rounded-ss-3xl rounded-ee-3xl shadow-sm shadow-black">
+                        <div className="bg-linear-hero text-black p-5 w-80 lg:w-64 rounded-3xl shadow-sm shadow-black transition-transform duration-500 hover:scale-105">
                             <div className="flex flex-col items-center gap-3 py-2">
                                 <img className="w-16" src="/public/assets/ZebbDigitalAgency/User.png" alt="Avatar" />
                                 <div className="flex flex-col items-center gap-3">
@@ -33,7 +37,7 @@ const TestimonialZebb = () => {
                             </div>
                         </div>
 
-                        <div className="bg-linear-hero text-black p-5 w-80 lg:w-64 rounded-md rounded-ss-3xl rounded-ee-3xl shadow-sm shadow-black">
+                        <div className="bg-linear-hero text-black p-5 w-80 lg:w-64 rounded-3xl shadow-sm shadow-black transition-transform duration-500 hover:scale-105">
                             <div className="flex flex-col items-center gap-3 py-2">
                                 <img className="w-16" src="/public/assets/ZebbDigitalAgency/User.png" alt="Avatar" />
                                 <div className="flex flex-col items-center gap-3">
@@ -47,7 +51,7 @@ const TestimonialZebb = () => {
                             </div>
                         </div>
 
-                        <div className="bg-linear-hero text-black p-5 w-80 lg:w-64 rounded-md rounded-ss-3xl rounded-ee-3xl shadow-sm shadow-black">
+                        <div className="bg-linear-hero text-black p-5 w-80 lg:w-64 rounded-3xl shadow-sm shadow-black transition-transform duration-500 hover:scale-105">
                             <div className="flex flex-col items-center gap-3 py-2">
                                 <img className="w-16" src="/public/assets/ZebbDigitalAgency/User.png" alt="Avatar" />
                                 <div className="flex flex-col items-center gap-3">
@@ -61,7 +65,7 @@ const TestimonialZebb = () => {
                             </div>
                         </div>
 
-                        <div className="bg-linear-hero text-black p-5 w-80 lg:w-64 rounded-md rounded-ss-3xl rounded-ee-3xl shadow-sm shadow-black">
+                        <div className="bg-linear-hero text-black p-5 w-80 lg:w-64 rounded-3xl shadow-sm shadow-black transition-transform duration-500 hover:scale-105">
                             <div className="flex flex-col items-center gap-3 py-2">
                                 <img className="w-16" src="/public/assets/ZebbDigitalAgency/User.png" alt="Avatar" />
                                 <div className="flex flex-col items-center gap-3">
