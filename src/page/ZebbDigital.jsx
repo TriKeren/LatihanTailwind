@@ -2,7 +2,9 @@ import AboutZebb from "../components/ZebbComponent/AboutZebb";
 import ContactZebb from "../components/ZebbComponent/ContactZebb";
 import Enjoy from "../components/ZebbComponent/Enjoy";
 import ExperienceZebb from "../components/ZebbComponent/ExperienceZebb";
+import FooterZebb from "../components/ZebbComponent/FooterZebb";
 import HeroZebb from "../components/ZebbComponent/HeroZebb";
+import JoinZebb from "../components/ZebbComponent/JoinZebb";
 import Navbar from "../components/ZebbComponent/Navbar";
 import TeamZebb from "../components/ZebbComponent/TeamZebb";
 import TestimonialZebb from "../components/ZebbComponent/TestimonialZebb";
@@ -20,6 +22,8 @@ const ZebbDigital = () => {
         <WorkZebb/>
         <TestimonialZebb/>
         <ContactZebb/>
+        <JoinZebb/>
+        <FooterZebb/>
         </>
      );
 }
