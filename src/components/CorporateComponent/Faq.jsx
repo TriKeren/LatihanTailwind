@@ -66,7 +66,7 @@ const Faq = () => {
                         <div className="mt-10 flex justify-center text-center">
                             <div className="bg-[#F0F6FF] lg:w-1/2 lg:h-1/2 md:w-2/3 md:h-2/3 p-4 rounded-3xl">
                                 <h1 className="text-2xl font-semibold text-[#002966] mb-4">Still have a questions?</h1>
-                                <p className="mb-6 text-[#002966]">We're sorry we couldn't provide you with the information you were looking for. Please contact us and we'll be happy to help.</p>
+                                <p className="mb-6 text-[#002966]">Were sorry we couldnt provide you with the information you were looking for. Please contact us and well be happy to help.</p>
                                 <div className="flex justify-center">
                                     <button className="flex items-center bg-[#1A75FF] text-white whitespace-nowrap px-4 py-2 text-base rounded-lg">
                                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" className="mt-[3px] mr-1" xmlns="http://www.w3.org/2000/svg">
