@@ -50,7 +50,7 @@ const Team = () => {
     return ( 
         <div className="relative">
             <header className="flex w-full lg:flex-row flex-col items-center gap-5 mr-auto">
-                <h1 className="lg:text-[48px] text-[38px] font-bold bg-[#B9FF66] px-4 text-kanit">
+                <h1 className="lg:text-[48px] text-[38px] font-bold bg-[#B9FF66] px-4 text-kanit mt-10">
                     Team
                 </h1>
                 <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal">
