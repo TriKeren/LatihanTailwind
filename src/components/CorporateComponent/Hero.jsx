@@ -1,7 +1,7 @@
 const Hero = () => {
     return (
         <>
-            <section className="mt-20 lg:mt-16 lg:max-w-screen-xl lg:mx-auto">
+            <section className="mt-10 lg:mt-0 lg:max-w-screen-xl lg:mx-auto">
                 <div className="container">
                     <div className="w-full lg:flex items-center lg:px-24">
                         <div className="self-center w-full px-4 lg:w-1/2">
