@@ -1,6 +1,12 @@
+import HeroInwood from "../components/Inwood/HeroInwood";
+import NavbarInwood from "../components/Inwood/NavbarInwood";
+
 const Inwood = () => {
     return ( 
-        <div className="text-center"><h1>INWOOD eCommerce LandingPage</h1></div>
+        <div className="text-center">
+            <NavbarInwood/>
+            <HeroInwood/>
+        </div>
      );
 }
  
