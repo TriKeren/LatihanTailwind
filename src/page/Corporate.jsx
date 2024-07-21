@@ -6,6 +6,7 @@ import Faq from "../components/CorporateComponent/Faq";
 import Blog from "../components/CorporateComponent/Blog";
 import NewsLetter from "../components/CorporateComponent/NewsLetter";
 import Client from "../components/CorporateComponent/Client";
+import Footer from "../components/CorporateComponent/Footer";
 
 const Corporate = () => {
     return ( 
@@ -18,6 +19,7 @@ const Corporate = () => {
         <Blog/>
         <NewsLetter/>
         <Client/>
+        <Footer/>
         </>
      );
 }
