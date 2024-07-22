@@ -1,21 +1,22 @@
 import React from "react";
 
-const Service = ({imgURL, title, btn ,titleColor}) => {
-    return ( 
-      <div className="w-full flex-col ">
-      <div className=" w-[40%] h-[30%]">
-          <h1 className={`text-[24px] lg:text-[28px] font-bold capitalize bg-${titleColor} `}>{title}</h1>
-      </div>
-      <div className="w-full flex justify-end relative mt-6 h-[30%]">
-          <img src={imgURL} height={140} className="w-44 md:w-52 absolute top-0 bottom-0 "/>
-      </div>
-      <div className="w-full items-center justify-start flex pt-10 h-[30%]">
-          <img src="/public/assets/positivus/arrow.svg" alt="arrow" className="group-hover:origin-center group-hover:rotate-90 duration-200
-           w-[48px] h-[48px] px-3 py-3 bg-black rounded-full hover:origin-center rotate-6 "/>
-          <div className='px-5 py-2  rounded-lg ml-3 hover:bg-black duration-150 hover:text-white'><button className="hidden md:block">{btn}</button></div>
-      </div>
-  </div>
-     );
+const Service = ({ imgURL, title, btn, titleColor }) => {
+    return (
+        <div className="w-full flex flex-col justify-between h-full">
+            <div className="w-full">
+                <h1 className={`text-[24px] lg:text-[28px] font-bold capitalize ${titleColor}`}>{title}</h1>
+            </div>
+            <div className="w-full flex justify-end items-center mt-6 h-full">
+                <img src={imgURL} alt={title} className="w-44 md:w-52 object-contain" />
+            </div>
+            <div className="w-full flex items-center justify-start pt-10">
+                <img src="/public/assets/positivus/arrow.svg" alt="arrow" className="group-hover:origin-center group-hover:rotate-90 duration-200 w-[48px] h-[48px] px-3 py-3 bg-black rounded-full hover:origin-center rotate-6" />
+                <button className="ml-3 text-sm font-bold border-none cursor-pointer hidden lg:block">
+                    {btn}
+                </button>
+            </div>
+        </div>
+    );
 }
- 
+
 export default Service;
