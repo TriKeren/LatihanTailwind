@@ -42,7 +42,7 @@ const ShopPaws = () => {
       <div className="flex justify-between my-5 w-full items-center lg:justify-center lg:gap-4">
         <Link
           to="/"
-          className="hover:text-white py-2 px-5 bg-[#101828] text-white rounded-lg"
+          className="hover:text-white py-2 px-5 bg-gradient-to-r from-[#101828] to-[#233250] text-white rounded-lg"
         >
           Random
         </Link>

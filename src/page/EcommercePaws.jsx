@@ -10,7 +10,7 @@ import ShopPaws from "../components/ecommercepaws/ShopPaws"
 
 const EcommercePaws = () => {
     return (
-        <div>
+        <div className="font-poppins">
             <NavbarPaws />
             <HeroPaws />
             <ShopPaws />
