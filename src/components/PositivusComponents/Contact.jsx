@@ -58,7 +58,7 @@ const Contact = () => {
           </div>
   
           <div className="hidden lg:block lg:ml-auto lg:flex-shrink-0">
-            <img src="/public/assets/positivus/contact.png" alt="banner" className="w-[649.86px] object-right object-contain" />
+            <img src="/public/assets/positivus/contact.png" alt="banner" className="w-[600px] object-right object-contain" />
           </div>
         </div>
       </div>
