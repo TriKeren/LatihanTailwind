@@ -1,14 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="px-4 md:px-24 py-2 lg:mt-3">
+    <nav className={`px-4 md:px-24 py-2 lg:mt-3 ${isSticky ? 'sticky top-0 z-50 backdrop-blur-md bg-white/80 shadow-md' : ''}`}>
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         <div className="flex items-center">
           <img src="/public/assets/positivus/logo.svg" alt="Logo" className="h-8" />
