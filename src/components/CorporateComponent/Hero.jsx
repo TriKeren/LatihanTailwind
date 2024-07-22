@@ -30,7 +30,11 @@ const Hero = () => {
                     <div className="w-full lg:flex items-center md:px-8 lg:px-24">
                         <div className={`self-center w-full px-4 lg:w-1/2 transition-transform duration-1000 ease-in-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
                             <h1 className="font-semibold text-4xl text-[#141C24] md:text-5xl">
-                                Everything you need to scale a <span className="underline underline-offset-[9px] decoration-[#1A75FF]">global team</span>
+                                Everything you need to scale a
+                                <span className='relative inline-block'>
+                                    <span className='relative z-10 bottom-0 lg:left-3'> global team</span>
+                                    <span className="absolute rounded -bottom-1.5 lg:left-2 lg:-right-3 -left-1 -right-1 h-1.5 bg-[#1A75FF] z-0"></span>
+                                </span>
                             </h1>
                             <p className="font-normal mt-4 text-[#344051] md:text-xl lg:text-base">
                                 Check out our proven methods, guides, and exercises that help make work better, and people happier.
