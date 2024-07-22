@@ -33,8 +33,8 @@ const Plan = () => {
     return (
         <div className="bg-white py-12 md:py-16 lg:py-12">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
-                <h1 className="text-5xl md:text-6xl font-bold text-center text-[#212529] mb-5">Choose Your Plan</h1>
-                <p className="text-lg md:text-xl lg:text-lg lg:px-32 text-center text-[#212529] mb-10">
+                <h1 className="text-[36px] md:text-6xl font-bold text-center text-[#212529] mb-5">Choose Your <br /> Plan</h1>
+                <p className="text-[18px] md:text-xl lg:text-lg lg:px-32 text-center text-[#212529] mb-10">
                     Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.
                 </p>
 

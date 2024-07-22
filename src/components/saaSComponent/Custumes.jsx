@@ -52,16 +52,16 @@ const Custumes = () => {
                 >
                     <img src="public/assets/saaS-landingpages/Advanced customization-amico.png" className="w-3/4 md:w-1/2 lg:w-2/3 h-auto" />
                 </div>
-                <div className="w-full md:w-full flex flex-col items-start lg:items-start space-y-4 lg:order-2 order-2">
+                <div className="w-[75%] md:w-full flex flex-col items-start lg:items-start space-y-4 lg:order-2 order-2">
                     <h1
                         id="custumes-title"
-                        className={`text-5xl md:text-6xl lg:text-6xl font-bold text-[#212529] mb-5 md:mb-5 lg:mb-7 text-center mt-10 md:text-center lg:text-start transition-all duration-1000 transform ${isTitleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                        className={`text-[36px] md:text-6xl lg:text-6xl font-bold text-[#212529] mb-5 md:mb-5 lg:mb-7 text-center mt-10 md:text-center lg:text-start transition-all duration-1000 transform ${isTitleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                     >
                         Customise it to your needs
                     </h1>
                     <p
                         id="custumes-text"
-                        className={`text-lg md:font-medium md:text-2xl lg:text-lg lg:font-medium text-[#212529] text-center md:text-center lg:text-start transition-all duration-1000 transform ${isTextVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                        className={`text-[18px] md:font-medium md:text-2xl lg:text-lg lg:font-medium text-[#212529] text-center md:text-center lg:text-start transition-all duration-1000 transform ${isTextVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                     >
                         Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
                     </p>
@@ -69,7 +69,10 @@ const Custumes = () => {
                         id="custumes-button"
                         className={`w-full flex justify-center lg:justify-start transition-all duration-1000 transform ${isButtonVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                     >
-                        <button className="px-4 py-2 font-medium bg-[#4F9CF9] text-[#FFE492] rounded hover:bg-[#FFE492] hover:text-[#043873] mt-5 lg:mt-10 md:mt-10 md:mb-5 transition-colors duration-300">Let’s Go</button>
+                        <button className="px-[40px] flex items-center text-[18px] lg:px-4 lg:py-2 py-[20px] font-medium bg-[#4F9CF9] text-[#FFE492] rounded-[8px] hover:bg-[#FFE492] hover:text-[#043873] mt-[60px] lg:mt-10 md:mt-10 md:mb-5 transition-colors duration-300">
+                            Let’s Go 
+                            <img className='w-4 ml-2' src="public/assets/saaS-landingpages/arrowright.svg" alt="" />
+                        </button>
                     </div>
                 </div>
             </div>

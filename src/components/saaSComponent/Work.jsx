@@ -44,24 +44,18 @@ const Work = () => {
     }, []);
 
     return (
-        <div className="bg-white py-12 md:py-10 lg:py-16 overflow-x-hidden">
+        <div className="bg-white py-5 md:py-10 lg:py-16 overflow-x-hidden">
             <div className="container mx-auto flex flex-col lg:flex-row items-center max-w-screen-xl px-2 md:px-7">
-                <div
-                    id="work-image"
-                    className={`w-full md:w-full mt-7 lg:mt-0 flex mb-5 md:mb-10 lg:mb-0 justify-center lg:justify-start lg:ml-auto lg:order-1 transition-all duration-1000 transform ${isImageVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
-                >
-                    <img src="public/assets/saaS-landingpages/Work Together Image.png" className="w-3/4 md:w-1/2 lg:w-1/2 h-auto" />
-                </div>
-                <div className="w-full md:w-3/4 flex flex-col items-start lg:items-start space-y-4 lg:order-2">
+                <div className="w-[80%] md:w-3/4 flex flex-col items-start lg:items-start space-y-4 lg:order-2">
                     <h1
                         id="work-title"
-                        className={`text-5xl md:text-7xl lg:text-6xl font-bold text-[#212529] mb-5 md:mb-5 lg:mb-7 text-center md:text-center lg:text-start transition-all duration-1000 transform ${isTitleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                        className={`text-[36px] md:text-7xl lg:text-6xl font-bold text-[#212529] mb-5 md:mb-5 lg:mb-7 text-center md:text-center lg:text-start transition-all duration-1000 transform ${isTitleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                     >
                         Work Together
                     </h1>
                     <p
                         id="work-text"
-                        className={`text-lg md:font-medium md:text-2xl lg:text-lg lg:font-medium text-[#212529] text-center md:text-center lg:text-start transition-all duration-1000 transform ${isTextVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                        className={`text-[18px] md:font-medium md:text-2xl lg:text-lg lg:font-medium text-[#212529] text-center md:text-center lg:text-start transition-all duration-1000 transform ${isTextVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                     >
                         With whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.
                     </p>
@@ -69,7 +63,16 @@ const Work = () => {
                         id="work-button"
                         className={`w-full flex justify-center lg:justify-start transition-all duration-1000 transform ${isButtonVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                     >
-                        <button className="px-4 py-2 font-medium bg-[#4F9CF9] text-[#FFE492] rounded hover:bg-[#FFE492] hover:text-[#043873] mt-5 lg:mt-10 md:mt-10 md:mb-5 transition-colors duration-300">Try it now</button>
+                        <button className="px-[40px] flex items-center text-[18px] lg:px-4 lg:py-2 py-[20px] font-medium bg-[#4F9CF9] text-[#FFE492] rounded-[8px] hover:bg-[#FFE492] hover:text-[#043873] mt-[60px] lg:mt-10 md:mt-10 md:mb-5 transition-colors duration-300">
+                            Try it now 
+                            <img className='w-4 ml-2' src="public/assets/saaS-landingpages/arrowright.svg" alt="" />
+                        </button>
+                    </div>
+                    <div
+                        id="work-image"
+                        className={`w-full md:w-full lg:mt-0 flex mb-5 md:mb-10 lg:mb-0 justify-center lg:justify-start lg:ml-auto lg:order-1 transition-all duration-1000 transform ${isImageVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                    >
+                    <img src="public/assets/saaS-landingpages/Work Together Image.png" className="w-[90%] md:w-1/2 lg:w-1/2 h-auto" />
                     </div>
                 </div>
             </div>
