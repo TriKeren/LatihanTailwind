@@ -29,14 +29,9 @@ const Home = () => {
       url: "/corporate",
     },
     {
-      title: "Positivirus",
+      title: "Positivus",
       img: "/public/assets/positivirus.png",
-      url: "/positivirus",
-    },
-    {
-      title: "Zebb-Digital Agency",
-      img: "/public/assets/Zebb-Digital-Agency.png",
-      url: "/zebb-digital-agency",
+      url: "/positivus",
     },
     {
       title: "LandingPage For Dentist",
