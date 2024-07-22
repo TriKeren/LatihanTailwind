@@ -48,7 +48,7 @@ const Team = () => {
     ];
 
     return ( 
-        <div className="px-4 md:px-24 py-2 lg:mt-3">
+        <div className="px-4 md:px-24 py-2 lg:mt-10">
             <header className="flex w-full lg:flex-row flex-col items-center gap-5 mr-auto">
                 <h1 className="lg:text-[48px] text-[38px] font-bold bg-[#B9FF66] px-4 text-kanit mt-10">
                     Team
