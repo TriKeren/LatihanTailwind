@@ -1,6 +1,6 @@
 const Contact = () => {
     return (
-      <div className="px-4 md:px-24 py-2 lg:mt-3 lg:max-w-screen-xl mx-auto">
+      <div className="px-4 md:px-24 py-2 lg:mt-3 lg:max-w-screen-xl mx-auto overflow-x-hidden">
         <header className="flex w-full lg:flex-row flex-col items-center gap-5 mr-auto">
           <h1 className="lg:text-[48px] text-[38px] font-bold bg-green px-4 text-kanit">
             Contact-Us
@@ -58,7 +58,7 @@ const Contact = () => {
           </div>
   
           <div className="hidden lg:block lg:ml-auto lg:flex-shrink-0">
-            <img src="/public/assets/positivus/contact.png" alt="banner" className="w-[600px] object-right object-contain" />
+            <img src="/public/assets/positivus/contact.png" alt="banner" className="w-[600px] object-right object-contain over mx-40" />
           </div>
         </div>
       </div>
