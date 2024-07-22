@@ -44,7 +44,7 @@ const Work = () => {
     }, []);
 
     return (
-        <div className="bg-white py-12 md:py-10 lg:py-16">
+        <div className="bg-white py-12 md:py-10 lg:py-16 overflow-x-hidden">
             <div className="container mx-auto flex flex-col lg:flex-row items-center max-w-screen-xl px-2 md:px-7">
                 <div
                     id="work-image"
