@@ -3,7 +3,7 @@ const FooterZebb = () => {
         <div className="max-w-screen-xl mx-auto w-full bg-white mt-12 lg:mt-20">
             <div className="max-w-screen-xl mx-auto py-10 px-4 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
-                    <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-4">
+                    <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-4 lg:mx-6">
                         <div className="flex items-center gap-2">
                             <img src="/public/assets/ZebbDigitalAgency/Logo.svg" alt="Logo" />
                             <h1 className="text-black">Zebb</h1>
@@ -24,34 +24,34 @@ const FooterZebb = () => {
 
                     <div className="flex flex-col items-center lg:items-start mt-2 lg:mx-14 gap-2">
                         <h1 className="text-2xl font-bold">Services</h1>
-                        <p className="lg:w-72">Web design & development</p>
-                        <p className="lg:w-72">Social media management</p>
-                        <p className="lg:w-72">Search Engine Optimization</p>
-                        <p className="lg:w-72">Social media marketing</p>
-                        <p className="lg:w-72">Content writing</p>
-                        <p className="lg:w-72">Video production</p>
+                        <a href=""><p className="lg:w-72">Web design & development</p></a>
+                        <a href=""><p className="lg:w-72">Social media management</p></a>
+                        <a href=""><p className="lg:w-72">Search Engine Optimization</p></a>
+                        <a href=""><p className="lg:w-72">Social media marketing</p></a>
+                        <a href=""><p className="lg:w-72">Content writing</p></a>
+                        <a href=""><p className="lg:w-72">Video production</p></a>
                     </div>
 
                     <div className="flex flex-col items-center lg:items-start mt-2 lg:mx-14 gap-2">
                         <h1 className="text-2xl font-bold">Company</h1>
-                        <p>Case Studies</p>
-                        <p className="lg:w-72">Web design & Services</p>
-                        <p>About</p>
-                        <p>Contact Us</p>
+                        <a href=""><p>Case Studies</p></a>
+                        <a href=""><p className="lg:w-72">Web design & Services</p></a>
+                        <a href=""><p>About</p></a>
+                        <a href=""><p>Contact Us</p></a>
                     </div>
 
                     <div className="flex flex-col items-center lg:items-start mt-2 lg:mx-12 gap-2">
                         <h1 className="text-2xl font-bold">About Us</h1>
-                        <p>Featured artists</p>
-                        <p>The Portal</p>
-                        <p>Live events</p>
+                        <a href=""><p>Featured artists</p></a>
+                        <a href=""><p>The Portal</p></a>
+                        <a href=""><p>Live events</p></a>
                     </div>
 
                     <div className="flex flex-col items-center lg:items-start mt-2 lg:mx-8 gap-2">
                         <h1 className="text-2xl font-bold">Legal Stuff</h1>
-                        <p>Shipping & Delivery</p>
-                        <p>Terms & Conditions</p>
-                        <p>Privacy & Policy</p>
+                        <a href=""><p>Shipping & Delivery</p></a>
+                        <a href=""><p>Terms & Conditions</p></a>
+                        <a href=""><p>Privacy & Policy</p></a>
                     </div>
                 </div>
             </div>
@@ -60,8 +60,8 @@ const FooterZebb = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-xl mx-auto text-white px-4 lg:px-8">
                     <h1 className="text-center md:text-left font-medium mb-4 md:mb-0">Copyright ©2020 Zebb Agency. All Right Reserved</h1>
                     <div className="flex gap-11">
-                        <p className="font-medium">Cookie Policy</p>
-                        <p className="font-medium">Privacy Policy</p>
+                        <a href=""><p className="font-medium">Cookie Policy</p></a>
+                        <a href=""><p className="font-medium">Privacy Policy</p></a>
                     </div>
                 </div>
             </div>
