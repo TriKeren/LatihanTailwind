@@ -12,7 +12,7 @@ const Hero = () => {
         opacity: 1,
         transform: "translateY(0)"
       });
-    }, 100); // Delay to trigger animation
+    }, 100); 
 
     return () => clearTimeout(timer);
   }, []);
@@ -24,8 +24,8 @@ const Hero = () => {
   };
 
   return (
-    <section className="px-4 md:px-24 py-2 lg:mt-3 lg:max-w-screen-xl mx-auto">
-      <div className="container mx-auto flex flex-col md:flex-row gap-8">
+    <section className="px-4 md:px-24 lg:mt-3 lg:max-w-screen-xl mx-auto">
+      <div className="container mx-auto flex md:flex-row">
         <div
           className="mt-9 order-2 md:order-1 md:w-1/2 px-0 lg:px-5 flex flex-col"
           style={animationStyles}
@@ -49,7 +49,7 @@ const Hero = () => {
             Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
           </p>
           <div
-            className="flex flex-col md:flex-row gap-2 lg:gap-3"
+            className="flex flex-col md:flex-row gap-2 lg:gap-3 mt-[40px]"
             style={animationStyles}
           >
             <button className="py-3 px-6 bg-[#191A23] text-white font-bold rounded-lg hover:bg-[#B9FF66] transition duration-300">

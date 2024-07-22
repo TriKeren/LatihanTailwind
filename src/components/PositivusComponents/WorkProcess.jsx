@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 
 const WorkProcess = () => {
     const [paragraph, setParagraph] = useState([false, false, false, false, false]);
-    const [activeIndex, setActiveIndex] = useState(null); // Menyimpan index aktif
+    const [activeIndex, setActiveIndex] = useState(null); 
     const sectionRef = useRef(null);
     const observerRef = useRef(null);
 
@@ -10,7 +10,7 @@ const WorkProcess = () => {
         setParagraph(prevState =>
             prevState.map((visible, i) => (i === index ? !visible : false))
         );
-        setActiveIndex(index); // Set index aktif
+        setActiveIndex(index);
     };
 
     const texts = [
@@ -68,33 +68,33 @@ const WorkProcess = () => {
             <section id="WorkProcess" className="mt-20 lg:mt-16 lg:max-w-screen-xl lg:mx-auto" ref={sectionRef}>
                 <div className="container">
                     <div className="w-full items-center px-4 lg:px-24">
-                        <header className="flex w-full lg:flex-row flex-col items-center gap-5 mr-auto">
-                            <h1 className="lg:text-[48px] text-[38px] font-bold bg-[#B9FF66] px-4 text-kanit mt-10">
+                        <header className="flex w-full lg:flex-row flex-col items-center gap-5 mx-auto text-center">
+                            <h1 className="lg:text-[40px] text-[36px] bg-[#B9FF66] px-4 mt-[30px] mx-11 rounded-[7px]">
                                 Our Working Process 
                             </h1>
-                            <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal">
+                            <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal mt-[30px]">
                                 Step-by-Step Guide to Achieving Your Business Goals
                             </p>
                         </header>
-                        <div className="mt-16 md:mx-20">
+                        <div className="mt-[30px] md:mx-20">
                             {[0, 1, 2, 3, 4].map((index) => (
                                 <div
                                     key={index}
-                                    className={`WorkProcess-item border border-[#637083] rounded-lg md:px-4 px-4 my-4 transition-all duration-500 ease-in-out ${activeIndex === index ? 'bg-[#B9FF66]' : 'bg-white'} opacity100 translate-y-10`}
+                                    className={`WorkProcess-item border-b-4 border-[#141C24] rounded-[45px] md:px-4 px-4 my-[20px] transition-all duration-500 ease-in-out ${activeIndex === index ? 'bg-[#B9FF66]' : 'bg-white'} opacity100 translate-y-10`}
                                 >
                                     <div className="flex justify-between py-4">
-                                        <p className="text-lg text-[#141C24] font-semibold md:text-xl mt-1">{texts[index]}</p>
+                                        <p className="text-[18px] text-[#141C24] font-bold md:text-xl mt-1">{texts[index]}</p>
                                         <button
                                             onClick={() => handleParagraph(index)}
                                             className="py-2 rounded"
                                         >
                                             {paragraph[index] ? (
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7 12L17 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#637083" />
+                                                    <path d="M7 12L17 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#191A23" />
                                                 </svg>
                                             ) : (
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7 12H12M12 12H17M12 12V7M12 12V17M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#637083" />
+                                                    <path d="M7 12H12M12 12H17M12 12V7M12 12V17M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#191A23" />
                                                 </svg>
                                             )}
                                         </button>

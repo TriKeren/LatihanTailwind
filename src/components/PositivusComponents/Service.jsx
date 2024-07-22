@@ -11,7 +11,7 @@ const Service = ({ imgURL, title, btn, titleColor }) => {
             </div>
             <div className="w-full flex items-center justify-start pt-10">
                 <img src="/public/assets/positivus/arrow.svg" alt="arrow" className="group-hover:origin-center group-hover:rotate-90 duration-200 w-[48px] h-[48px] px-3 py-3 bg-black rounded-full hover:origin-center rotate-6" />
-                <button className="ml-3 text-sm font-bold bg-transparent border-none cursor-pointer">
+                <button className="ml-3 text-sm font-bold border-none cursor-pointer hidden lg:block">
                     {btn}
                 </button>
             </div>

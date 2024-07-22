@@ -2,10 +2,10 @@ const Contact = () => {
     return (
       <div className="px-4 md:px-24 py-2 lg:mt-3 lg:max-w-screen-xl mx-auto overflow-x-hidden">
         <header className="flex w-full lg:flex-row flex-col items-center gap-5 mr-auto">
-          <h1 className="lg:text-[48px] text-[38px] font-bold bg-green px-4 text-kanit">
+          <h1 className="mt-[30px] lg:text-[40px] text-[36px] bg-[#B9FF66] px-4">
             Contact-Us
           </h1>
-          <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal">
+          <p className="mt-[30px] text-xl lg:max-w-[50%] lg:text-start text-center font-normal">
             Meet the skilled and experienced team behind our successful digital
             marketing strategies
           </p>
@@ -25,28 +25,28 @@ const Contact = () => {
             </div>
   
             <div className="mt-5">
-              <div className="flex flex-col gap-2 mt-3">
-                <label className="text-slate-800 font-light">Name</label>
+              <div className="flex flex-col gap-[10px] mt-3">
+                <label className="text-slate-800 font-light">Name*</label>
                 <input
-                  placeholder="What's your good name?"
+                  placeholder="Name"
                   type="text"
-                  className="input font-light lg:w-[560px] border border-slate-500"
+                  className="rounded-[14px] pl-5 w-[300px] h-[60px] input font-light lg:w-[560px] border border-[#000000]"
                 />
               </div>
               <div className="flex flex-col gap-2 mt-3">
                 <label className="text-slate-800 font-light">Email*</label>
                 <input
-                  placeholder="Enter your email address"
+                  placeholder="Email"
                   type="email"
-                  className="input font-light lg:w-[560px] border border-slate-500"
+                  className="rounded-[14px] pl-5 w-[300px] h-[60px] input font-light lg:w-[560px] border border-[#000000]"
                 />
               </div>
               <div className="flex flex-col gap-2 mt-3">
-                <label className="text-slate-800 font-light">Message</label>
+                <label className="text-slate-800 font-light">Message*</label>
                 <textarea
                   placeholder="Message"
                   type="text"
-                  className="max-sm:h-[180px] pl-5 pt-5 rounded-[20px] lg:h-[220px] font-light lg:w-[560px] border border-slate-500"
+                  className="rounded-[14px] max-sm:h-[180px] pl-5 pt-5 lg:h-[220px] font-light lg:w-[560px] border border-[#000000]"
                 />
               </div>
               <div className="flex flex-col gap-2 mt-10">

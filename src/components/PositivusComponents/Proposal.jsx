@@ -6,12 +6,12 @@ const Proposal = () => {
       <div className="w-full gap-5 items-center mt-10 md:justify-center flex bg-[#F3F3F3] p-[30px] rounded-[30px] flex-col md:flex-row">
         <div className="flex flex-col justify-center gap-2 text-center md:text-left">
           <h1 className="text-[32px] font-semibold">Let’s make things happen</h1>
-          <p className="w-full lg:max-w-[70%] text-[18px]">
+          <p className="w-full lg:max-w-[] text-[18px]">
             Contact us today to learn more about how our digital marketing
             services can help your business grow and succeed online.
           </p>
           <div className="mt-5 flex justify-center md:justify-start">
-            <button className="text-white bg-black rounded-lg px-3 py-5 hover:bg-green hover:text-dark duration-150 ease">
+            <button className="w-[290px] h-[68px] lg:w-[288px] lg:h-[68px] text-white bg-black rounded-lg px-3 py-5 hover:bg-green hover:text-dark duration-150 ease">
               Get your free proposal
             </button>
           </div>
