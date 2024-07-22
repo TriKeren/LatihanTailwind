@@ -1,6 +1,6 @@
 const Partner = () => {
     return ( 
-        <section className="partner mt-10 lg:mt-24">
+        <section className="partner mt-10 lg:mt-24 lg:max-w-screen-xl mx-auto">
         <div className="container">
           <div className="w-full flex flex-wrap  justify-center items-center xl:w-10/12 xl:mx-auto">
             <div className="mb-12 px-4 lg:w-1/6 lg:p-5 flex justify-center">
