@@ -120,7 +120,7 @@ const Navbar = () => {
                                 </ul>
                             </div>
                             <button className="bg-[#1A75FF] md:w-fit w-full text-white whitespace-nowrap px-4 py-2 mr-14 lg:mr-0 text-sm rounded-lg border-2 border-transparent transition-colors duration-300 ease-in-out hover:bg-white hover:text-[#1A75FF] hover:border-[#1A75FF]">
-                                Start Now
+                                Start now
                             </button>
                         </div>
                     </div>
