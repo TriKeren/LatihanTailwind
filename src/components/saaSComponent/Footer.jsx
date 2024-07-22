@@ -1,15 +1,42 @@
+import { useEffect, useRef, useState } from 'react';
+
 const Footer = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const footerRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting) {
+                    setIsVisible(true);
+                    observer.disconnect();
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        if (footerRef.current) {
+            observer.observe(footerRef.current);
+        }
+    }, []);
+
+    const animationStyles = {
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
+        transition: 'opacity 0.8s ease-out, transform 0.8s ease-out',
+    };
+
     return (
-        <footer className="bg-[#043873] py-12 lg:py-6">
+        <footer ref={footerRef} style={animationStyles} className="bg-[#043873] py-12 lg:py-6">
             <div className="container mx-auto px-4 md:px-10">
                 <div className="flex flex-col md:flex-col lg:flex-row justify-between mb-10 space-y-8 md:space-y-8 lg:space-y-0">
                     {/* Logo and Text */}
                     <div className="flex flex-col items-center md:items-start">
                         <img src="public/assets/saaS-landingpages/Logo.svg" className="w-36 lg:w-36 md:w-48 h-auto mb-4" alt="Logo" />
-                        <p className="text-white text-base lg:text-base md:text-xl lg:w-52 md:w-3/4 text-center md:text-left">Whitepace was created for the new ways we live and work. We make a better  workspace around the world.</p>
+                        <p className="text-white text-base lg:text-base md:text-xl lg:w-52 md:w-3/4 text-center md:text-left">Whitepace was created for the new ways we live and work. We make a better workspace around the world.</p>
                     </div>
 
-                    {/* bagian Center */}
+                    {/* Center Section */}
                     <div className="flex flex-col md:flex-col lg:flex-row justify-center md:justify-start space-y-8 md:space-y-8 lg:space-y-0 lg:space-x-16">
                         <div className="flex flex-col items-center md:items-start text-center md:text-left">
                             <h4 className="text-white text-lg lg:text-lg md:text-2xl font-bold mb-4">Product</h4>
@@ -46,7 +73,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* bagian Copyright */}
+                {/* Copyright Section */}
                 <div className="flex flex-col md:flex-row justify-between items-center border-t border-[#6C757D] pt-8">
                     <div className="flex flex-col md:flex-row items-center lg:gap-10 text-center md:text-left space-y-2 md:space-y-0 md:space-x-8 mb-6 md:mb-0">
                         <a href="#" className="text-white flex gap-2 text-sm hover:text-[#FFE492]"><img src="public/assets/saaS-landingpages/bahasa.svg" alt="" />English</a>
