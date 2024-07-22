@@ -8,8 +8,8 @@ const ServicesPaws = () => {
           <img
             src="../../../public/assets/ecommercePaws/Vectorkakiblack.svg"
             alt="iconkaki"
-            width={40}
-            height={40}
+            width={24}
+            height={24}
           />
           <a
             href="#"
