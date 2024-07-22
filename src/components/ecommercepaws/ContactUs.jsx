@@ -2,14 +2,14 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className="w-full bg-blue-950 relative py-10 mt-10 px-5 w-screen-lg">
+    <div className="w-full bg-[#101828] relative py-10 mt-10 px-5 w-screen-lg">
       <div className="flex gap-2 relative w-full md:w-auto flex-col mb-6">
         <div className="flex gap-4 items-center">
           <img
             src="../../../public/assets/ecommercePaws/vectorkaki.svg"
             alt="iconkaki"
-            width={40}
-            height={40}
+            width={24}
+            height={24}
           />
           <a
             href="#"
@@ -102,7 +102,7 @@ const ContactUs = () => {
         <form className="bg-white text-black p-8 rounded-lg shadow-lg w-full lg:order-1">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 w-full">
             <div>
-              <label className="block text-gray-700">First name</label>
+              <label className="block text-gray-700 font-semibold">First name</label>
               <input
                 type="text"
                 className="w-full p-2 border border-gray-300 rounded"
@@ -110,7 +110,7 @@ const ContactUs = () => {
               />
             </div>
             <div>
-              <label className="block text-gray-700">Last name</label>
+              <label className="block text-gray-700 font-semibold">Last name</label>
               <input
                 type="text"
                 className="w-full p-2 border border-gray-300 rounded"
@@ -119,7 +119,7 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Email</label>
+            <label className="block text-gray-700 font-semibold">Email</label>
             <input
               type="email"
               className="w-full p-2 border border-gray-300 rounded"
@@ -127,7 +127,7 @@ const ContactUs = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Message</label>
+            <label className="block text-gray-700 font-semibold">Message</label>
             <textarea
               className="w-full p-2 border border-gray-300 rounded"
               placeholder="Message"
@@ -143,7 +143,7 @@ const ContactUs = () => {
               .
             </label>
           </div>
-          <button className="w-full py-3 bg-blue-950 text-white rounded-lg font-semibold">
+          <button className="w-full py-3 bg-[#101828] text-white rounded-lg font-semibold">
             Send message
           </button>
         </form>

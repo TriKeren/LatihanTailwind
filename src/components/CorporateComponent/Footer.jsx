@@ -7,9 +7,8 @@ const Footer = () => {
                         <img
                             src="/public/assets/corporate/logo.svg"
                             alt="Logo"
-                            className="transition-transform duration-300 ease-in-out transform hover:scale-105 hover:brightness-110"
                         />
-                        <p className="font-medium mt-8 md:mt-6 text-[#344051] md:text-lg">
+                        <p className="font-medium mt-6 text-[#344051] md:text-lg">
                             We love working with ambitious people. <br /> Lets build something great together now.
                         </p>
                         <div className="flex gap-4 mt-8 md:mt-6">
@@ -75,7 +74,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="my-10 w-full flex flex-col text-center justify-center border-t border-[#E4E7EC]">
-                        <span className="text-[#141C24] mt-4 font-bold md:text-lg">
+                        <span className="text-[#141C24] mt-8 font-medium md:text-lg">
                             © 2023 Whitespace UI - All rights reserved
                         </span>
                         <div className="mt-4 flex items-center justify-center space-x-2">

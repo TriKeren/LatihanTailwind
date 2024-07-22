@@ -31,11 +31,11 @@ const Client = () => {
 
     return (
         <>
-            <div className="mt-20 lg:mt-16 lg:max-w-screen-xl lg:mx-auto">
+            <div className="mt-16 lg:max-w-screen-xl lg:mx-auto">
                 <div className="container">
                     <div className="w-full flex flex-col items-center justify-center px-4 lg:px-24 text-center">
-                        <h1 className="text-[#141C24] mt-2 font-bold text-2xl md:text-4xl">Our Client</h1>
-                        <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 md:w-3/4 lg:w-full">
+                        <h1 className="text-[#141C24] font-bold text-3xl py-6 md:text-4xl">Our Client</h1>
+                        <div className="mt-14 grid grid-cols-1 gap-14 md:grid-cols-2 lg:grid-cols-4 md:w-3/4 lg:w-full">
                             <img
                                 ref={(el) => clientImagesRef.current[0] = el}
                                 className="w-40 md:w-48 mx-auto opacity-0 translate-y-10 transition-all duration-700 ease-in-out"
