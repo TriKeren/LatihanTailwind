@@ -2,9 +2,9 @@ import React from "react";
 
 const FooterPaws = () => {
   return (
-    <div className="bg-blue-950 relative w-screen-lg">
-      <div className="w-full border border-gray-300 mb-6"></div>
-      <div className="px-5 flex flex-col lg:flex-row">
+    <div className="bg-[#101828] relative w-screen-lg">
+      <div className="w-full border border-gray-300 mb-10"></div>
+      <div className="px-5 flex flex-col  lg:flex-row">
         <div className="w-full">
           <h2 className="text-white font-semibold text-2xl">
             Join our newsletter
@@ -32,8 +32,8 @@ const FooterPaws = () => {
             <img
               src="../../../public/assets/ecommercePaws/vectorkaki.svg"
               alt="iconkaki"
-              width={40}
-              height={40}
+              width={30}
+              height={30}
             />
             <a
               href="#"
@@ -42,13 +42,13 @@ const FooterPaws = () => {
               Paws n'Play
             </a>
           </div>
-          <p className="text-white">
+          <p className="text-gray-300">
             Where wagging tails and purring hearts reign supreme!
           </p>
         </div>
-        <div className="w-full grid grid-cols-2 gap-4 text-white lg:grid-cols-5 ">
+        <div className="w-full grid grid-cols-2 gap-4 my-4 text-gray-300 lg:grid-cols-5 ">
           <div className="flex flex-col">
-            <h3 className="font-bold">Shop</h3>
+            <h3 className="font-bold text-white">Shop</h3>
             <span>Pet Adoption</span>
             <span>Nutrition</span>
             <span>Pet Care</span>
@@ -56,7 +56,7 @@ const FooterPaws = () => {
             <span>Pricing</span>
           </div>
           <div className="flex flex-col">
-            <h3 className="font-bold">Company</h3>
+            <h3 className="font-bold text-white">Company</h3>
             <span>About Us</span>
             <span>Careers</span>
             <span>Press</span>
@@ -64,7 +64,7 @@ const FooterPaws = () => {
             <span>Contact</span>
           </div>
           <div className="flex flex-col">
-            <h3 className="font-bold">Services</h3>
+            <h3 className="font-bold text-white">Services</h3>
             <span>Grooming</span>
             <span>Boarding</span>
             <span>Traaining</span>
@@ -72,7 +72,7 @@ const FooterPaws = () => {
             <span>Support</span>
           </div>
           <div className="flex flex-col">
-            <h3 className="font-bold">Social</h3>
+            <h3 className="font-bold text-white">Social</h3>
             <span>Twitter</span>
             <span>Linkedln</span>
             <span>Facebook</span>
@@ -80,7 +80,7 @@ const FooterPaws = () => {
             <span>Dribble</span>
           </div>
           <div className="flex flex-col">
-            <h3 className="font-bold">Legal</h3>
+            <h3 className="font-bold text-white">Legal</h3>
             <span>Terms</span>
             <span>Privacy</span>
             <span>Cookies</span>
@@ -99,26 +99,26 @@ const FooterPaws = () => {
             <img
               src="../../../public/assets/ecommercePaws/twitter.svg"
               alt="iconTwitter"
-              width={20}
-              height={20}
+              width={25}
+              height={25}
             />
             <img
               src="../../../public/assets/ecommercePaws/linkedin.svg"
               alt="iconLinkedln"
-              width={20}
-              height={20}
+              width={24}
+              height={24}
             />
             <img
               src="../../../public/assets/ecommercePaws/facebook.svg"
               alt="iconFacebook"
-              width={20}
-              height={20}
+              width={24}
+              height={24}
             />
             <img
               src="../../../public/assets/ecommercePaws/github.svg"
               alt="iconGithub"
-              width={20}
-              height={20}
+              width={24}
+              height={24}
             />
             <img
               src="../../../public/assets/ecommercePaws/angellist.svg"
@@ -129,8 +129,8 @@ const FooterPaws = () => {
             <img
               src="../../../public/assets/ecommercePaws/dribble.svg"
               alt="iconDribble"
-              width={20}
-              height={20}
+              width={24}
+              height={24}
             />
           </div>
         </div>
