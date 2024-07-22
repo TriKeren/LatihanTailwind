@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full mt-10 max-sm:px-0 lg:px-[80px] md:px-[40px] px-[30px] lg:max-w-screen-xl mx-auto ">
+    <footer className="w-full mt-10 max-sm:px-0 lg:px-[80px] md:px-[40px] px-[30px] lg:max-w-screen-xl mx-auto">
       <div className="bg-[#191A23] rounded-t-[30px] flex-col max-md:p-[25px] h-full p-[50px]">
         <div className="flex flex-wrap flex-row max-md:flex-col justify-between items-center w-full">
           <div>
@@ -53,7 +53,7 @@ const Footer = () => {
           <div className="flex flex-col w-full max-sm:items-center">
             <div className="bg-[#B9FF66] w-[180px] rounded-[10px] flex justify-center">
               <h1 className="text-[30px] max-sm:text-[28px] font-grotesk">
-                Contact Us :
+                Contact Us:
               </h1>
             </div>
             <div className="justify-center text-center text-white font-extralight mt-[30px]">
@@ -68,7 +68,7 @@ const Footer = () => {
               placeholder="Email"
               type="email"
             />
-            <button className="bg-[#B9FF66] text-white mt-3 lg:mt-0 w-full lg:w-full lg:h-[68px] py-[12px] px-4 rounded-[10px] hover:bg-black hover:text-white font-light text-[18px] duration-150">
+            <button className="bg-[#B9FF66] text-black mt-3 lg:mt-0 w-full lg:w-full lg:h-[68px] py-[12px] px-4 rounded-[10px] hover:bg-black hover:text-white font-light text-[18px] duration-150">
               Subscribe to News
             </button>
           </div>
