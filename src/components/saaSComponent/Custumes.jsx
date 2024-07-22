@@ -44,7 +44,7 @@ const Custumes = () => {
     }, []);
 
     return (
-        <div className="bg-white py-12 md:py-10 lg:py-20">
+        <div className="bg-white py-12 md:py-10 lg:py-20 overflow-x-hidden">
             <div className="container mx-auto flex flex-col lg:flex-row items-center max-w-screen-xl px-4 md:px-2">
                 <div
                     id="custumes-image"
