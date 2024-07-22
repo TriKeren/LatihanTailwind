@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 
 const WorkProcess = () => {
     const [paragraph, setParagraph] = useState([false, false, false, false, false]);
+    const [activeIndex, setActiveIndex] = useState(null); // Menyimpan index aktif
     const sectionRef = useRef(null);
     const observerRef = useRef(null);
 
@@ -9,6 +10,7 @@ const WorkProcess = () => {
         setParagraph(prevState =>
             prevState.map((visible, i) => (i === index ? !visible : false))
         );
+        setActiveIndex(index); // Set index aktif
     };
 
     const texts = [
@@ -16,8 +18,8 @@ const WorkProcess = () => {
         "02. Research and Strategy Development",
         "03. Implementation",
         "04. Monitoring and Optimization",
-        "05.Reporting and Communication",
-        "06.Continual Improvement"
+        "05. Reporting and Communication",
+        "06. Continual Improvement"
     ];
 
     const paragraphs = [
@@ -27,7 +29,6 @@ const WorkProcess = () => {
         "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
         "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
         "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
-
     ];
 
     useEffect(() => {
@@ -67,17 +68,20 @@ const WorkProcess = () => {
             <section id="WorkProcess" className="mt-20 lg:mt-16 lg:max-w-screen-xl lg:mx-auto" ref={sectionRef}>
                 <div className="container">
                     <div className="w-full items-center px-4 lg:px-24">
-                    <header className="flex w-full lg:flex-row flex-col items-center gap-5 mr-auto">
-                <h1 className="lg:text-[48px] text-[38px] font-bold bg-[#B9FF66] px-4 text-kanit mt-10">
-                Our Working Process 
-                </h1>
-                <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal">
-                Step-by-Step Guide to Achieving Your Business Goals
-                </p>
-            </header>
+                        <header className="flex w-full lg:flex-row flex-col items-center gap-5 mr-auto">
+                            <h1 className="lg:text-[48px] text-[38px] font-bold bg-[#B9FF66] px-4 text-kanit mt-10">
+                                Our Working Process 
+                            </h1>
+                            <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal">
+                                Step-by-Step Guide to Achieving Your Business Goals
+                            </p>
+                        </header>
                         <div className="mt-16 md:mx-20">
                             {[0, 1, 2, 3, 4].map((index) => (
-                                <div key={index} className="WorkProcess-item border border-[#637083] rounded-lg md:px-4 px-4 my-4 opacity-0 translate-y-10 transition-opacity duration-500 ease-in-out">
+                                <div
+                                    key={index}
+                                    className={`WorkProcess-item border border-[#637083] rounded-lg md:px-4 px-4 my-4 transition-all duration-500 ease-in-out ${activeIndex === index ? 'bg-[#B9FF66]' : 'bg-white'} opacity100 translate-y-10`}
+                                >
                                     <div className="flex justify-between py-4">
                                         <p className="text-lg text-[#141C24] font-semibold md:text-xl mt-1">{texts[index]}</p>
                                         <button

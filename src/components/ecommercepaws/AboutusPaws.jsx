@@ -21,7 +21,7 @@ const AboutusPaws = () => {
         <div className="w-full border border-gray-300"></div>
       </div>
       <div className="flex gap-6 lg:max-w-full lg:items-center">
-        <div className="flex flex-col gap-4 w-full">
+        <div className="flex flex-col gap-4 w-full text-gray-500">
           <p>
             At Paws n’ Play, our journey began with a simple yet profound love
             for animals. Inspired by the unwavering companionship and joy they

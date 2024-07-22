@@ -18,7 +18,7 @@ const FooterPaws = () => {
             <input
               type="email"
               className="w-full p-2 bg-transparent"
-              placeholder="enter your email"
+              placeholder="Enter your email"
             />
           </div>
           <button className="w-full py-2 bg-white text-blue-950 rounded-lg font-semibold lg:w-fit lg:h-fit lg:px-3">
@@ -92,7 +92,7 @@ const FooterPaws = () => {
       <div className="flex flex-col items-center gap-5 py-10 px-5">
         <div className="w-full border border-gray-500"></div>
         <div className="w-full flex flex-col gap-2 lg:flex-row lg:justify-between lg:items-center">
-          <h3 className="text-white">
+          <h3 className="text-white text-center">
             &copy; 2024 Paws n’ Play. All rights reserved.
           </h3>
           <div className="flex gap-6 items-center justify-center">
