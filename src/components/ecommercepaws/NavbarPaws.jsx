@@ -28,8 +28,8 @@ const NavbarPaws = () => {
             <img
               src="../../../public/assets/ecommercePaws/vectorkaki.svg"
               alt="iconkaki"
-              width={40}
-              height={40}
+              width={30}
+              height={30}
             />
             <a href="#" className="text-white text-xl font-bold">
               Paws n'Play
