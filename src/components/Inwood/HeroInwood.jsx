@@ -1,4 +1,4 @@
-// src/components/HeroInwood.jsx
+ //src/components/HeroInwood.jsx
 import React from 'react';
 
 const HeroInwood = () => {
