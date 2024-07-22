@@ -31,9 +31,9 @@ const Footer = () => {
             <div className="container mx-auto px-4 md:px-10">
                 <div className="flex flex-col md:flex-col lg:flex-row justify-between mb-10 space-y-8 md:space-y-8 lg:space-y-0">
                     {/* Logo and Text */}
-                    <div className="flex flex-col items-center md:items-start">
-                        <img src="public/assets/saaS-landingpages/Logo.svg" className="w-36 lg:w-36 md:w-48 h-auto mb-4" alt="Logo" />
-                        <p className="text-white text-base lg:text-base md:text-xl lg:w-52 md:w-3/4 text-center md:text-left">Whitepace was created for the new ways we live and work. We make a better workspace around the world.</p>
+                    <div className="flex flex-col w-[80%] ml-8 items-center md:items-start">
+                        <img src="public/assets/saaS-landingpages/Logo.svg" className="w-[191px] lg:w-36 md:w-48 h-auto mb-4" alt="Logo" />
+                        <p className="text-white text-[18px] lg:text-base md:text-xl lg:w-52 md:w-3/4 text-center md:text-left">Whitepace was created for the new ways we live and work. We make a better workspace around the world.</p>
                     </div>
 
                     {/* Center Section */}
@@ -69,7 +69,10 @@ const Footer = () => {
                     <div className="flex flex-col items-center md:items-start text-center md:text-left">
                         <h4 className="text-white text-lg lg:text-xl md:text-2xl font-bold mb-4">Try It Today</h4>
                         <p className="text-white text-base lg:text-base md:text-lg mb-4">Get started for free. Add your <br /> whole team as your needs grow.</p>
-                        <button className="px-6 py-2 font-medium bg-[#4F9CF9] text-[#FFE492] rounded hover:bg-[#FFE492] hover:text-[#043873] transition-colors duration-300">Let’s Go</button>
+                        <button className="px-[40px] flex items-center text-[18px] lg:px-4 lg:py-2 py-[20px] font-medium bg-[#4F9CF9] text-[#FFE492] rounded-[8px] hover:bg-[#FFE492] hover:text-[#043873] mt-[60px] lg:mt-10 md:mt-10 md:mb-5 transition-colors duration-300">
+                            Start today
+                            <img className='w-4 ml-2' src="public/assets/saaS-landingpages/arrowright.svg" alt="" />
+                        </button>
                     </div>
                 </div>
 
