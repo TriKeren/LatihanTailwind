@@ -2,7 +2,7 @@ import React from 'react';
 
 const Proposal = () => {
   return (
-    <div className="px-4 md:px-24 py-2 lg:mt-3">
+    <div className="px-4 md:px-24 py-2 lg:mt-3 lg:max-w-screen-xl mx-auto">
       <div className="w-full gap-5 items-center mt-10 md:justify-center flex bg-[#F3F3F3] p-[30px] rounded-[30px] flex-col md:flex-row">
         <div className="flex flex-col justify-center gap-2 text-center md:text-left">
           <h1 className="text-[32px] font-semibold">Let’s make things happen</h1>

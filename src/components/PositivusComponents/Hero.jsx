@@ -24,7 +24,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="px-4 md:px-24 py-2 lg:mt-3">
+    <section className="px-4 md:px-24 py-2 lg:mt-3 lg:max-w-screen-xl mx-auto">
       <div className="container mx-auto flex flex-col md:flex-row gap-8">
         <div
           className="mt-9 order-2 md:order-1 md:w-1/2 px-0 lg:px-5 flex flex-col"

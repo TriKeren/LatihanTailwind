@@ -30,7 +30,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="px-4 md:px-24 py-2 lg:mt-3">
+    <div className="px-4 md:px-24 py-2 lg:mt-3 lg:max-w-screen-xl mx-auto">
       <header className="flex w-full lg:flex-row flex-col items-center gap-5">
         <h1 className="lg:text-[48px] text-[38px] font-bold bg-[#B9FF66] px-4 text-kanit">Testimonials</h1>
         <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal">

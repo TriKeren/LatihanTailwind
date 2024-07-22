@@ -1,6 +1,6 @@
 const Contact = () => {
     return (
-      <div className="px-4 md:px-24 py-2 lg:mt-3">
+      <div className="px-4 md:px-24 py-2 lg:mt-3 lg:max-w-screen-xl mx-auto">
         <header className="flex w-full lg:flex-row flex-col items-center gap-5 mr-auto">
           <h1 className="lg:text-[48px] text-[38px] font-bold bg-green px-4 text-kanit">
             Contact-Us
@@ -11,7 +11,7 @@ const Contact = () => {
           </p>
         </header>
   
-        <div className="flex flex-col mt-10 lg:justify-between lg:flex-row bg-slate-100 md:p-[20px] p-[12px] lg:p-[30px] h-auto relative rounded-[30px]">
+        <div className="flex flex-col mt-10 lg:justify-between lg:flex-row bg-slate-100 md:p-[20px] p-[12px] lg:p-[30px] h-auto relative rounded-[30px] ">
           <div className="flex flex-col w-full lg:w-auto lg:mr-auto">
             <div className="flex gap-[30px] w-full text-[24px] max-sm:text-[20px] font-light">
               <div className="flex gap-2">

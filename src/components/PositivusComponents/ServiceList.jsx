@@ -49,7 +49,7 @@ const ServiceList = () => {
     ];
     
     return (
-        <div className="px-4 md:px-24 py-2 lg:mt-3">
+        <div className="px-4 md:px-24 py-2 lg:mt-3 lg:max-w-screen-xl mx-auto">
             <div className="flex w-full lg:justify-start flex-col" id="service">
                 <header className="w-full flex flex-wrap flex-1 gap-7 justify-center lg:justify-start mt-3">
                     <h1 className="lg:text-[48px] text-[38px] font-bold bg-green px-4 bg-[#B9FF66]">
