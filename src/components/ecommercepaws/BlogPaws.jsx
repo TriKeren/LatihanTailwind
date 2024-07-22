@@ -9,8 +9,8 @@ const BlogPaws = () => {
           <img
             src="../../../public/assets/ecommercePaws/Vectorkakiblack.svg"
             alt="iconkaki"
-            width={40}
-            height={40}
+            width={24}
+            height={24}
           />
           <a
             href="#"
@@ -49,7 +49,7 @@ const BlogPaws = () => {
           <div className="mt-4 lg:mt-10">
           <Link
           to="/"
-          className="hover:text-white py-4 px-5 bg-blue-950 text-white rounded-lg"
+          className="hover:text-white py-2 px-5 bg-gradient-to-r from-[#101828] to-[#233250] text-white rounded-lg"
         >
           Read More
         </Link>

@@ -33,10 +33,20 @@ const Plan = () => {
     return (
         <div className="bg-white py-12 md:py-16 lg:py-12">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
-                <h1 className="text-5xl md:text-6xl font-bold text-center text-[#212529] mb-5">Choose Your Plan</h1>
-                <p className="text-lg md:text-xl lg:text-lg lg:px-32 text-center text-[#212529] mb-10">
+                <div className="w-[85%] ml-[22px]">
+                <h1 
+                    className="relative text-[36px] md:text-6xl font-bold text-center text-[#212529] mb-5">
+                    <span className="relative z-10">Choose Your Plan</span>
+                    <img
+                        src="public/assets/saaS-landingpages/bg-text.svg"
+                        alt=""
+                        className="absolute inset-0 mt-[85px] ml-[80px] w-[40%] h-[44%] object-cover opacity-100 z-0"
+                    />
+                </h1>
+                <p className="text-[18px] md:text-xl lg:text-lg lg:px-32 text-center text-[#212529] mb-10">
                     Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.
                 </p>
+                </div>
 
                 <div className="flex flex-col md:flex-row justify-center gap-8">
                     <div id="plan-cards" className="flex overflow-x-auto space-x-4 md:space-x-8 w-full md:w-auto">

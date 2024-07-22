@@ -42,7 +42,7 @@ const FavApp = () => {
     });
 
     return (
-        <div className="bg-[#043873] py-12 md:py-10 lg:py-16">
+        <div className="bg-[#043873] bg-[url('public/assets/saaS-landingpages/bg-hero.png')] bg-no-repeat bg-cover py-12 md:py-10 lg:py-16">
             <div className="container mx-auto flex flex-col lg:flex-row items-center max-w-screen-xl px-4 md:px-2">
                 <div
                     ref={imageRef}
@@ -51,22 +51,22 @@ const FavApp = () => {
                 >
                     <img
                         src="public/assets/saaS-landingpages/Apps.png"
-                        className="w-3/4 md:w-1/2 lg:w-2/3 h-auto"
+                        className="w-[73%] md:w-1/2 lg:w-2/3 h-auto"
                         alt="Apps"
                     />
                 </div>
-                <div className="w-full md:w-full flex flex-col items-start lg:items-start space-y-4 lg:order-2 order-2">
+                <div className="w-full mt-3 md:w-full flex flex-col items-start lg:items-start space-y-4 lg:order-2 order-2">
                     <h1
                         ref={headingRef}
                         style={animationStyles(isHeadingVisible)}
-                        className="text-4xl md:text-6xl lg:text-6xl font-bold text-white mb-5 md:mb-5 lg:mb-7 text-center mt-10 md:text-center lg:text-start"
+                        className="text-[36px] md:text-6xl lg:text-6xl font-bold text-white mb-5 md:mb-5 lg:mb-7 text-center mt-10 md:text-center lg:text-start"
                     >
                         Work with Your Favorite Apps Using whitepace
                     </h1>
                     <p
                         ref={paragraphRef}
                         style={animationStyles(isParagraphVisible)}
-                        className="text-lg md:font-medium md:text-2xl lg:text-lg lg:font-medium text-white text-center md:text-center lg:text-start"
+                        className="text-[18px] w-[77%] ml-[35px] md:font-medium md:text-2xl lg:text-lg lg:font-medium text-white text-center md:text-center lg:text-start"
                     >
                         Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.
                     </p>
@@ -75,8 +75,9 @@ const FavApp = () => {
                         style={animationStyles(isButtonVisible)}
                         className="w-full flex justify-center lg:justify-start"
                     >
-                        <button className="px-4 py-2 font-medium bg-[#4F9CF9] text-[#FFE492] rounded hover:bg-[#FFE492] hover:text-[#043873] mt-5 lg:mt-10 md:mt-10 md:mb-5 transition-colors duration-300">
-                            Read More
+                        <button className="px-[40px] flex items-center text-[18px] lg:px-4 lg:py-2 py-[20px] font-medium bg-[#4F9CF9] text-[#FFE492] rounded-[8px] hover:bg-[#FFE492] hover:text-[#043873] mt-[60px] lg:mt-10 md:mt-10 md:mb-5 transition-colors duration-300">
+                            Read more
+                            <img className='w-4 ml-2' src="public/assets/saaS-landingpages/arrowright.svg" alt="" />
                         </button>
                     </div>
                 </div>

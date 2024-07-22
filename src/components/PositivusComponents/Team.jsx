@@ -47,24 +47,35 @@ const Team = () => {
         }
     ];
 
-    return ( 
-        <div className="px-4 md:px-24 py-2 lg:mt-10 lg:max-w-screen-xl mx-auto">
-            <header className="flex w-full lg:flex-row flex-col items-center gap-5 mr-auto">
-                <h1 className="lg:text-[48px] text-[38px] font-bold bg-[#B9FF66] px-4 text-kanit mt-10">
-                    Team
-                </h1>
-                <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal">
-                    Meet the skilled and experienced team behind our successful digital marketing strategies
-                </p>
-            </header>
-            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-                {team.map((items, index) => (
-                    <div key={index} className="flex items-center border border-r-4 border-b-8 rounded-[50px] p-5 hover:bg-green duration-300 group">
-                        <TeamList {...items} />
-                    </div>
-                ))}
+    return (
+        <>
+            <style>
+                {`
+                    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+                    .font-space-grotesk {
+                        font-family: 'Space Grotesk', sans-serif;
+                    }
+                `}
+            </style>
+            <div className="font-space-grotesk px-4 md:px-24 py-2 mt-[30px] lg:mt-[30px] lg:max-w-screen-xl mx-auto">
+                <header className="flex w-full lg:flex-row flex-col items-center gap-5 mr-auto">
+                    <h1 className="mt-[30px] lg:text-[40px] text-[36px] bg-[#B9FF66] px-4">
+                        Team
+                    </h1>
+                    <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal mt-[30px]">
+                        Meet the skilled and experienced team behind our successful digital marketing strategies
+                    </p>
+                </header>
+                <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+                    {team.map((items, index) => (
+                        <div key={index} className="flex items-center border border-r-4 border-b-8 rounded-[50px] p-5 hover:bg-green duration-300 group">
+                            <TeamList {...items} />
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 

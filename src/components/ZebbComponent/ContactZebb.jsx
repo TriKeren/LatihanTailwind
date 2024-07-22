@@ -56,14 +56,24 @@ const ContactZebb = () => {
     }, []);
 
     return ( 
-        <div className="max-w-screen-xl mx-auto flex justify-center mt-10 lg:mt-28">
+      <>
+      <style>
+            {`
+            @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+            .font-merriweather{
+                font-family: 'Merriweather' , sans-serif;
+            }`
+            }
+        </style>
+        <div className="max-w-screen-xl mx-auto flex justify-center mt-10 lg:mt-28 font-merriweather">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 py-20 rounded-lg">
                 <div className={`flex justify-center transition-opacity duration-700 ${imageVisible ? 'opacity-100' : 'opacity-0'}`} ref={imageRef}>
                     <img src="/public/assets/ZebbDigitalAgency/LogoHero.png" className="w-11/12 mx-10 mt-16" alt="" />
                 </div>
                 <div ref={formRef} className={`mx-14 text-black transition-transform duration-500 ${formVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
                     <div className="text-black flex justify-center lg:justify-start text-center lg:text-start">
-                        <h1 className="text-3xl font-bold w-80">
+                        <h1 className="text-4xl font-bold w-52">
                             Need Help Making Coffee? <span></span>
                             <span className="relative inline-block">
                                 Contact Us <span className="absolute inset-x-0 bottom-0 h-[16px] bg-[#FF5678] -z-10"></span>
@@ -94,6 +104,7 @@ const ContactZebb = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 }
 

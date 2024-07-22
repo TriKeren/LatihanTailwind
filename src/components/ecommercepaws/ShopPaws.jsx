@@ -9,8 +9,8 @@ const ShopPaws = () => {
           <img
             src="../../../public/assets/ecommercePaws/Vectorkakiblack.svg"
             alt="iconkaki"
-            width={40}
-            height={40}
+            width={24}
+            height={24}
           />
           <a
             href="#"
@@ -22,10 +22,10 @@ const ShopPaws = () => {
         <div className="w-full border border-gray-300"></div>
       </div>
       <div className="max-w-screen-xl flex justify-between items-center gap-10">
-        <h2 className="text-base min-w-fit font-semibold inline-block lg:text-2xl">
+        <h2 className="text-base min-w-fit px-3 font-semibold inline-block lg:text-2xl">
           Featured Product
         </h2>
-        <div className="flex py-2 px-3 rounded-full bg-gray-100 items-center gap-3">
+        <div className="flex py-2 px-3 rounded-full font-semibold bg-gray-100 items-center gap-4">
           <img
             src="../../../public/assets/ecommercePaws/search.svg"
             alt="iconsearch"
@@ -42,7 +42,7 @@ const ShopPaws = () => {
       <div className="flex justify-between my-5 w-full items-center lg:justify-center lg:gap-4">
         <Link
           to="/"
-          className="hover:text-white py-2 px-3 bg-blue-950 text-white rounded-lg"
+          className="hover:text-white py-2 px-5 bg-gradient-to-r from-[#101828] to-[#233250] text-white rounded-lg"
         >
           Random
         </Link>
