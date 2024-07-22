@@ -15,10 +15,7 @@ const Navbardentist = () => {
               className="h-8 w-8"
             />
             <div className="flex flex-col text-center items-centerlg:text-left">
-              <a
-                href="#"
-                className="text-lg  hover:text-black text-center items-center"
-              >
+              <a href="#" className="text-lg   text-center items-center">
                 Odontologia Integral
               </a>
               <span className="text-xs">Salud & Estetica Dental</span>
@@ -52,8 +49,7 @@ const Navbardentist = () => {
                 alt="menuNavbar"
                 className="h-8 w-8"
                 style={{
-                  filter:
-                    "invert(23%) sepia(89%) saturate(7466%) hue-rotate(199deg) brightness(99%) contrast(98%)",
+                  filter: "rgba(0, 41, 109, 1)",
                 }}
               />
             </button>

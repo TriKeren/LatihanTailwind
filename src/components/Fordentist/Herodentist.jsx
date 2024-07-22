@@ -27,7 +27,7 @@ const Herodentist = () => {
             </p>
             <div className="flex space-x-2">
               <div className="relative inline-block">
-                <button className="px-4 py-4 text-sm text-white bg-blue-500 font-semibold rounded-[20px]">
+                <button className="px-4 py-4 text-sm text-white bg-blue-500 font-semibold rounded-[20px] shadow-lg">
                   Saca Tu Turno
                 </button>
               </div>

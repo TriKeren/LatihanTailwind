@@ -18,13 +18,6 @@ const Fasilitydentist = () => {
               className="object-cover h-full w-full"
             />
           </div>
-          <div className="relative h-[400px] w-[300px] flex-shrink-0 flex items-center justify-center rounded-lg overflow-hidden">
-            <img
-              src="../../../public/assets/Fordentist/bgfasility2.png"
-              alt="Fasilitas2"
-              className="object-cover h-full w-full"
-            />
-          </div>
         </div>
       </div>
     </div>

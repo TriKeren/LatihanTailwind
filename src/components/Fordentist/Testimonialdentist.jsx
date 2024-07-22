@@ -29,16 +29,13 @@ const Testimonialdentist = () => {
       </div>
 
       <div className="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md mt-8">
-        <h3 className="font-bold text-lg md:text-xl">Maria Paz</h3>
-        <div className="flex justify-center items-center mb-4">
-          {[...Array(5)].map((_, i) => (
-            <span
-              key={i}
-              className={`${i < 3 ? "text-cyan-400" : "text-gray-300"} text-xl`}
-            >
-              ★
-            </span>
-          ))}
+        <div className="flex justify-between items-center mb-4">
+          <h3 className="font-bold text-lg md:text-xl">Maria Paz</h3>
+          <div className="flex">
+            <span className="text-cyan-400 text-xl">★</span>
+            <span className="text-cyan-400 text-xl">★</span>
+            <span className="text-cyan-400 text-xl">★</span>
+          </div>
         </div>
         <p className="text-gray-600 text-sm md:text-base">
           Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa
@@ -48,14 +45,14 @@ const Testimonialdentist = () => {
       </div>
 
       <div className="flex justify-center items-center gap-2 my-8">
-        <span className="block w-3 h-3 bg-cyan-400 rounded-full"></span>
+        <span className="block w-3 h-3 bg-blue-800 rounded-full"></span>
         <span className="block w-3 h-3 bg-gray-300 rounded-full"></span>
         <span className="block w-3 h-3 bg-gray-300 rounded-full"></span>
         <span className="block w-3 h-3 bg-gray-300 rounded-full"></span>
       </div>
 
       <div className="text-center">
-        <button className="border border-cyan-400 text-cyan-400 py-2 px-6 rounded-lg hover:bg-cyan-400 hover:text-white transition duration-300">
+        <button className="border border-blue-800 text-blue-800 py-2 px-6 rounded-lg">
           Ver Mas Reviews
         </button>
       </div>
