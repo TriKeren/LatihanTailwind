@@ -1,14 +1,30 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
     const [mobile, setMobile] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     const toggleMobile = () => {
         setMobile(!mobile);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <nav className="bg-[#043873] shadow-md py-4 sticky top-0 z-50">
+        <nav className={`bg-[#043873] shadow-md py-4 sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-opacity-80 backdrop-blur-md' : 'bg-opacity-500'}`}>
             <div className="container mx-auto flex justify-between items-center max-w-screen-xl px-4 md:px-8">
                 <div className="flex items-center">
                     <img src="public/assets/saaS-landingpages/Logo.svg" className="h-10 w-2/4 md:w-2/3" />
