@@ -105,6 +105,8 @@ const Faq = () => {
                                 <div className="flex justify-center">
                                     <button className="flex items-center bg-[#1A75FF] text-white whitespace-nowrap px-4 py-2 text-base rounded-lg border-2 border-[#1A75FF] transition-colors duration-300 ease-in-out hover:bg-white hover:text-[#1A75FF] hover:border-[#1A75FF]">
                                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" className="mt-[3px] mr-1 transition-colors duration-300 ease-in-out hover:fill-[#1A75FF]" xmlns="http://www.w3.org/2000/svg">
+                                    <button className="group flex items-center bg-[#1A75FF] text-white whitespace-nowrap px-4 py-2 text-base rounded-lg border-2 border-[#1A75FF] transition-colors duration-300 ease-in-out hover:bg-white hover:text-[#1A75FF] hover:border-[#1A75FF]">
+                                        <svg width="25" height="24" viewBox="0 0 21 20" fill="none" className="mt-[3px] mr-1 transition-colors duration-300 ease-in-out group-hover:fill-[#1A75FF]" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M3.83333 5.83334L8.99999 9.70833C9.88889 10.375 11.1111 10.375 12 9.70833L17.1667 5.8333M4.66667 15.8333H16.3333C17.2538 15.8333 18 15.0871 18 14.1667V5.83334C18 4.91286 17.2538 4.16667 16.3333 4.16667H4.66667C3.74619 4.16667 3 4.91286 3 5.83334V14.1667C3 15.0871 3.74619 15.8333 4.66667 15.8333Z" stroke="white" />
                                         </svg>
                                         Contact us
