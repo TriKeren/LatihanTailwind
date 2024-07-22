@@ -48,12 +48,12 @@ const Team = () => {
     ];
 
     return ( 
-        <div className="px-4 md:px-24 py-2 lg:mt-10 lg:max-w-screen-xl mx-auto">
+        <div className="px-4 md:px-24 py-2 mt-[30px] lg:mt-[30px] lg:max-w-screen-xl mx-auto">
             <header className="flex w-full lg:flex-row flex-col items-center gap-5 mr-auto">
-                <h1 className="lg:text-[48px] text-[38px] font-bold bg-[#B9FF66] px-4 text-kanit mt-10">
+                <h1 className="mt-[30px] lg:text-[40px] text-[36px] bg-[#B9FF66] px-4">
                     Team
                 </h1>
-                <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal">
+                <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal mt-[30px]">
                     Meet the skilled and experienced team behind our successful digital marketing strategies
                 </p>
             </header>

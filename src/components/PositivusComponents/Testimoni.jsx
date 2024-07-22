@@ -30,19 +30,19 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="px-4 md:px-24 py-2 lg:mt-3 lg:max-w-screen-xl mx-auto">
+    <div className="mt-[30px] px-4 md:px-24 py-2 lg:mt-[30px] lg:max-w-screen-xl mx-auto">
       <header className="flex w-full lg:flex-row flex-col items-center gap-5">
-        <h1 className="lg:text-[48px] text-[38px] font-bold bg-[#B9FF66] px-4 text-kanit">Testimonials</h1>
-        <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal">
+        <h1 className="lg:text-[40px] text-[36px] bg-[#B9FF66] px-4 text-kanit">Testimonials</h1>
+        <p className="text-xl mt-[30px] lg:max-w-[50%] lg:text-start text-center font-normal">
           At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:
         </p>
       </header>
-      <div className="flex items-center justify-center h-auto lg:h-[625px] bg-gray-900 text-white rounded-[20px] mt-10">
+      <div className="mt-[30px] flex items-center justify-center h-auto lg:h-[625px] bg-gray-900 text-white rounded-[20px]">
         <div className="w-full max-w-5xl px-4">
           <div className="flex justify-between items-center space-x-4">
             <button
               onClick={prevTestimonial}
-              className="text-2xl p-2 bg-gray-800 rounded-full hover:bg-gray-700 border border-green-500"
+              className="text-2xl mt-96 p-2 bg-gray-800 rounded-full hover:bg-gray-700 border border-green-500"
             >
               &larr;
             </button>
@@ -54,14 +54,14 @@ const TestimonialSlider = () => {
                 {testimonials.map((_, index) => (
                   <span
                     key={index}
-                    className={`w-3 h-3 rounded-full ${index === currentIndex ? 'bg-green-500' : 'bg-gray-500'}`}
+                    className={`w-3 h-3 rounded-full mt-52 ${index === currentIndex ? 'bg-green-500' : 'bg-gray-500'}`}
                   ></span>
                 ))}
               </div>
             </div>
             <button
               onClick={nextTestimonial}
-              className="text-2xl p-2 bg-gray-800 rounded-full hover:bg-gray-700 border border-green-500"
+              className="text-2xl p-2 mt-96 bg-gray-800 rounded-full hover:bg-gray-700 border border-green-500"
             >
               &rarr;
             </button>

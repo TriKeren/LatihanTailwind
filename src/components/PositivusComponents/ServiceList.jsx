@@ -9,42 +9,42 @@ const ServiceList = () => {
             title: "Search engine optimize",
             btn: "learn more",
             colors:"bg-[#F3F3F3]",
-            titleColor:"black",
+            titleColor:"bg-[#B9FF66]",
         },
         {
             imgURL: "/public/assets/positivus/service2.png",
             title: "Pay-per-click advertising",
             btn: "learn more",
             colors:"bg-[#B9FF66]",
-            titleColor:"white",
-        },
-        {
-            imgURL: "/public/assets/positivus/service3.png",
-            title: "search engine optimize",
-            btn: "learn more",
-            colors:"bg-[#191A23]",
-            titleColor:"white",
+            titleColor:"bg-[#F3F3F3]",
         },
         {
             imgURL: "/public/assets/positivus/service4.png",
             title: "Social Media Marketing",
             btn: "learn more",
             colors:"bg-white",
-            titleColor:'green',
+            titleColor:'bg-[#B9FF66]',
+        },
+        {
+            imgURL: "/public/assets/positivus/service3.png",
+            title: "Email Marketing",
+            btn: "learn more",
+            colors:"bg-[#191A23]",
+            titleColor:"bg-[#F3F3F3]",
         },
         {
             imgURL: "/public/assets/positivus/service5.png",
             title: "Content Creation",
             btn: "learn more",
             colors:"bg-[#B9FF66]",
-            titleColor:'white',
+            titleColor:"bg-[#F3F3F3]",
         },
         {
             imgURL: "/public/assets/positivus/service6.png",
             title: "Analytics and Tracking",
             btn: "learn more",
             colors:"bg-[#191A23]",
-            titleColor:'white',
+            titleColor:'bg-[#F3F3F3]',
         },
     ];
     
@@ -52,7 +52,7 @@ const ServiceList = () => {
         <div className="px-4 md:px-24 py-2 lg:mt-3 lg:max-w-screen-xl mx-auto">
             <div className="flex w-full lg:justify-start flex-col" id="service">
                 <header className="w-full flex flex-wrap flex-1 gap-7 justify-center lg:justify-start mt-3">
-                    <h1 className="lg:text-[48px] text-[38px] font-bold bg-green px-4 bg-[#B9FF66]">
+                    <h1 className="lg:text-[40px] text-[36px]  px-4 py-2 bg-[#B9FF66]">
                         Services
                     </h1>
                     <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal">

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
 
 const Case = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,22 +30,29 @@ const Case = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + caseStudies.length) % caseStudies.length);
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: nextSlide,
+    onSwipedRight: prevSlide,
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
+
   return (
     <div className="px-4 md:px-24 py-2 lg:mt-3 lg:max-w-screen-xl mx-auto">
       <header className="flex w-full lg:flex-row flex-col items-center gap-5 ">
-        <h1 className="lg:text-[48px] text-[38px] font-bold bg-[#B9FF66] px-4 text-kanit ">
+        <h1 className="lg:text-[40px] text-[36px] bg-[#B9FF66] px-4 text-kanit">
           Case Studies
         </h1>
-        <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal ">
+        <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal">
           Explore Real-Life Examples of Our Proven Digital Marketing Success
           through Our Case Studies
         </p>
       </header>
 
-      <div className="relative mt-10 bg-[#191A23] rounded-[30px] overflow-hidden">
+      <div className="relative mt-10 bg-[#191A23] rounded-[30px] overflow-hidden" {...handlers}>
         <div className="flex flex-row transition-transform duration-300" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {caseStudies.map((items, index) => (
-            <div key={index} className="flex-shrink-0 w-full lg:w-1/3 px-4 py-6">
+            <div key={index} className="flex-shrink-0 w-full lg:w-1/3 px-10 py-6">
               <div className="text-white cursor-pointer">
                 <h1 className="font-light w-[70%] leading-6">{items.title}</h1>
               </div>
@@ -58,14 +66,14 @@ const Case = () => {
 
         <button
           onClick={prevSlide}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+          className="hidden absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
           style={{ transform: 'translateX(-50%)' }}
         >
           &larr;
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+          className="hidden absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
           style={{ transform: 'translateX(50%)' }}
         >
           &rarr;
