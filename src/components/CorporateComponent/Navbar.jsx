@@ -38,18 +38,19 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`sticky top-0 left-0 w-full z-10 py-4 lg:py-0 lg:px-24 lg:max-w-screen-xl lg:mx-auto transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-md shadow-md' : 'bg-transparent shadow-none'}`}>
+            <nav className={`sticky top-0 left-0 w-full z-10 py-4 lg:py-0 md:px-8 lg:px-24 lg:max-w-screen-xl border-b lg:mx-auto transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-md shadow-md' : 'bg-transparent shadow-none'}`}>
                 <div className="container">
                     <div className={`flex items-center justify-between ${view ? 'relative' : ''}`}>
-                        <div className="px-4">
-                            <img className="h-6 md:h-8" src="/public/assets/corporate/logo.svg" alt="Logo" />
+                        <div className="px-4 flex text-center">
+                            <img className="h-8 md:h-8 mr-2" src="/public/assets/corporate/logo_2.svg" alt="Logo" />
+                            <span className="text-[#141C24] font-semibold mt-[1px] text-xl hidden md:flex">Whitespace UI</span>
                         </div>
                         <div className="flex items-center px-4">
                             <button
                                 id="hamburger"
                                 name="hamburger"
                                 type="button"
-                                className={`block absolute border border-[#CED2DA] right-4 py-3 px-3 rounded-lg lg:hidden ${view ? 'active' : ''}`}
+                                className={`block absolute border border-[#CED2DA] right-4 md:right-8 py-3 px-3 rounded-lg lg:hidden ${view ? 'active' : ''}`}
                                 onClick={toggleMenu}
                             >
                                 <span
@@ -119,7 +120,7 @@ const Navbar = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <button className="bg-[#1A75FF] md:w-fit w-full text-white whitespace-nowrap px-4 py-2 mr-14 lg:mr-0 text-sm rounded-lg border-2 border-transparent transition-colors duration-300 ease-in-out hover:bg-white hover:text-[#1A75FF] hover:border-[#1A75FF]">
+                            <button className="bg-[#1A75FF] md:w-fit w-full text-white whitespace-nowrap px-4 py-2 mr-16 lg:mr-0 text-sm rounded-lg border-2 border-transparent transition-colors duration-300 ease-in-out hover:bg-white hover:text-[#1A75FF] hover:border-[#1A75FF]">
                                 Start now
                             </button>
                         </div>
