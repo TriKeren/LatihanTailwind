@@ -71,7 +71,7 @@ const Management = () => {
                         className={`w-full flex justify-center lg:justify-start transition-all duration-700 transform ${isButtonVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                     >
                         <button className="px-[40px] flex items-center text-[18px] lg:px-4 lg:py-2 py-[20px] font-medium bg-[#4F9CF9] text-[#FFE492] rounded-[8px] hover:bg-[#FFE492] hover:text-[#043873] mt-[60px] lg:mt-10 md:mt-10 md:mb-5 transition-colors duration-300">
-                            Try TasKey Free 
+                            Get started 
                             <img className='w-4 ml-2' src="public/assets/saaS-landingpages/arrowright.svg" alt="" />
                         </button>
                     </div>

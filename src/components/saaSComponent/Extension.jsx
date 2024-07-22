@@ -44,14 +44,19 @@ const Extension = () => {
     }, []);
 
     return (
-        <div className="bg-[#043873] py-14 md:py-10 md:mt-16 lg:py-20 overflow-x-hidden">
+        <div className="bg-[#043873] mt-5 py-14 md:py-10 md:mt-16 lg:py-20 overflow-x-hidden">
             <div className="container mx-auto flex flex-col lg:flex-row items-center max-w-screen-xl px-4 md:px-1">
                 <div className={`w-[75%] md:w-3/4 flex flex-col items-start lg:items-start space-y-4 transition-all duration-1000 transform ${isTitleVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
                     <h1
                         id="extension-title"
-                        className={`text-[36px] md:text-7xl lg:text-6xl font-bold text-white mb-5 md:mb-5 lg:mb-7 text-center md:text-center lg:text-start`}
+                        className={`relative text-[36px] md:text-7xl lg:text-6xl font-bold text-white mb-5 md:mb-5 lg:mb-7 text-center md:text-center lg:text-start`}
                     >
-                        Use as Extension
+                        <span className="relative z-10">Use as Extension</span>
+                        <img
+                            src="public/assets/saaS-landingpages/bg-text.svg"
+                            alt=""
+                            className="absolute inset-0 mt-[88px] ml-20 w-[60%] h-auto object-cover opacity-100 z-0"
+                        />
                     </h1>
                     <p
                         id="extension-text"
