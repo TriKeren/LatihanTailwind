@@ -6,8 +6,8 @@ const HeroPaws = () => {
         <img src="../../../public/assets/ecommercePaws/background.png" alt="backgroundHero" className="object-cover h-[100%] w-[100%] absolute" width={100} height={100}/>
       <div className="absolute z-10 h-[100%] flex justify-center flex-col gap-10 px-4">
         <div>
-          <h1 className="text-2xl font-semibold mb-4 w-4/5 text-white">Pawsitively Perfect: Where Every Pet's Dream Comes True!</h1>
-          <p className="text-white">
+          <h1 className="text-3xl font-semibold mb-4 w-4/5 text-white lg:text-5xl lg:w-1/2">Pawsitively Perfect: Where Every Pet's Dream Comes True!</h1>
+          <p className="text-white lg:text-xl lg:w-1/2">
             Welcome to Paws n’ Play, the ultimate destination for pet lovers!
             Explore a world of tail-wagging joy and furry companionship with our
             wide range of products and services. From pampering essentials to
