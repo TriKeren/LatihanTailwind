@@ -102,7 +102,7 @@ const ContactUs = () => {
         <form className="bg-white text-black p-8 rounded-lg shadow-lg w-full lg:order-1">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 w-full">
             <div>
-              <label className="block text-gray-700">First name</label>
+              <label className="block text-gray-700 font-semibold">First name</label>
               <input
                 type="text"
                 className="w-full p-2 border border-gray-300 rounded"
@@ -110,7 +110,7 @@ const ContactUs = () => {
               />
             </div>
             <div>
-              <label className="block text-gray-700">Last name</label>
+              <label className="block text-gray-700 font-semibold">Last name</label>
               <input
                 type="text"
                 className="w-full p-2 border border-gray-300 rounded"
@@ -119,7 +119,7 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Email</label>
+            <label className="block text-gray-700 font-semibold">Email</label>
             <input
               type="email"
               className="w-full p-2 border border-gray-300 rounded"
@@ -127,7 +127,7 @@ const ContactUs = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Message</label>
+            <label className="block text-gray-700 font-semibold">Message</label>
             <textarea
               className="w-full p-2 border border-gray-300 rounded"
               placeholder="Message"
