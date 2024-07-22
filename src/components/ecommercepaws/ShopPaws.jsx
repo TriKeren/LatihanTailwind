@@ -46,16 +46,16 @@ const ShopPaws = () => {
         >
           Random
         </Link>
-        <Link to="/" className="text-gray-500 hover:text-white">
+        <Link to="/" className="text-gray-700 font-semibold hover:text-white">
           Cat
         </Link>
-        <Link to="/" className="text-gray-500 hover:text-white">
+        <Link to="/" className="text-gray-700 font-semibold hover:text-white">
           Dogs
         </Link>
-        <Link to="/" className="text-gray-500 hover:text-white">
+        <Link to="/" className="text-gray-700 font-semibold hover:text-white">
           Fish
         </Link>
-        <Link to="/" className="text-gray-500 hover:text-white">
+        <Link to="/" className="text-gray-700 font-semibold hover:text-white">
           Birds
         </Link>
       </div>
