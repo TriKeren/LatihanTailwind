@@ -65,7 +65,16 @@ const WorkProcess = () => {
 
     return (
         <>
-            <section id="WorkProcess" className="mt-20 lg:mt-16 lg:max-w-screen-xl lg:mx-auto" ref={sectionRef}>
+            <style>
+                {`
+                    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+                    .font-space-grotesk {
+                        font-family: 'Space Grotesk', sans-serif;
+                    }
+                `}
+            </style>
+            <section id="WorkProcess" className="font-space-grotesk mt-20 lg:mt-16 lg:max-w-screen-xl lg:mx-auto" ref={sectionRef}>
                 <div className="container">
                     <div className="w-full items-center px-4 lg:px-24">
                         <header className="flex w-full lg:flex-row flex-col items-center gap-5 mx-auto text-center">
@@ -76,7 +85,7 @@ const WorkProcess = () => {
                                 Step-by-Step Guide to Achieving Your Business Goals
                             </p>
                         </header>
-                        <div className="mt-[30px] md:mx-20">
+                        <div className="mt-[30px] md:mx-20 lg:mt-[30px]">
                             {[0, 1, 2, 3, 4].map((index) => (
                                 <div
                                     key={index}

@@ -42,7 +42,7 @@ const TestimonialSlider = () => {
           <div className="flex justify-between items-center space-x-4">
             <button
               onClick={prevTestimonial}
-              className="text-2xl mt-96 p-2 bg-gray-800 rounded-full hover:bg-gray-700 border border-green-500"
+              className="text-2xl p-2 bg-gray-800 rounded-full hover:bg-gray-700 border border-green-500"
             >
               &larr;
             </button>
@@ -54,14 +54,14 @@ const TestimonialSlider = () => {
                 {testimonials.map((_, index) => (
                   <span
                     key={index}
-                    className={`w-3 h-3 rounded-full mt-52 ${index === currentIndex ? 'bg-green-500' : 'bg-gray-500'}`}
+                    className={`w-3 h-3 rounded-full ${index === currentIndex ? 'bg-green-500' : 'bg-gray-500'}`}
                   ></span>
                 ))}
               </div>
             </div>
             <button
               onClick={nextTestimonial}
-              className="text-2xl p-2 mt-96 bg-gray-800 rounded-full hover:bg-gray-700 border border-green-500"
+              className="text-2xl p-2 bg-gray-800 rounded-full hover:bg-gray-700 border border-green-500"
             >
               &rarr;
             </button>
