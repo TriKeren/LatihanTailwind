@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 
 const WorkProcess = () => {
     const [paragraph, setParagraph] = useState([false, false, false, false, false]);
-    const [activeIndex, setActiveIndex] = useState(null); // Menyimpan index aktif
+    const [activeIndex, setActiveIndex] = useState(null); 
     const sectionRef = useRef(null);
     const observerRef = useRef(null);
 
@@ -10,7 +10,7 @@ const WorkProcess = () => {
         setParagraph(prevState =>
             prevState.map((visible, i) => (i === index ? !visible : false))
         );
-        setActiveIndex(index); // Set index aktif
+        setActiveIndex(index);
     };
 
     const texts = [
