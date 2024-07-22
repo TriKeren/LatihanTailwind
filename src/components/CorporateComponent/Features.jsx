@@ -68,8 +68,8 @@ const Features = () => {
                         <div className="self-end flex justify-center w-full px-4 mt-12 md:mt-20 lg:mt-10 lg:w-1/2">
                             <div className="flex flex-col feature-image opacity-0 translate-y-10 transition-opacity duration-500 ease-in-out">
                                 <div className="flex gap-5 justify-center">
-                                    <img className="w-[150px] h-[280px] lg:h-[550px] md:w-[310px] lg:w-[220px] md:h-[510px]" src="/public/assets/corporate/features_1.png" alt="" />
-                                    <img className="w-[150px] h-[280px] lg:h-[550px] md:w-[310px] lg:w-[220px] md:h-[510px]" src="/public/assets/corporate/features_2.png" alt="" />
+                                    <img className="w-[150px] h-[280px] lg:h-[550px] md:w-[310px] lg:w-[250px] md:h-[510px]" src="/public/assets/corporate/features_1.png" alt="" />
+                                    <img className="w-[150px] h-[280px] lg:h-[550px] md:w-[310px] lg:w-[250px] md:h-[510px]" src="/public/assets/corporate/features_2.png" alt="" />
                                 </div>
                             </div>
                         </div>
