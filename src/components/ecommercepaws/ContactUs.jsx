@@ -95,7 +95,7 @@ const ContactUs = () => {
               </p>
           </div>
         </div>
-        <form className="bg-white text-black p-8 rounded-lg shadow-lg w-full lg:order-1">
+        <form className="bg-white text-black p-8 rounded-xl shadow-lg w-full lg:order-1">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 w-full">
             <div>
               <label className="block text-gray-700 font-semibold">

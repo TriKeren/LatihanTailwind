@@ -2,7 +2,7 @@ import React from "react";
 
 const Ourteam = () => {
   return (
-    <div className="bg-white relative  mt-10 px-2 w-screen-lg">
+    <div className="bg-white relative  mt-20 w-screen-lg px-5">
       <div className="flex gap-2 relative w-full md:w-auto flex-col mb-6">
         <div className="flex gap-4 items-center">
           <img
@@ -28,8 +28,8 @@ const Ourteam = () => {
               alt="Olivia"
               className="flex items-center overflow-hidden lg:h-[300px]"
             />
-            <div className="text-center lg:text-left">
-              <h2 className="font-semibold">Dr. Olivia Rhye</h2>
+            <div className="text-center mb-2 lg:text-left">
+              <h2 className="font-semibold mb-4">Dr. Olivia Rhye</h2>
               <p className="text-gray-400">Senior Veterinarian</p>
               <div className="flex gap-3 mt-2 justify-center lg:justify-normal">
                 <img

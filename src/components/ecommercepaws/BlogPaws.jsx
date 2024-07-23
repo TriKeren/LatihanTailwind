@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const BlogPaws = () => {
   return (
-    <div className="bg-white relative  mt-10 px-5 w-screen-lg">
+    <div className="bg-white relative mt-20 px-5 w-screen-lg">
       <div className="flex gap-2 relative w-full md:w-auto flex-col mb-6">
         <div className="flex gap-4 items-center">
           <img

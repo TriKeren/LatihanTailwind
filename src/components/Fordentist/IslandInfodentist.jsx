@@ -34,10 +34,10 @@ const IslanInfodentist = () => {
                 className="h-12 w-12 text-blue-500"
               />
             </div>
-            <h3 className="text-xl text-start font-semibold text-gray-800 w-full">
+            <h3 className="text-xl text-start text-gray-800 w-full text-[18px] font-source">
               {val.label}
             </h3>
-            <div className="text-start text-gray-500 ">
+            <div className="text-start text-gray-500 font-source ">
               <p className="w-[166px]">{val.details[0]}</p>
               <p className="w-[166px]">{val.details[1]}</p>
             </div>

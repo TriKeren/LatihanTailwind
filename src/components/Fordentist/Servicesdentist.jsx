@@ -56,7 +56,7 @@ const Servicesdentist = () => {
       }}
     >
       <h2 className="text-sm text-blue-500 mb-8">Especialidades</h2>
-      <h3 className="text-4xl font-bold text-blue-800 mb-6 drop-shadow-[5px_5px_0px_rgba(212,228,244,1)]">
+      <h3 className="text-4xl font-bold text-blue-800 mb-6 drop-shadow-[6px_6px_0px_rgba(212,228,244,1)]">
         Nuestros Servicios
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">

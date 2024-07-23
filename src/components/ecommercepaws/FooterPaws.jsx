@@ -14,10 +14,10 @@ const FooterPaws = () => {
           </p>
         </div>
         <div className="w-full flex flex-col lg:flex-row mt-5 lg:mt-0 gap-4 items-center lg:w-fit lg:px-10 ">
-          <div className="rounded-lg bg-gray-300 lg:w-[300px] w-full">
+          <div className="rounded-lg bg-gray-300 lg:w-[300px] w-full px-2">
             <input
               type="email"
-              className="w-full p-2 bg-transparent"
+              className="w-full p-2 bg-transparent "
               placeholder="Enter your email"
             />
           </div>

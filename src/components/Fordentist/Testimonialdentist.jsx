@@ -23,7 +23,7 @@ const Testimonialdentist = () => {
     <div className="bg-white py-16 px-5">
       <div className="max-w-3xl mx-auto text-center">
         <p className="text-cyan-400">Testimonios</p>
-        <h2 className="text-3xl font-bold text-blue-900 drop-shadow-[5px_5px_0px_rgba(212,228,244,1)]">
+        <h2 className="text-3xl font-bold text-blue-900 drop-shadow-[6px_6px_0px_rgba(212,228,244,1)]">
           Lo que opinan nuestros Pacientes
         </h2>
       </div>

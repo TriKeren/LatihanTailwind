@@ -4,10 +4,10 @@ const Fasilitydentist = () => {
   return (
     <div className="bg-white relative lg:h-screen mt-10 px-5 w-screen-lg">
       <div className="flex flex-col gap-2 mb-6">
-        <h2 className="text-blue-300 font-medium text-xl lg:text-4xl">
+        <h2 className="text-cyan-400 font-xs text-xl lg:text-4xl">
           Las Instalaciones
         </h2>
-        <p className="text-blue-800 font-bold text-4xl drop-shadow-[5px_5px_0px_rgba(212,228,244,1)]">
+        <p className="text-blue-800 font-bold text-4xl drop-shadow-[6px_6px_0px_rgba(212,228,244,1)]">
           Nuestra Clinica
         </p>
       </div>
