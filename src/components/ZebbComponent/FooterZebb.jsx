@@ -14,7 +14,7 @@ const FooterZebb = () => {
             <div className="absolute w-full md:left-20 lg:w-4/12 lg:-left-16">
                 <img src="/public/assets/ZebbDigitalAgency/IllustrationFooter.svg" alt="" />
             </div>
-            <div className="absolute w-full lg:w-4/12 top-[850px] md:top-[650px] lg:top-0 md:left-20 lg:left-[900px] lg:rotate-180">
+            <div className="absolute w-full lg:w-4/12 top-[850px] md:top-[640px] lg:top-0 md:left-20 lg:left-[900px] lg:rotate-180">
                 <img src="/public/assets/ZebbDigitalAgency/IllustrationFooter.svg" alt="" />
             </div>
             <div className="relative max-w-screen-xl mx-auto py-10 px-4 lg:px-8 bg-cover bg-center">
