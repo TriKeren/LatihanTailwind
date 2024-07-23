@@ -48,7 +48,7 @@ const Case = () => {
           }
         `}
       </style>
-      <div className="font-space-grotesk px-4 md:px-24 py-2 lg:mt-[30px] lg:max-w-screen-xl mx-auto">
+      <div className="font-space-grotesk px-4 md:px-24 py-2 lg:mt-[30px] lg:max-w-screen-xl mx-auto" id="Case">
         <header className="flex w-full lg:flex-row flex-col items-center gap-5">
           <h1 className="lg:text-[40px] text-[36px] bg-[#B9FF66] rounded-[7px] px-4">
             Case Studies
