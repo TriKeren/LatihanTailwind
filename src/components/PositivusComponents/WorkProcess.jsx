@@ -74,18 +74,19 @@ const WorkProcess = () => {
                     }
                 `}
             </style>
-            <section id="WorkProcess" className="font-space-grotesk mt-20 lg:mt-16 lg:max-w-screen-xl lg:mx-auto" ref={sectionRef}>
+            <section id="WorkProcess" className="font-space-grotesk mt-[30px] lg:mt-16 lg:max-w-screen-xl lg:mx-auto" ref={sectionRef}>
                 <div className="container px-4 lg:px-24">
-                    <div className="w-full flex flex-col items-center">
-                        <header className="flex flex-col items-center text-center mb-10">
+                    <div className="w-full flex flex-col items-center lg:items-start">
+                        <header className="flex w-full lg:flex-row flex-col items-center gap-5">
                             <h1 className="text-[32px] lg:text-[40px] bg-[#B9FF66] px-4 py-2 rounded-[10px]">
-                                Our Working <br /> Process
+                                <span className="block text-center lg:hidden">Our Working <br /> Process</span>
+                                <span className="hidden lg:block">Our Working Process</span>
                             </h1>
-                            <p className="text-xl lg:max-w-[50%] text-center font-normal mt-4">
+                            <p className="text-xl lg:max-w-[50%] font-normal mt-[10px]">
                                 Step-by-Step Guide to Achieving Your Business Goals
                             </p>
                         </header>
-                        <div className="w-full md:mx-20 lg:mt-[30px]">
+                        <div className="w-full md:mx-0 lg:mt-[20px]">
                             {[0, 1, 2, 3, 4].map((index) => (
                                 <div
                                     key={index}
