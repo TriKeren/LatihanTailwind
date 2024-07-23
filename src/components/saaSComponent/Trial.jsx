@@ -97,19 +97,19 @@ const Trial = () => {
                     data-index={4}
                     style={animationStyles(isVisible[4], 4)}
                 >
-                    <div className="lg:w-1/4 flex justify-start lg:justify-center">
+                    <div className="lg:w-[80px] md:w-[100px] flex justify-start lg:justify-center">
                         <div className="">
-                            <img src="public/assets/saaS-landingpages/trial1.svg" className="w-[35px] h-[36px] md:w-28 lg:w-20 mx-auto" alt="Apple" />
+                            <img src="public/assets/saaS-landingpages/trial1.svg" className="w-[35px] h-[36px] md:w-[50px] md:h-auto lg:w-[55px] lg:h-[55px] mx-auto" alt="Apple" />
                         </div>
                     </div>
-                    <div className="lg:w-1/4 flex justify-start lg:justify-center">
-                        <div className="px-10 lg:px-0">
-                            <img src="public/assets/saaS-landingpages/trial2.svg" className="w-[35px] h-[36px] md:w-28 lg:w-20 mx-auto" alt="Microsoft" />
+                    <div className="lg:w-[80px] md:w-[100px] flex justify-start lg:justify-center">
+                        <div className="px-10 lg:px-0 md:px-0">
+                            <img src="public/assets/saaS-landingpages/trial2.svg" className="w-[35px] h-[36px] md:w-[50px] md:h-auto lg:w-[55px] lg:h-[55px] mx-auto" alt="Microsoft" />
                         </div>
                     </div>
-                    <div className="lg:w-1/4 flex justify-start lg:justify-center">
+                    <div className="lg:w-[60px] md:w-[70px] flex justify-start lg:justify-center">
                         <div className="">
-                            <img src="public/assets/saaS-landingpages/trial3.svg" className="w-[35px] h-[36px] md:w-28 lg:w-20 mx-auto" alt="Slack" />
+                            <img src="public/assets/saaS-landingpages/trial3.svg" className="w-[35px] h-[36px] md:w-[50px] md:h-auto lg:w-[55px] lg:h-[55px] mx-auto" alt="Slack" />
                         </div>
                     </div>
                 </div>

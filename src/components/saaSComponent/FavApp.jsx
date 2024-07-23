@@ -59,7 +59,7 @@ const FavApp = () => {
                     <h1
                         ref={headingRef}
                         style={animationStyles(isHeadingVisible)}
-                        className="text-[36px] md:text-[55px] lg:text-[62px] font-bold text-white mb-5 md:mb-5 lg:mb-7 text-center mt-10 md:text-center lg:text-start"
+                        className="text-[36px] lg:leading-[70px] md:text-[55px] lg:text-[62px] font-bold text-white mb-5 md:mb-5 lg:mb-7 text-center mt-10 md:text-center lg:text-start"
                     >
                         Work with Your Favorite Apps Using whitepace
                     </h1>
