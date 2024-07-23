@@ -92,7 +92,7 @@ const TeamZebb = () => {
             </div>
             
             <div className="flex justify-center mt-20 lg:mt-16">
-                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 px-5">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 px-5 cursor-pointer">
                     {teamMembers.map((member, index) => (
                         <div
                             key={index}

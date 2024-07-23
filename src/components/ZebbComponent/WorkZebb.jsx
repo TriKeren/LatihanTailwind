@@ -54,7 +54,7 @@ const WorkZebb = () => {
             </div>
 
             <div className="flex justify-center items-center mt-5 text-[#020E35]">
-                <div className="grid grid-cols-2 gap-2 md:grid-cols-4 font-merriweather">
+                <div className="grid grid-cols-2 gap-2 md:grid-cols-4 font-merriweather cursor-pointer">
                     <h1 className="font-medium hover:bg-[#FF5678] hover:text-white duration-300 px-12 md:px-12 text-start md:text-center">All</h1>
                     <h1 className="font-medium hover:bg-[#FF5678] hover:text-white duration-300 px-12 md:px-2 md:order-3 text-start md:text-center">App</h1>
                     <h1 className="font-medium hover:bg-[#FF5678] hover:text-white duration-300 px-12 md:px-2 md:order-2">Illustration</h1>

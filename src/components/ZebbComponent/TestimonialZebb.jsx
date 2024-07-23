@@ -1,5 +1,49 @@
 import { useState, useEffect, useRef } from 'react';
 
+const userTestimonials =[
+    {
+        name: 'Samantha Kate',
+        role: 'CEO of Floatcom',
+        deskription: '“My experience with Mark is a complete success, from customer service, wide rang of products, clean store, purchasing experience',
+        avatar: '/public/assets/ZebbDigitalAgency/User.png',
+        rating: '/public/assets/ZebbDigitalAgency/Star.png',
+    },
+    {
+        name: 'Samantha Kate',
+        role: 'CEO of Floatcom',
+        deskription: '“My experience with Mark is a complete success, from customer service, wide rang of products, clean store, purchasing experience',
+        avatar: '/public/assets/ZebbDigitalAgency/User.png',
+        rating: '/public/assets/ZebbDigitalAgency/Star.png',
+    },
+    {
+        name: 'Samantha Kate',
+        role: 'CEO of Floatcom',
+        deskription: '“My experience with Mark is a complete success, from customer service, wide rang of products, clean store, purchasing experience',
+        avatar: '/public/assets/ZebbDigitalAgency/User.png',
+        rating: '/public/assets/ZebbDigitalAgency/Star.png',
+    },
+    {
+        name: 'Samantha Kate',
+        role: 'CEO of Floatcom',
+        deskription: '“My experience with Mark is a complete success, from customer service, wide rang of products, clean store, purchasing experience',
+        avatar: '/public/assets/ZebbDigitalAgency/User.png',
+        rating: '/public/assets/ZebbDigitalAgency/Star.png',
+    },
+    {
+        name: 'Samantha Kate',
+        role: 'CEO of Floatcom',
+        deskription: '“My experience with Mark is a complete success, from customer service, wide rang of products, clean store, purchasing experience',
+        avatar: '/public/assets/ZebbDigitalAgency/User.png',
+        rating: '/public/assets/ZebbDigitalAgency/Star.png',
+    },
+    {
+        name: 'Samantha Kate',
+        role: 'CEO of Floatcom',
+        deskription: '“My experience with Mark is a complete success, from customer service, wide rang of products, clean store, purchasing experience',
+        avatar: '/public/assets/ZebbDigitalAgency/User.png',
+        rating: '/public/assets/ZebbDigitalAgency/Star.png',
+    },
+];
 const TestimonialZebb = () => {
     const [visibleIndex, setVisibleIndex] = useState(-1);
     const cardRefs = useRef([]);
@@ -35,7 +79,7 @@ const TestimonialZebb = () => {
     }, [visibleIndex]);
 
     const scrollLeft = () => {
-        const newPosition = Math.max(scrollPosition - 300, 0); // Adjust the scroll distance as needed
+        const newPosition = Math.max(scrollPosition - 327, 0); 
         carouselRef.current.scrollTo({
             left: newPosition,
             behavior: 'smooth'
@@ -44,7 +88,7 @@ const TestimonialZebb = () => {
     };
 
     const scrollRight = () => {
-        const newPosition = Math.min(scrollPosition + 300, carouselRef.current.scrollWidth - carouselRef.current.clientWidth); // Adjust the scroll distance as needed
+        const newPosition = Math.min(scrollPosition + 327, carouselRef.current.scrollWidth - carouselRef.current.clientWidth); // Adjust the scroll distance as needed
         carouselRef.current.scrollTo({
             left: newPosition,
             behavior: 'smooth'
@@ -82,21 +126,17 @@ const TestimonialZebb = () => {
 
                 <div className="relative w-full mt-10">
                     <div ref={carouselRef} className="w-full overflow-x-scroll p-4 cursor-pointer no-scrollbar">
-                        <div className="flex space-x-8 w-max">
-                            {['Samantha Kate', 'Samantha Kate', 'Samantha Kate', 'Samantha Kate', 'Samantha Kate'].map((name, index) => (
-                                <div
-                                    key={index}
-                                    ref={el => cardRefs.current[index] = el}
-                                    className={`bg-linear-hero text-black p-5 w-80 lg:w-64 rounded-3xl shadow-sm shadow-black transition-opacity duration-500 hover:scale-105 ${index <= visibleIndex ? 'opacity-100' : 'opacity-0'}`}
-                                >
+                        <div className="flex space-x-2 w-max">
+                            {userTestimonials.map((userTestimonials, index) => (
+                                <div key={index} ref={el => cardRefs.current[index] = el} className={`bg-linear-hero text-black p-2 py-10 w-80 lg:w-64 rounded-[80px] shadow-sm shadow-black border border-gray-400 duration-500 transition-transform scale-90 hover:scale-105 ${index <= visibleIndex ? 'opacity-100' : 'opacity-0'}`}>
                                     <div className="flex flex-col items-center gap-3 py-2">
-                                        <img className="w-16" src="/public/assets/ZebbDigitalAgency/User.png" alt="Avatar" />
+                                        <img className="w-16" src={userTestimonials.avatar} alt="Avatar" />
                                         <div className="flex flex-col items-center gap-3">
-                                            <img className="w-20" src="/public/assets/ZebbDigitalAgency/Star.png" alt="" />
-                                            <p className="text-center font-medium text-[#020E35]">“My experience with Mark is a complete success, from customer service, wide rang of products, clean store, purchasing experience</p>
+                                            <img className="w-20" src={userTestimonials.rating} alt="" />
+                                            <p className="text-center font-medium text-[#020E35]">{userTestimonials.deskription}</p>
                                             <div className="mt-2 flex flex-col text-center gap-1">
-                                                <h1 className='text-[#020E35]'>{name}</h1>
-                                                <p className='text-[#020E35]'>CEO of Floatcom</p>
+                                                <h1 className='text-[#020E35]'>{userTestimonials.name}</h1>
+                                                <p className='text-[#020E35]'>{userTestimonials.role}</p>
                                             </div>
                                         </div>
                                     </div>
