@@ -12,7 +12,7 @@ const Testimonials = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-green-700 mb-4 text-center">Testimonials</h2>
+        <h2 className="text-4xl font-bold font-serif text-green-700 mb-4 text-center">Testimonials</h2>
         <p className="text-center text-gray-600 mb-8">Over 15,000 happy customers.</p>
         <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md relative">
           <div className="absolute left-0 top-0 -ml-16 -mt-16 text-blue-100 hidden lg:block" style={{ fontSize: '8rem', zIndex: -1 }}>
