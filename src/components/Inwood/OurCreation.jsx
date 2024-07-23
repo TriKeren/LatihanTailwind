@@ -1,4 +1,6 @@
 import React, { useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const products = [
   {
@@ -15,7 +17,7 @@ const products = [
   },
   {
     name: 'Product 3',
-    description: 'Description 2',
+    description: 'Description 3',
     price: '$200',
     // image: '../../public/assets/Inwood/.png',
   },
@@ -52,7 +54,7 @@ const OurCreation = () => {
               onClick={scrollLeft} 
               className="hidden lg:block absolute top-1/2 left-0 transform -translate-y-1/2 bg-green-700 text-white p-2 rounded-full shadow-lg hover:bg-green-800 focus:outline-none z-10"
             >
-              &#9664;
+              <FontAwesomeIcon icon={faChevronLeft} />
             </button>
             <div 
               className="overflow-x-auto whitespace-nowrap scroll-smooth" 
@@ -75,7 +77,7 @@ const OurCreation = () => {
               onClick={scrollRight} 
               className="hidden lg:block absolute top-1/2 right-0 transform -translate-y-1/2 bg-green-700 text-white p-2 rounded-full shadow-lg hover:bg-green-800 focus:outline-none z-10"
             >
-              &#9654;
+              <FontAwesomeIcon icon={faChevronRight} />
             </button>
           </div>
         </div>
