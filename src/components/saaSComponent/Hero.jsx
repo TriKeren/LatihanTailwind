@@ -36,7 +36,7 @@ const Hero = () => {
             id="hero-section"
             className={`bg-[#043873] bg-[url('public/assets/saaS-landingpages/bg-hero.png')] bg-no-repeat bg-cover py-20 md:py-20 lg:py-32 transition-opacity duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
         >
-            <div className="container mx-auto flex flex-col lg:flex-row items-center max-w-screen-xl px-4 md:px-7">
+            <div className="container w-[86%] mx-auto flex flex-col lg:flex-row items-center max-w-screen-xl px-4 md:px-7">
                 <div
                     ref={headingRef}
                     style={animationStyles(0)}
@@ -68,7 +68,7 @@ const Hero = () => {
                     style={animationStyles(0.3)}
                     className="w-full md:w-full mt-[100px] lg:mt-0 flex justify-center lg:justify-end lg:ml-auto"
                 >
-                    <img src="public/assets/saaS-landingpages/hero.png" className="w-5/6 md:w-3/4 lg:w-2/3 h-auto" />
+                    <img src="public/assets/saaS-landingpages/hero.png" className="w-[95%] md:w-3/4 lg:w-2/3 h-auto" />
                 </div>
             </div>
         </div>

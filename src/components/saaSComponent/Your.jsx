@@ -30,9 +30,14 @@ const Your = () => {
                 <h1
                     ref={ref}
                     style={animationStyles}
-                    className="text-[36px] md:text-6xl md:mb-14 font-bold lg:text-center text-white mb-5 lg:mb-10"
+                    className="relative text-[36px] md:text-6xl md:mb-14 font-bold lg:text-center text-white mb-7 lg:mb-10"
                 >
-                    Your work, everywhere you are
+                    <span className="relative z-10">Your work, everywhere you are</span>
+                    <img
+                            src="public/assets/saaS-landingpages/bg2-text.svg"
+                            alt=""
+                            className="absolute inset-0 mt-[140px] w-[90%] h-auto object-cover opacity-100 z-0"
+                        />
                 </h1>
                 <p
                     style={animationStyles}

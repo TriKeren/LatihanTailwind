@@ -46,12 +46,17 @@ const Work = () => {
     return (
         <div className="bg-white py-5 md:py-10 lg:py-16 overflow-x-hidden">
             <div className="container mx-auto flex flex-col lg:flex-row items-center max-w-screen-xl px-2 md:px-7">
-                <div className="w-[80%] md:w-3/4 flex flex-col items-start lg:items-start space-y-4 lg:order-2">
-                    <h1
+                <div className="w-[80%] md:w-3/4 flex flex-col items-start lg:items-start space-y-10 lg:order-2">
+                <h1
                         id="work-title"
-                        className={`text-[36px] md:text-7xl lg:text-6xl font-bold text-[#212529] mb-5 md:mb-5 lg:mb-7 text-center md:text-center lg:text-start transition-all duration-1000 transform ${isTitleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                        className={`relative text-[36px] md:text-7xl lg:text-6xl font-bold text-[#212529] mb-3 md:mb-5 lg:mb-7 text-center md:text-center lg:text-start transition-all duration-1000 transform ${isTitleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                     >
-                        Work Together
+                        <span className="relative z-10">Work Together</span>
+                        <img
+                            src="public/assets/saaS-landingpages/bg-text.svg"
+                            alt=""
+                            className="absolute ml-24 mt-7 inset-0 w-[80%] h-auto object-cover opacity-100 z-0"
+                        />
                     </h1>
                     <p
                         id="work-text"
@@ -70,7 +75,7 @@ const Work = () => {
                     </div>
                     <div
                         id="work-image"
-                        className={`w-full md:w-full lg:mt-0 flex mb-5 md:mb-10 lg:mb-0 justify-center lg:justify-start lg:ml-auto lg:order-1 transition-all duration-1000 transform ${isImageVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                        className={`w-full md:w-full lg:mt-0 flex md:mb-10 lg:mb-0 justify-center lg:justify-start lg:ml-auto lg:order-1 transition-all duration-1000 transform ${isImageVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                     >
                     <img src="public/assets/saaS-landingpages/Work Together Image.png" className="w-[90%] md:w-1/2 lg:w-1/2 h-auto" />
                     </div>

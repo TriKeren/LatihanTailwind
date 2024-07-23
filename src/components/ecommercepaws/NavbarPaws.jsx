@@ -23,7 +23,7 @@ const NavbarPaws = () => {
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 ${isScrolled ? "backdrop-blur-lg bg-opacity-30 bg-black" : "bg-transparent"} ${isOpen ? "backdrop-blur-none bg-transparent" : ""}`}>
-        <div className="max-w-screen-xl mx-auto flex justify-between items-center py-3 px-5">
+        <div className="max-w-screen-xl mx-auto flex justify-between items-center py-6 px-5">
           <div className="flex items-center gap-2 min-w-fit mr-10">
             <img
               src="../../../public/assets/ecommercePaws/vectorkaki.svg"
