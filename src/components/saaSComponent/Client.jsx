@@ -46,7 +46,7 @@ const Client = () => {
                     <img
                             src="public/assets/saaS-landingpages/bg-text.svg"
                             alt=""
-                            className="absolute inset-0 w-[40%] h-[40%] mt-[80px] ml-[60px] object-cover opacity-100 z-0"
+                            className="absolute inset-0 w-[40%] lg:w-[10%] lg:h-[60%] lg:ml-[690px] lg:mt-[45px] h-[40%] mt-[80px] ml-[60px] object-cover opacity-100 z-0"
                     />
                 </h1>
                 
