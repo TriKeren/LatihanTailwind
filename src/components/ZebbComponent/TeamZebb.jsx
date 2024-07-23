@@ -85,7 +85,7 @@ const TeamZebb = () => {
         <div className="max-w-screen-xl mx-auto mt-40 md:mt-52 lg:mt-40 font-merriweather">
             <div className="flex justify-center">
                 <h1 className="text-[40px] font-bold w-52 md:w-80 text-center">
-                    <span className="relative">
+                    <span className="relative text-[#020E35]">
                         Meet The Team <span className="absolute inset-x-0 bottom-0 h-[20px] w-[110px] mx-10 md:w-[310px] md:mx-0 bg-[#FF5678] -z-10"></span>
                     </span>
                 </h1>
@@ -100,9 +100,9 @@ const TeamZebb = () => {
                             className={`group flex flex-col items-center gap-5 bg-white py-12 px-16 md:px-56 lg:px-16 rounded-3xl shadow-sm shadow-black transform transition-transform duration-500 ease-out hover:scale-105 ${index <= visibleIndex ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${index <= visibleIndex ? `delay-[${index * 100}ms]` : ''}`}
                         >
                             <img className="w-30 lg:w-20" src={member.image} alt={member.name} />
-                            <h1 className="text-2xl font-bold text-center">{member.name}</h1>
-                            <p className="text-center font-medium">{member.position}</p>
-                            <a href={member.detailLink} className="opacity-0 font-medium group-hover:opacity-100 transition-opacity duration-300">See Detail</a>
+                            <h1 className="text-2xl font-bold text-center text-[#020E35]">{member.name}</h1>
+                            <p className="text-center font-medium text-[#020E35]">{member.position}</p>
+                            <a href={member.detailLink} className="opacity-0 text-[#020E35] font-medium group-hover:opacity-100 transition-opacity duration-300">See Detail</a>
                         </div>
                     ))}
                 </div>

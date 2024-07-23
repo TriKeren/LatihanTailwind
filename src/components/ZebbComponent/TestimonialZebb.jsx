@@ -73,7 +73,7 @@ const TestimonialZebb = () => {
                 scrollbar-width: none; 
             }`}
         </style>
-        <div className="max-w-screen-xl mx-auto flex justify-center items-center mt-44 lg:mt-44 font-merriweather">
+        <div className="max-w-screen-xl mx-auto flex justify-center items-center mt-44 lg:mt-44 font-merriweather text-[#020E35]">
             <div className="w-full relative">
                 <div className="flex flex-col items-center gap-2">
                     <h1 className="text-4xl font-bold">Testimonial</h1>
@@ -93,10 +93,10 @@ const TestimonialZebb = () => {
                                         <img className="w-16" src="/public/assets/ZebbDigitalAgency/User.png" alt="Avatar" />
                                         <div className="flex flex-col items-center gap-3">
                                             <img className="w-20" src="/public/assets/ZebbDigitalAgency/Star.png" alt="" />
-                                            <p className="text-center font-medium">“My experience with Mark is a complete success, from customer service, wide rang of products, clean store, purchasing experience</p>
+                                            <p className="text-center font-medium text-[#020E35]">“My experience with Mark is a complete success, from customer service, wide rang of products, clean store, purchasing experience</p>
                                             <div className="mt-2 flex flex-col text-center gap-1">
-                                                <h1>{name}</h1>
-                                                <p>CEO of Floatcom</p>
+                                                <h1 className='text-[#020E35]'>{name}</h1>
+                                                <p className='text-[#020E35]'>CEO of Floatcom</p>
                                             </div>
                                         </div>
                                     </div>

@@ -52,13 +52,13 @@ const Enjoy = () => {
                     </div>
                     <div className="flex justify-center md:justify-start">
                         <h1 className={`text-[40px] leading-tight font-bold text-3xl w-52 md:w-96 text-center md:text-start transition-transform duration-1000 ${isVisible ? 'translate-y-0' : 'translate-y-10'}`}>
-                            <span className="relative">
+                            <span className="relative text-[#020E35]">
                                 Thing We Enjoy <span className="absolute inset-x-0 bottom-0 h-[22px] w-[110px] mx-8 md:mx-0 md:w-80 bg-[#FF5678] -z-10"></span>
                             </span>
                         </h1>
                     </div>
 
-                    <div className="mt-28">
+                    <div className="mt-28 text-[#020E35]">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14">
                             <div className="flex flex-col gap-16">
                                 <div className={`flex flex-col md:flex-row gap-5 transition-transform duration-1000 ${isVisible ? 'translate-y-0' : 'translate-y-10'}`}>
