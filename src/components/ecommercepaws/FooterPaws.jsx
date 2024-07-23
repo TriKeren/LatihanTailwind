@@ -46,46 +46,56 @@ const FooterPaws = () => {
             Where wagging tails and purring hearts reign supreme!
           </p>
         </div>
-        <div className="w-full grid grid-cols-2 gap-4 my-4 text-gray-300 lg:grid-cols-5 ">
-          <div className="flex flex-col">
+        <div className="w-full grid grid-cols-2 gap-8 my-4 text-gray-300 lg:grid-cols-5 ">
+          <div className="flex flex-col gap-4">
             <h3 className="font-bold text-white">Shop</h3>
+            <div className="flex flex-col gap-3">
             <span>Pet Adoption</span>
             <span>Nutrition</span>
             <span>Pet Care</span>
             <span>Pet Food</span>
             <span>Pricing</span>
+            </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-4">
             <h3 className="font-bold text-white">Company</h3>
+            <div className="flex flex-col gap-3">
             <span>About Us</span>
             <span>Careers</span>
             <span>Press</span>
             <span>News</span>
             <span>Contact</span>
+            </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-4">
             <h3 className="font-bold text-white">Services</h3>
+            <div className="flex flex-col gap-3">
             <span>Grooming</span>
             <span>Boarding</span>
             <span>Traaining</span>
             <span>Vetinary</span>
             <span>Support</span>
+            </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-4">
             <h3 className="font-bold text-white">Social</h3>
+            <div className="flex flex-col gap-3">
             <span>Twitter</span>
             <span>Linkedln</span>
             <span>Facebook</span>
             <span>AngelList</span>
             <span>Dribble</span>
+            </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-4">
             <h3 className="font-bold text-white">Legal</h3>
+            <div className="flex flex-col gap-3">
             <span>Terms</span>
             <span>Privacy</span>
             <span>Cookies</span>
             <span>Licenses</span>
             <span>Settings</span>
+            </div>
           </div>
         </div>
       </div>

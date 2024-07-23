@@ -11,7 +11,7 @@ import Footerdentist from "../components/Fordentist/Footerdentist";
 
 function Fordentist() {
   return (
-    <div>
+    <div className="font-poppins">
       <Navbardentist />
       <Herodentist />
       <IslanInfodentist />

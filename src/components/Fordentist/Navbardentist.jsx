@@ -14,12 +14,12 @@ const Navbardentist = () => {
               alt="Vektorgigi"
               className="h-8 w-8"
             />
-            <div className="flex flex-col text-center items-centerlg:text-left">
-              <a href="#" className="text-lg   text-center items-center">
-                Odontologia Integral
-              </a>
-              <span className="text-xs">Salud & Estetica Dental</span>
-            </div>
+          </div>
+          <div className="flex flex-col text-center items-center lg:text-left">
+            <a href="#" className="text-lg   text-center items-center">
+              Odontologia Integral
+            </a>
+            <span className="text-xs">Salud & Estetica Dental</span>
           </div>
           <div className="hidden lg:flex justify-center items-center flex-1">
             <div className="flex gap-5">
@@ -49,7 +49,8 @@ const Navbardentist = () => {
                 alt="menuNavbar"
                 className="h-8 w-8"
                 style={{
-                  filter: "rgba(0, 41, 109, 1)",
+                  filter:
+                    "invert(33%) sepia(100%) saturate(3600%) hue-rotate(200deg) brightness(80%) contrast(110%)",
                 }}
               />
             </button>
@@ -57,7 +58,36 @@ const Navbardentist = () => {
         </div>
 
         {isOpen && (
-          <>
+          <div className="flex justify-between px-5 py-4">
+          <div className="grid grid-cols-2 gap-5 justify-items-center">
+          <img
+                src="../../../public/assets/Fordentist/facebook.svg"
+                alt="facebook"
+                width={30}
+                height={30}
+              />
+              <img
+                src="../../../public/assets/Fordentist/linkedin.png"
+                alt="linkedin"
+                width={30}
+                height={30}
+              />
+              <img
+                src="../../../public/assets/Fordentist/instagram.svg"
+                alt="instagram"
+                width={30}
+                height={30}
+              />
+              <img
+                src="../../../public/assets/Fordentist/gmail.svg"
+                alt="instagram"
+                width={30}
+                height={30}
+              />
+               <button className="px-3 py-3 col-span-2 text-gray-500 bg-white font-semibold rounded-lg mt-2 border border-gray-700 ml-5 hover:text-black">
+                Saca tu turno
+              </button>
+          </div>
             <div className="lg:hidden mt-4 px-2 flex flex-col items-end">
               <Link
                 to="/"
@@ -83,11 +113,8 @@ const Navbardentist = () => {
               >
                 Contacto
               </Link>
-              <button className="px-5 py-2 text-gray-500 bg-white font-semibold rounded-full mt-2 border border-gray-700 ml-5 hover:text-black">
-                Saca tu turno
-              </button>
             </div>
-          </>
+          </div>
         )}
       </nav>
       {isOpen && (

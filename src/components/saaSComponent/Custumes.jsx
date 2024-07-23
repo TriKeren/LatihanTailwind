@@ -55,9 +55,14 @@ const Custumes = () => {
                 <div className="w-[75%] md:w-full flex flex-col items-start lg:items-start space-y-4 lg:order-2 order-2">
                     <h1
                         id="custumes-title"
-                        className={`text-[36px] md:text-6xl lg:text-6xl font-bold text-[#212529] mb-5 md:mb-5 lg:mb-7 text-center mt-10 md:text-center lg:text-start transition-all duration-1000 transform ${isTitleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                        className={`relative text-[36px] md:text-6xl lg:text-6xl font-bold text-[#212529] mb-5 md:mb-5 lg:mb-7 text-center mt-10 md:text-center lg:text-start transition-all duration-1000 transform ${isTitleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                     >
-                        Customise it to your needs
+                         <span className="relative z-10">Customise it to your needs</span>
+                         <img
+                            src="public/assets/saaS-landingpages/bg-text.svg"
+                            alt=""
+                            className="absolute inset-0 w-[60%] mt-[92px] ml-[130px] h-auto object-cover opacity-100 z-0"
+                        />
                     </h1>
                     <p
                         id="custumes-text"
