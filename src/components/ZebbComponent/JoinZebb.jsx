@@ -47,7 +47,7 @@ const JoinZebb = () => {
             }`
             }
         </style>
-        <div className="max-w-screen-xl mx-auto flex justify-center mt-10 lg:mt-14 font-merriweather">
+        <div className="max-w-screen-xl mx-auto flex justify-center mt-10 md:mt-20 lg:mt-14 font-merriweather">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 py-20 rounded-lg">
                 <div
                     className={`flex justify-center order-1 lg:order-2 lg:text-right transform transition-opacity duration-700 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
@@ -56,19 +56,19 @@ const JoinZebb = () => {
                     <img src="/public/assets/ZebbDigitalAgency/meditation.png" className="w-11/12 mx-10 mt-16" alt="Meditation" />
                 </div>
                 <div
-                    className={`mx-14 text-black transform transition-transform duration-700 ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
+                    className={`mx-14 text-[#020E35] transform transition-transform duration-700 ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
                     ref={textRef}
                 >
-                    <div className="text-black flex justify-center lg:justify-start text-center lg:text-start">
+                    <div className="text-[#020E35] flex justify-center lg:justify-start text-center lg:text-start">
                         <h1 className="text-4xl font-bold w-80">
-                            Join Our Newsletters & get Coffee
+                            Join Our Newsletters & get Coffe 
                             <span className="relative inline-block">
-                                Formula!<span className="absolute inset-x-0 bottom-0 h-[16px] bg-[#FF5678] -z-10"></span>
+                                Formula!<span className="absolute inset-x-0 bottom-0 h-[16px] bg-[#FF5678] md:-mx-24 w-40 md:w-64 -z-10"></span>
                             </span>
                         </h1>
                     </div>
 
-                    <div className="mt-14">
+                    <div className="mt-14 text-[#020E35]">
                         <form action="" className="flex flex-col gap-6 lg:mx-1">
                             <div className="flex flex-col">
                                 <label htmlFor="name" className="font-poppins font-medium">Name :</label>
@@ -83,8 +83,8 @@ const JoinZebb = () => {
                                 <textarea id="message" type="text" className="bg-[#FFEEF6] border border-black rounded-lg py-2" />
                             </div>
 
-                            <div>
-                                <button className="p-3 bg-[#020E35] text-white font-medium px-5 lg:px-16">Send</button>
+                            <div className='flex justify-center lg:justify-start'>
+                                <button className="p-3 bg-[#020E35] text-white font-medium px-14 lg:px-16">Send</button>
                             </div>
                         </form>
                     </div>

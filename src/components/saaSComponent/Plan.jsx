@@ -33,17 +33,17 @@ const Plan = () => {
     return (
         <div className="bg-white py-12 md:py-16 lg:py-12">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
-                <div className="w-[85%] ml-[22px]">
+                <div className="w-[85%] lg:w-[100%] ml-[22px]">
                 <h1 
                     className="relative text-[36px] md:text-6xl font-bold text-center text-[#212529] mb-5">
                     <span className="relative z-10">Choose Your Plan</span>
                     <img
                         src="public/assets/saaS-landingpages/bg-text.svg"
                         alt=""
-                        className="absolute inset-0 mt-[85px] ml-[80px] w-[40%] h-[44%] object-cover opacity-100 z-0"
+                        className="absolute inset-0 mt-[85px] lg:mt-[40px] ml-[80px] lg:ml-[580px] w-[40%] lg:w-[30%] h-[44%] lg:h-[50%] object-cover opacity-100 z-0"
                     />
                 </h1>
-                <p className="text-[18px] md:text-xl lg:text-lg lg:px-32 text-center text-[#212529] mb-10">
+                <p className="text-[18px] md:text-xl lg:text-[18px] lg:px-32 text-center text-[#212529] mb-10">
                     Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.
                 </p>
                 </div>
@@ -80,7 +80,7 @@ const Plan = () => {
                                     Add due dates, reminders, and notifications to your tasks
                                 </li>
                             </ul>
-                            <button className="px-4 py-2 font-medium bg-[#FFE492] text-[#043873] rounded hover:bg-[#4F9CF9] hover:text-[#FFE492] transition-colors duration-300">Get Started</button>
+                            <button className="px-4 py-2 font-medium bg-white border border-[#FFE492] text-[#043873] rounded hover:bg-[#4F9CF9] hover:text-[#FFE492] transition-colors duration-300">Get Started</button>
                         </div>
 
                         <div style={zoomInStyle} className="bg-white rounded-lg shadow-md p-6 transform duration-500 min-w-[280px] md:min-w-[300px] hover:bg-[#043873] hover:text-white">
@@ -113,7 +113,7 @@ const Plan = () => {
                                     Add due dates, reminders, and notifications to your tasks
                                 </li>
                             </ul>
-                            <button className="px-4 py-2 font-medium bg-[#FFE492] text-[#043873] rounded hover:bg-[#4F9CF9] hover:text-[#FFE492] transition-colors duration-300">Get Started</button>
+                            <button className="px-4 py-2 font-medium bg-white border border-[#FFE492] text-[#043873] rounded hover:bg-[#4F9CF9] hover:text-[#FFE492] transition-colors duration-300">Get Started</button>
                         </div>
 
                         <div style={zoomInStyle} className="bg-white rounded-lg shadow-md p-6 transform duration-500 min-w-[280px] md:min-w-[300px] hover:bg-[#043873] hover:text-white">
@@ -146,7 +146,7 @@ const Plan = () => {
                                     Add due dates, reminders, and notifications to your tasks
                                 </li>
                             </ul>
-                            <button className="px-4 py-2 font-medium bg-[#FFE492] text-[#043873] rounded hover:bg-[#4F9CF9] hover:text-[#FFE492] transition-colors duration-300">Get Started</button>
+                            <button className="px-4 py-2 font-medium bg-white border border-[#FFE492] text-[#043873] rounded hover:bg-[#4F9CF9] hover:text-[#FFE492] transition-colors duration-300">Get Started</button>
                         </div>
                     </div>
                 </div>

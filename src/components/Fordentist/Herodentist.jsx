@@ -25,7 +25,7 @@ const Herodentist = () => {
             <p className="text-3xl lg:text-5xl font-bold text-cyan-400 mb-3">
               Odontología
             </p>
-            <p className="text-lg lg:text-xl mb-6">
+            <p className="text-sm lg:text-xl mb-6 font-source">
               Lorem ipsum dolor sit amet consectetur adipiscing elit molestie,
               rhoncus luctus arcu ut eros augue. Eu commodo laoreet parturient
               quam purus magna pretium luctus.

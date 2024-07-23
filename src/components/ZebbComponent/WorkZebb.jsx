@@ -43,22 +43,22 @@ const WorkZebb = () => {
             }`
             }
         </style>
-        <div className="max-w-screen-xl mx-auto mt-36 lg:mt-40">
+        <div className="max-w-screen-xl mx-auto mt-44 lg:mt-40">
             <div className="flex justify-center text-center">
-                <h1 className="text-4xl font-bold w-56 font-merriweather">
+                <h1 className="text-4xl font-bold w-56 md:w-96 lg:w-11/12 font-merriweather text-[#020E35]">
                     Some of Our <span></span>
                     <span className="relative">
-                        Previous Work <span className="absolute inset-x-0 bottom-0 h-[16px] w-[94px] mx-7 bg-[#FF5678] -z-10"></span>
+                        Previous Work <span className="absolute inset-x-0 bottom-0 h-[16px] w-[94px] mx-7 md:mx-0 md:w-[270px] bg-[#FF5678] -z-10"></span>
                     </span>
                 </h1>
             </div>
 
-            <div className="flex justify-center items-center mt-5">
+            <div className="flex justify-center items-center mt-5 text-[#020E35]">
                 <div className="grid grid-cols-2 gap-2 md:grid-cols-4 font-merriweather">
-                    <h1 className="font-medium hover:bg-[#FF5678] hover:text-white duration-300 px-1 md:px-12">All</h1>
-                    <h1 className="font-medium hover:bg-[#FF5678] hover:text-white duration-300 px-1 md:order-3">App</h1>
-                    <h1 className="font-medium hover:bg-[#FF5678] hover:text-white duration-300 px-1 md:order-2">Illustration</h1>
-                    <h1 className="font-medium hover:bg-[#FF5678] hover:text-white duration-300 px-1 md:order-4">Branding</h1>
+                    <h1 className="font-medium hover:bg-[#FF5678] hover:text-white duration-300 px-12 md:px-12 text-start md:text-center">All</h1>
+                    <h1 className="font-medium hover:bg-[#FF5678] hover:text-white duration-300 px-12 md:px-2 md:order-3 text-start md:text-center">App</h1>
+                    <h1 className="font-medium hover:bg-[#FF5678] hover:text-white duration-300 px-12 md:px-2 md:order-2">Illustration</h1>
+                    <h1 className="font-medium hover:bg-[#FF5678] hover:text-white duration-300 px-12 md:px-2 md:order-4 text-start md:text-center">Branding</h1>
                 </div>
             </div>
             
@@ -68,7 +68,7 @@ const WorkZebb = () => {
                         <div
                             key={index}
                             ref={el => imageRefs.current[index] = el}
-                            className={`flex flex-col items-center gap-5 bg-white py-12 px-16 shadow-sm shadow-black transform transition-transform duration-500 ${index <= visibleIndex ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${index <= visibleIndex ? `delay-[${index * 100}ms]` : ''}`}
+                            className={`flex flex-col items-center gap-5 bg-white py-12 px-5 shadow-sm shadow-black transform transition-transform duration-500 ${index <= visibleIndex ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${index <= visibleIndex ? `delay-[${index * 100}ms]` : ''}`}
                         >
                             <img className="w-full" src={`/public/assets/ZebbDigitalAgency/work${num}.png`} alt={`Work ${num}`} />
                         </div>
@@ -77,7 +77,7 @@ const WorkZebb = () => {
             </div>
 
             <div className="flex justify-center mt-12 lg:mt-16">
-                <button className="p-2 bg-[#020E35] text-white font-medium px-5 lg:px-16">See More</button>
+                <button className="p-4 bg-[#020E35] text-white font-medium px-10 lg:px-16">See More</button>
             </div>
         </div>
         </>

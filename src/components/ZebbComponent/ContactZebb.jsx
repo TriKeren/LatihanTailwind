@@ -66,14 +66,14 @@ const ContactZebb = () => {
             }`
             }
         </style>
-        <div className="max-w-screen-xl mx-auto flex justify-center mt-10 lg:mt-28 font-merriweather">
+        <div className="max-w-screen-xl mx-auto flex justify-center mt-32 md:mt-36 lg:mt-28 font-merriweather">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 py-20 rounded-lg">
                 <div className={`flex justify-center transition-opacity duration-700 ${imageVisible ? 'opacity-100' : 'opacity-0'}`} ref={imageRef}>
                     <img src="/public/assets/ZebbDigitalAgency/LogoHero.png" className="w-11/12 mx-10 mt-16" alt="" />
                 </div>
-                <div ref={formRef} className={`mx-14 text-black transition-transform duration-500 ${formVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-                    <div className="text-black flex justify-center lg:justify-start text-center lg:text-start">
-                        <h1 className="text-4xl font-bold w-52">
+                <div ref={formRef} className={`mx-14 text-[#020E35] transition-transform duration-500 ${formVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+                    <div className="text-[#020E35] flex justify-center lg:justify-start text-center lg:text-start">
+                        <h1 className="text-4xl font-bold w-52 md:w-96">
                             Need Help Making Coffee? <span></span>
                             <span className="relative inline-block">
                                 Contact Us <span className="absolute inset-x-0 bottom-0 h-[16px] bg-[#FF5678] -z-10"></span>
@@ -96,8 +96,8 @@ const ContactZebb = () => {
                                 <textarea id="message" type="text" className="bg-[#FFEEF6] border border-black rounded-lg py-2" />
                             </div>
 
-                            <div className="">
-                                <button className="p-3 bg-[#020E35] text-white font-medium px-5 lg:px-16">Send</button>
+                            <div className="flex justify-center lg:justify-start">
+                                <button className="p-3 bg-[#020E35] text-white font-medium px-14 lg:px-16 text">Send</button>
                             </div>
                         </form>
                     </div>

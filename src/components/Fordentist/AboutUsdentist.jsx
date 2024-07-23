@@ -13,9 +13,9 @@ const AboutUsdentist = () => {
             />
           </div>
           <div className="mt-4 ml-1 w-full text-start py-2">
-            <div className="text-xs text-cyan-400 font-source">Sobre Mi</div>
+            <div className="text-xs text-cyan-500 font-source">Sobre Mi</div>
             <div className="px-0">
-              <h1 className="font-bold text-blue-800 text-3xl drop-shadow-[5px_5px_0px_rgba(212,228,244,1)]">
+              <h1 className="font-bold text-blue-800 text-3xl drop-shadow-[6px_6px_0px_rgba(212,228,244,1)]">
                 Dra. Patricia Nieves Kiriaco
               </h1>
               <ul className="mt-2 text-black list-disc px-2- pl-4 space-y-1 text-sm font-source">
