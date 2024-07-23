@@ -23,10 +23,12 @@ const Service = ({ imgURL, title, btn, titleColor }) => {
                 <img src={imgURL} alt={title} className="w-44 md:w-52 object-contain" />
             </div>
             <div className="w-full flex items-center justify-start pt-10">
-                <img src="/public/assets/positivus/arrow.svg" alt="arrow" className="group-hover:origin-center group-hover:rotate-90 duration-200 w-[48px] h-[48px] px-3 py-3 bg-black rounded-full hover:origin-center rotate-6" />
-                <button className="ml-3 text-sm font-bold border-none cursor-pointer hidden lg:block">
-                    {btn}
-                </button>
+                <div className="relative flex items-center">
+                    <img src="/public/assets/positivus/arrow.svg" alt="arrow" className="w-[48px] h-[48px] px-3 py-3 bg-black rounded-full group-hover:rotate-90 duration-200" />
+                    <button className="ml-3 text-sm font-bold border-none cursor-pointer hidden lg:inline-block group-hover:inline-block group-hover:ml-5 group-hover:bg-black group-hover:text-white transition-all duration-200 px-4 py-2 rounded-md">
+                        {btn}
+                    </button>
+                </div>
             </div>
         </div>
     );

@@ -28,7 +28,7 @@ const Proposal = () => {
               </button>
             </div>
           </div>
-          <div className="md:w-1/2 flex justify-center md:justify-end mt-6 md:ml-10">
+          <div className="md:w-1/2 justify-center md:justify-end mt-6 md:ml-10 hidden md:block">
             <img src="/public/assets/positivus/hero2.png" alt="banner" className="w-[494px] h-[394px] md:w-full md:h-auto" />
           </div>
         </div>
