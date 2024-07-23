@@ -1,57 +1,115 @@
+import { useState, useEffect, useRef } from 'react';
+
+const teamMembers = [
+    {
+        name: 'Samantha Jones',
+        position: 'Ilustrator',
+        image: '/public/assets/ZebbDigitalAgency/User.png',
+        detailLink: '#'
+    },
+    {
+        name: 'Mark Ali',
+        position: 'Owner Creative Director',
+        image: '/public/assets/ZebbDigitalAgency/User.png',
+        detailLink: '#'
+    },
+    {
+        name: 'Davi John',
+        position: 'Head of Marketing',
+        image: '/public/assets/ZebbDigitalAgency/User.png',
+        detailLink: '#'
+    },
+    {
+        name: 'John Daen',
+        position: 'Graphic Designer',
+        image: '/public/assets/ZebbDigitalAgency/User.png',
+        detailLink: '#'
+    },
+    {
+        name: 'Alice Kate',
+        position: 'Social Media Manager',
+        image: '/public/assets/ZebbDigitalAgency/User.png',
+        detailLink: '#'
+    },
+    {
+        name: 'Jhang Yui',
+        position: 'Web Designer & Developer',
+        image: '/public/assets/ZebbDigitalAgency/User.png',
+        detailLink: '#'
+    }
+];
+
 const TeamZebb = () => {
-    return ( 
-        <div className="max-w-screen-xl mx-auto mt-36 lg:mt-40">
+    const [visibleIndex, setVisibleIndex] = useState(-1);
+    const cardRefs = useRef([]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    const index = cardRefs.current.indexOf(entry.target);
+                    if (entry.isIntersecting) {
+                        setVisibleIndex(prevIndex => Math.max(prevIndex, index));
+                    } else if (index === visibleIndex) {
+                        setVisibleIndex(index - 1);
+                    }
+                });
+            },
+            {
+                threshold: 0.1,
+            }
+        );
+
+        cardRefs.current.forEach(card => {
+            if (card) observer.observe(card);
+        });
+
+        return () => {
+            cardRefs.current.forEach(card => {
+                if (card) observer.unobserve(card);
+            });
+        };
+    }, [visibleIndex]);
+
+    return (
+        <>
+        <style>
+            {`
+            @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+            .font-merriweather{
+                font-family: 'Merriweather' , sans-serif;
+            }`
+            }
+        </style>
+        <div className="max-w-screen-xl mx-auto mt-40 md:mt-52 lg:mt-40 font-merriweather">
             <div className="flex justify-center">
-                <h1 className="text-4xl font-bold">
-                    <span className="relative inline-block">
-                        Meet Team <span className="absolute inset-x-0 bottom-0 h-[16px] bg-[#FF5678] -z-10"></span>
+                <h1 className="text-[40px] font-bold w-52 md:w-80 text-center">
+                    <span className="relative text-[#020E35]">
+                        Meet The Team <span className="absolute inset-x-0 bottom-0 h-[20px] w-[110px] mx-10 md:w-[310px] md:mx-0 bg-[#FF5678] -z-10"></span>
                     </span>
                 </h1>
             </div>
             
-            <div className="flex justify-center mt-14 lg:mt-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16  px-5">
-                    <div className="flex flex-col items-center gap-5 bg-white py-12 px-16 rounded-3xl shadow-sm shadow-black transform transition-transform duration-500 hover:scale-105">
-                        <img className="w-20" src="/public/assets/ZebbDigitalAgency/User.png" alt=""/>
-                        <h1 className="text-2xl font-medium">Samantha Jones</h1>
-                        <p className="text-center">Ilustrator</p>
-                        <a href="">See Detail</a>
-                    </div>
-                    <div className="flex flex-col items-center gap-5 bg-white py-12 px-16 rounded-3xl shadow-sm shadow-black transform transition-transform duration-500 hover:scale-105">
-                        <img className="w-20" src="/public/assets/ZebbDigitalAgency/User.png" alt=""/>
-                        <h1 className="text-2xl font-medium">Mark Ali</h1>
-                        <p className="text-center">Owner Creative Director</p>
-                        <a href="">See Detail</a>
-                    </div>
-                    <div className="flex flex-col items-center gap-5 bg-white py-12 px-16 rounded-3xl shadow-sm shadow-black transform transition-transform duration-500 hover:scale-105">
-                        <img className="w-20" src="/public/assets/ZebbDigitalAgency/User.png" alt=""/>
-                        <h1 className="text-2xl font-medium">Davi John</h1>
-                        <p className="text-center">Head Of Marketing</p>
-                        <a href="">See Detail</a>
-                    </div>
-                    <div className="flex flex-col items-center gap-5 bg-white py-12 px-16 rounded-3xl shadow-sm shadow-black transform transition-transform duration-500 hover:scale-105">
-                        <img className="w-20" src="/public/assets/ZebbDigitalAgency/User.png" alt=""/>
-                        <h1 className="text-2xl font-medium">John Daen</h1>
-                        <p className="text-center">Graphic Designer</p>
-                        <a href="">See Detail</a>
-                    </div>
-                    <div className="flex flex-col items-center gap-5 bg-white py-12 px-16 rounded-3xl shadow-sm shadow-black transform transition-transform duration-500 hover:scale-105">
-                        <img className="w-20" src="/public/assets/ZebbDigitalAgency/User.png" alt=""/>
-                        <h1 className="text-2xl font-medium">Alice Kate</h1>
-                        <p className="text-center">Social Media Manager</p>
-                        <a href="">See Detail</a>
-                    </div>
-                    <div className="flex flex-col items-center gap-5 bg-white py-12 px-16 rounded-3xl shadow-sm shadow-black transform transition-transform duration-500 hover:scale-105">
-                        <img className="w-20" src="/public/assets/ZebbDigitalAgency/User.png" alt=""/>
-                        <h1 className="text-2xl font-medium">Jhang Yui</h1>
-                        <p className="text-center">Web Designer and Developer</p>
-                        <a href="">See Detail</a>
-                    </div>
+            <div className="flex justify-center mt-20 lg:mt-16">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 px-5">
+                    {teamMembers.map((member, index) => (
+                        <div
+                            key={index}
+                            ref={el => cardRefs.current[index] = el}
+                            className={`group flex flex-col items-center gap-5 bg-white py-12 px-16 md:px-56 lg:px-16 rounded-3xl shadow-sm shadow-black transform transition-transform duration-500 ease-out hover:scale-105 ${index <= visibleIndex ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${index <= visibleIndex ? `delay-[${index * 100}ms]` : ''}`}
+                        >
+                            <img className="w-30 lg:w-20" src={member.image} alt={member.name} />
+                            <h1 className="text-2xl font-bold text-center text-[#020E35]">{member.name}</h1>
+                            <p className="text-center font-medium text-[#020E35]">{member.position}</p>
+                            <a href={member.detailLink} className="opacity-0 text-[#020E35] font-medium group-hover:opacity-100 transition-opacity duration-300">See Detail</a>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
-     );
+        </>
+    );
 }
- 
-export default TeamZebb
-;
+
+export default TeamZebb;

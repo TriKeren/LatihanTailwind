@@ -1,19 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const NavbarPaws = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 w-full z-50">
-        <div className="max-w-screen-xl mx-auto flex justify-between items-center py-3 px-5">
+      <nav className={`fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 ${isScrolled ? "backdrop-blur-lg bg-opacity-30 bg-black" : "bg-transparent"} ${isOpen ? "backdrop-blur-none bg-transparent" : ""}`}>
+        <div className="max-w-screen-xl mx-auto flex justify-between items-center py-6 px-5">
           <div className="flex items-center gap-2 min-w-fit mr-10">
             <img
               src="../../../public/assets/ecommercePaws/vectorkaki.svg"
               alt="iconkaki"
-              width={40}
-              height={40}
+              width={30}
+              height={30}
             />
             <a href="#" className="text-white text-xl font-bold">
               Paws n'Play
@@ -43,10 +59,10 @@ const NavbarPaws = () => {
           <div className="hidden lg:flex w-full items-center justify-between">
             <div className="flex gap-5">
               <Link to="/" className="text-gray-300 hover:text-white flex items-center gap-1">
-                Shop <img src="../../../public/assets/ecommercePaws/chevronDown.svg" alt="ikonDropdownShop" className="w-4 h-4"></img>
+                Shop <img src="../../../public/assets/ecommercePaws/chevronDown.svg" alt="ikonDropdownShop" className="w-5 h-5"></img>
               </Link>
               <Link to="/" className="text-gray-300 hover:text-white flex items-center gap-1">
-                Services <img src="../../../public/assets/ecommercePaws/chevronDown.svg" alt="ikonDropdownService" className="w-4 h-4"></img>
+                Services <img src="../../../public/assets/ecommercePaws/chevronDown.svg" alt="ikonDropdownService" className="w-5 h-5"></img>
               </Link>
               <Link to="/" className="text-gray-300 hover:text-white">
                 About Us
@@ -61,10 +77,10 @@ const NavbarPaws = () => {
             <button className="px-5 py-2 text-black bg-white font-semibold rounded-full">
               Get Started
             </button>
-            </div>
+          </div>
         </div>
         {isOpen && (
-          <div className="lg:hidden mt-4 px-2">
+          <div className="lg:hidden my-4 px-2">
             <Link to="/" className="block text-gray-300 hover:text-white mb-2">
               Shop
             </Link>

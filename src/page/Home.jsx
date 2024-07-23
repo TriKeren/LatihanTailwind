@@ -1,47 +1,46 @@
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const data = [
+    {
+      title: "Zebb-Digital Agency",
+      img: "/public/assets/Zebb-Digital-Agency.png",
+      url: "/zebb-digital-agency",
+    },
+    {
+      title: "Responsive E-Commerce LandingPage",
+      img: "/public/assets/Responsive-E-Commerce-LandingPage.png",
+      url: "/responsive-ecommerce-landingpage",
+    },
+    {
+      title: "INWOOD-eCommerce LandingPage",
+      img: "/public/assets/INWOOD-eCommerce-LandingPage.png",
+      url: "/inwood-ecommerce-landingpage",
+    },
 
-    const data = [
-        {
-            title : "Zebb-Digital Agency",
-            img : "/public/assets/Zebb-Digital-Agency.png",
-            url : '/zebb-digital-agency'
-        },
-        {
-            title : "Responsive E-Commerce LandingPage",
-            img : "/public/assets/Responsive-E-Commerce-LandingPage.png",
-            url : "/responsive-ecommerce-landingpage"
-        },
-        {
-            title : "INWOOD-eCommerce LandingPage",
-            img : "/public/assets/INWOOD-eCommerce-LandingPage.png",
-            url : '/inwood-ecommerce-landingpage'
-        },
-
-         {
-            title : "saaS-landingpage",
-            img : "/public/assets/saaS-landingpage.png",
-            url : '/saaS-landingpage'
-        },
-        {
-            title : "Corporate",
-            img : "/public/assets/Corporate.png",
-            url : '/corporate'
-        },
-        {
-            title : "Positivus",
-            img : "/public/assets/positivirus.png",
-            url : '/positivus'
-        },
+    {
+      title: "saaS-landingpage",
+      img: "/public/assets/saaS-landingpage.png",
+      url: "/saaS-landingpage",
+    },
+    {
+      title: "Corporate",
+      img: "/public/assets/Corporate.png",
+      url: "/corporate",
+    },
+    {
+      title: "Positivus",
+      img: "/public/assets/positivirus.png",
+      url: "/positivus",
+    },
     {
       title: "LandingPage For Dentist",
       img: "/public/assets/LandingPage-For-Dentist.png",
       url: "/landingpage-for-dentist",
-    }
-    ]
+    },
+  ];
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <>
