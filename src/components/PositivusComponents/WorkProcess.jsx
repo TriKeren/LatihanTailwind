@@ -2,15 +2,16 @@ import { useState, useEffect, useRef } from 'react';
 
 const WorkProcess = () => {
     const [paragraph, setParagraph] = useState([false, false, false, false, false]);
-    const [activeIndex, setActiveIndex] = useState(null); 
+    const [activeIndex, setActiveIndex] = useState(null);
     const sectionRef = useRef(null);
     const observerRef = useRef(null);
+    const contentRefs = useRef([]);
 
     const handleParagraph = (index) => {
         setParagraph(prevState =>
             prevState.map((visible, i) => (i === index ? !visible : false))
         );
-        setActiveIndex(index);
+        setActiveIndex(prevActiveIndex => (prevActiveIndex === index ? null : index));
     };
 
     const texts = [
@@ -72,6 +73,10 @@ const WorkProcess = () => {
                     .font-space-grotesk {
                         font-family: 'Space Grotesk', sans-serif;
                     }
+
+                    .content-transition {
+                        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+                    }
                 `}
             </style>
             <section id="WorkProcess" className="font-space-grotesk mt-[30px] lg:mt-16 lg:max-w-screen-xl lg:mx-auto" ref={sectionRef}>
@@ -90,7 +95,7 @@ const WorkProcess = () => {
                             {[0, 1, 2, 3, 4].map((index) => (
                                 <div
                                     key={index}
-                                    className={`WorkProcess-item border-b-4 border-[#141C24] rounded-[45px] md:px-4 px-4 my-[20px] transition-all duration-500 ease-in-out ${activeIndex === index ? 'bg-[#B9FF66]' : 'bg-white'} opacity-100 translate-y-10`}
+                                    className={`WorkProcess-item border-b-4 border-[#141C24] rounded-[45px] md:px-4 px-4 my-[20px] transition-all duration-500 ease-in-out ${activeIndex === index ? 'bg-[#B9FF66]' : 'bg-[#F3F3F3]'} opacity-100 translate-y-10`}
                                 >
                                     <div className="flex justify-between py-4">
                                         <p className="text-[18px] text-[#141C24] font-bold md:text-xl mt-1">{texts[index]}</p>
@@ -109,12 +114,13 @@ const WorkProcess = () => {
                                             )}
                                         </button>
                                     </div>
-                                    <div className={`transition-all duration-500 ease-in-out overflow-hidden ${paragraph[index] ? 'max-h-[200px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                        {paragraph[index] && (
-                                            <p className="mb-4 text-base text-[#344051] font-light md:text-xl w-11/12">
-                                                {paragraphs[index]}
-                                            </p>
-                                        )}
+                                    <div
+                                        ref={el => (contentRefs.current[index] = el)}
+                                        className={`content-transition overflow-hidden ${paragraph[index] ? 'max-h-[200px] opacity-100' : 'max-h-0 opacity-0'}`}
+                                    >
+                                        <p className="mb-4 text-base text-[#344051] font-light md:text-xl w-11/12">
+                                            {paragraphs[index]}
+                                        </p>
                                     </div>
                                 </div>
                             ))}
