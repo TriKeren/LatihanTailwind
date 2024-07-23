@@ -7,7 +7,8 @@ const FooterInwood = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start">
           <div className="w-full lg:w-1/2 p-8 bg-gray-300 h-80 mb-6 lg:mb-0"></div>
           <div className="w-full lg:w-1/2 p-8 bg-green-100 h-80">
-            <h2 className="text-2xl font-bold text-green-700 mb-2">Join Our Newsletter</h2>
+            <h2 className="text-2xl font-medium font-serif text-green-700 mb-2">Join Our</h2>
+            <h2 className="text-2xl font-bold font-serif text-green-700 mb-2">Newsletter</h2>
             <p className="text-gray-600 mb-4">Receive exclusive deals, discounts and many offers.</p>
             <input
               type="email"

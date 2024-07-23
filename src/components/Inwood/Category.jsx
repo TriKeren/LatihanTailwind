@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faChevronRight, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const categories = [
   { name: 'Bedroom', image: '../../public/assets/Inwood/bedroom.jpg' },
@@ -12,10 +12,16 @@ const categories = [
 ];
 
 const Category = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
     <section className="py-16 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-green-700 mb-8 text-center">Explore by Category</h2>
+        <h2 className="text-4xl font-bold font-serif text-green-700 mb-8 text-center">Explore by Category</h2>
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/4 flex flex-col space-y-4">
             <div className="relative">
@@ -25,18 +31,23 @@ const Category = () => {
                 className="w-full px-4 py-2 rounded-lg shadow-sm border border-gray-300"
               />
               <FontAwesomeIcon
-                icon={faSearch}
+                icon={faSearch} 
                 className="absolute top-2 right-3 text-gray-500"
               />
+                <div className="lg:hidden flex justify-end">
+              <button onClick={toggleNav} className="text-green-700">
+                <FontAwesomeIcon icon={isNavOpen ? faTimes : faBars} size="2x" />
+              </button>
             </div>
-            <ul className="flex-grow space-y-4">
+            </div>
+            <ul className={`flex-grow space-y-4 ${isNavOpen ? 'block' : 'hidden'} lg:block`}>
               {categories.map((category, index) => (
                 <li key={index} className="font-medium text-green-700 hover:text-green-900 cursor-pointer">
                   {category.name}
                 </li>
               ))}
             </ul>
-            <button className="flex items-center justify-between px-4 py-2 bg-green-700 text-white rounded-lg shadow hover:bg-green-800">
+            <button className="hidden lg:flex items-center justify-between px-4 py-2 bg-green-700 text-white rounded-lg shadow hover:bg-green-800">
               All Categories
               <FontAwesomeIcon icon={faChevronRight} />
             </button>
@@ -54,7 +65,7 @@ const Category = () => {
                     className="absolute inset-0 w-full h-full object-cover rounded-lg opacity-50"
                   />
                   <h3 className="text-2xl font-bold text-white relative">{category.name}</h3>
-                  <button className="px-4 py-2 bg-white text-green-700 font-medium rounded shadow hover:bg-gray-100 absolute bottom-4">
+                  <button className="px-4 py-2 bg-[#E0EFF6] text-green-700 font-medium rounded shadow hover:bg-gray-100 absolute bottom-4">
                     Explore
                   </button>
                 </div>

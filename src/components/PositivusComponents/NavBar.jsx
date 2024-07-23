@@ -36,7 +36,7 @@ const Navbar = () => {
           }
         `}
       </style>
-      <nav className={`font-space-grotesk px-4 md:px-24 lg:max-w-screen-xl mx-auto ${isSticky ? 'sticky top-0 z-50 backdrop-blur-md bg-white/80 shadow-md' : ''}`}>
+      <nav className={`font-space-grotesk whitespace-nowrap px-4 md:max-w-screen-xl lg:max-w-screen-xl mx-auto ${isSticky ? 'sticky top-0 z-50 backdrop-blur-md bg-white/80 shadow-md' : ''}`}>
         <div className="container mx-auto px-4 flex items-center justify-between h-16">
           <div className="flex items-center">
             <img src="/public/assets/positivus/logo.svg" alt="Logo" className="h-8" />

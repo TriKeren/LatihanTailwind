@@ -37,8 +37,8 @@ const OurCreation = () => {
     <section className="py-16 bg-gray-100 flex flex-col items-center">
       <div className="container mx-auto px-4">
         <div className="relative flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4">
-          <div className="bg-green-700 text-white p-8 rounded-lg flex-shrink-0 w-full lg:w-80 h-96">
-            <h2 className="text-4xl font-bold mb-4">Our Own Creation</h2>
+          <div className="bg-[#70908B] text-white p-8 rounded-lg flex-shrink-0 w-full lg:w-80 h-96">
+            <h2 className="text-4xl font-bold font-serif mb-4">Our Own Creation</h2>
             <p className="text-lg mb-4">Designed in our studio</p>
             <div className="flex items-center">
               <a href="#" className="text-white underline mr-4">More</a>
