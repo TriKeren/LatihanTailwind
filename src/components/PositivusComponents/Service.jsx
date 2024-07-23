@@ -3,8 +3,21 @@ import React from "react";
 const Service = ({ imgURL, title, btn, titleColor }) => {
     return (
         <div className="w-full flex flex-col justify-between h-full">
-            <div className="w-full">
-                <h1 className={`text-[24px] lg:text-[28px] font-bold capitalize ${titleColor}`}>{title}</h1>
+            <div className="w-full mb-4">
+                <h1 className="inline-block px-2 py-1 text-[24px] lg:text-[28px] font-bold capitalize">
+                    <span className={`${titleColor} inline-block px-2 py-1 rounded-[10px]`}>
+                        {title.includes('<br>') ? (
+                            title.split('<br>').map((part, index) => (
+                                <React.Fragment key={index}>
+                                    {part}
+                                    {index < title.split('<br>').length - 1 && <br />}
+                                </React.Fragment>
+                            ))
+                        ) : (
+                            title
+                        )}
+                    </span>
+                </h1>
             </div>
             <div className="w-full flex justify-end items-center mt-6 h-full">
                 <img src={imgURL} alt={title} className="w-44 md:w-52 object-contain" />

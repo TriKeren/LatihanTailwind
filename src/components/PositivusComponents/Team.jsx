@@ -67,12 +67,17 @@ const Team = () => {
                         Meet the skilled and experienced team behind our successful digital marketing strategies
                     </p>
                 </header>
-                <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+                <div className="relative mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
                     {team.map((items, index) => (
                         <div key={index} className="flex items-center border border-r-4 border-b-8 rounded-[50px] p-5 hover:bg-green duration-300 group">
                             <TeamList {...items} />
                         </div>
                     ))}
+                    <div className="col-span-full flex justify-center lg:justify-end mt-10">
+                        <button className="bg-black text-white w-[300px] h-[68px]  lg:px-6 lg:py-3 rounded-[14px] hover:bg-green duration-300">
+                            See All Team
+                        </button>
+                    </div>
                 </div>
             </div>
         </>
