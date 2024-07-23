@@ -41,7 +41,7 @@ const Data = () => {
                     ref={refImage}
                     style={animationStyles(isVisibleImage)}
                     className="w-full md:w-full mb-12
-                     lg:mt-0 flex justify-center lg:justify-end lg:ml-auto"
+                     lg:mt-0 flex justify-center lg:justify-end order-1 lg:order-2 lg:ml-auto"
                 >
                     <img
                         src="public/assets/saaS-landingpages/data.png"
@@ -52,7 +52,7 @@ const Data = () => {
                 <div
                     ref={refText}
                     style={animationStyles(isVisibleText)}
-                    className="w-full md:w-3/4 flex flex-col items-start lg:items-start space-y-4"
+                    className="w-full md:w-3/4 flex flex-col order-2 lg:order-1 items-start lg:items-start space-y-4"
                 >
                     <h1
                         className="relative text-[36px] ml-7 lg:ml-0 md:text-7xl lg:text-6xl font-bold text-[#212529] mb-5 md:mb-5 lg:mb-7 text-center lg:text-start"
@@ -63,7 +63,7 @@ const Data = () => {
                         <img
                             src="public/assets/saaS-landingpages/bg-text.svg"
                             alt=""
-                            className="absolute inset-0 w-[80%] ml-24 mt-8 h-auto object-cover opacity-100 z-[-1]"
+                            className="absolute inset-0 w-[80%] ml-24 lg:ml-[160px] mt-8 h-auto object-cover opacity-100 z-[-1]"
                         />
                     </h1>
                     <p className="text-[18px] md:font-medium md:text-2xl lg:text-lg text-[#212529] text-center md:text-center lg:text-start">
@@ -71,7 +71,7 @@ const Data = () => {
                     </p>
                     <div className="w-full flex justify-center lg:justify-start">
                         <button
-                            className="px-[40px] flex items-center text-[18px] lg:px-4 lg:py-2 py-[20px] font-medium bg-[#4F9CF9] text-[#FFE492] rounded-[8px] hover:bg-[#FFE492] hover:text-[#043873] mt-[60px] lg:mt-10 md:mt-10 md:mb-5 transition-colors duration-300"
+                            className="px-[40px] flex items-center text-[18px] lg:px-[20px] lg:py-[20px] py-[20px] font-medium bg-[#4F9CF9] text-[#FFE492] rounded-[8px] hover:bg-[#FFE492] hover:text-[#043873] mt-[60px] lg:mt-10 md:mt-10 md:mb-5 transition-colors duration-300"
                         >
                             Read more
                             <img
