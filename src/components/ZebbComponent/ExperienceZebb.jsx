@@ -44,7 +44,7 @@ const ExperienceZebb = () => {
         </style>
         <div
             ref={ref}
-            className={`lg:max-w-screen-xl mx-auto md:mt-52 mt-36 md:mt-32 lg:mt-44`}
+            className={`lg:max-w-screen-xl mx-auto md:mt-52 mt-36 lg:mt-44`}
         >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-30 lg:mx-11 font-merriweather">
                 <div className={`flex flex-col items-start md:items-center lg:items-start gap-10 md:gap-12 lg:gap-8 lg:mt-12 mx-4 lg:mx-0transition-opacity duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} delay-400`}>
@@ -54,7 +54,7 @@ const ExperienceZebb = () => {
                          customers<span className="absolute inset-x-0 bottom-0 h-[20px] w-[209px] mx-0 bg-[#FF5678] -z-10"></span>
                         </span>
                     </h1>
-                    <p className="text-start w-80 md:w-9/12 lg:w-96 md:text-center lg:text-start text-[18px]">
+                    <p className="text-start w-80 md:w-9/12 lg:w-96 md:text-center lg:text-start text-[#020E35] text-[18px]">
                         But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.
                     </p>
                     <button className="p-4 bg-[#020E35] text-white font-medium px-10 lg:px-10">

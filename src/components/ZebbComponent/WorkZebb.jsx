@@ -45,7 +45,7 @@ const WorkZebb = () => {
         </style>
         <div className="max-w-screen-xl mx-auto mt-44 lg:mt-40">
             <div className="flex justify-center text-center">
-                <h1 className="text-4xl font-bold w-56 md:w-96 lg:w-11/12 font-merriweather">
+                <h1 className="text-4xl font-bold w-56 md:w-96 lg:w-11/12 font-merriweather text-[#020E35]">
                     Some of Our <span></span>
                     <span className="relative">
                         Previous Work <span className="absolute inset-x-0 bottom-0 h-[16px] w-[94px] mx-7 md:mx-0 md:w-[270px] bg-[#FF5678] -z-10"></span>
@@ -53,7 +53,7 @@ const WorkZebb = () => {
                 </h1>
             </div>
 
-            <div className="flex justify-center items-center mt-5">
+            <div className="flex justify-center items-center mt-5 text-[#020E35]">
                 <div className="grid grid-cols-2 gap-2 md:grid-cols-4 font-merriweather">
                     <h1 className="font-medium hover:bg-[#FF5678] hover:text-white duration-300 px-12 md:px-12 text-start md:text-center">All</h1>
                     <h1 className="font-medium hover:bg-[#FF5678] hover:text-white duration-300 px-12 md:px-2 md:order-3 text-start md:text-center">App</h1>

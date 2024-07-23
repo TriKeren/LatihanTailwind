@@ -48,13 +48,13 @@ const AboutZebb = () => {
         >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-36 lg:mx-12 font-merriweather">
                 <div className={`flex flex-col items-center lg:items-start gap-10 md:gap-12 lg:gap-5 order-1 lg:order-2 lg:text-right transition-transform duration-1000 ${isVisible ? 'translate-y-0' : 'translate-y-10'}`}>
-                    <h1 className={`text-[40px] md:text-5xl w-72 md:w-96 text-center lg:text-start text-black font-bold leading-snug md:leading-tight lg:leading-snug transition-transform duration-1000 ${isVisible ? 'translate-y-0' : 'translate-y-10'}`}>
+                    <h1 className={`text-[40px] md:text-5xl w-72 md:w-96 text-center lg:text-start text-[#020E35] font-bold leading-snug md:leading-tight lg:leading-snug transition-transform duration-1000 ${isVisible ? 'translate-y-0' : 'translate-y-10'}`}>
                         Powered by <span></span>
                         <span className="relative">
                             talented people <span className="absolute inset-x-0 bottom-0 h-[20px] w-[155px] md:w-[370px] lg:w-96 bg-[#FF5678] -z-10"></span>
                         </span>
                     </h1>
-                    <p className={`text-center w-64 md:w-96 lg:text-start transition-transform duration-1000 ${isVisible ? 'translate-y-0' : 'translate-y-10'}`}>
+                    <p className={`text-center w-64 md:w-96 lg:text-start text-[#020E35] transition-transform duration-1000 ${isVisible ? 'translate-y-0' : 'translate-y-10'}`}>
                         But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system. <br /> <br />
                         I wrote to let them know ready to came back they kicked me of their team slack all of us are make company email.
                     </p>
@@ -67,7 +67,7 @@ const AboutZebb = () => {
                                     <img className="absolute inset-0 w-9 h-9 m-auto mx-[15px] hover:w-5 hover:mx-[22px]" src="/public/assets/ZebbDigitalAgency/Play.svg" alt="" />
                                 </a>
                             </div>
-                            <button className="font-medium">Watch Videos</button>
+                            <button className="font-medium text-[#020E35]">Watch Videos</button>
                         </div>
                     </div>
 

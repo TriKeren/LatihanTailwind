@@ -71,8 +71,8 @@ const ContactZebb = () => {
                 <div className={`flex justify-center transition-opacity duration-700 ${imageVisible ? 'opacity-100' : 'opacity-0'}`} ref={imageRef}>
                     <img src="/public/assets/ZebbDigitalAgency/LogoHero.png" className="w-11/12 mx-10 mt-16" alt="" />
                 </div>
-                <div ref={formRef} className={`mx-14 text-black transition-transform duration-500 ${formVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-                    <div className="text-black flex justify-center lg:justify-start text-center lg:text-start">
+                <div ref={formRef} className={`mx-14 text-[#020E35] transition-transform duration-500 ${formVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+                    <div className="text-[#020E35] flex justify-center lg:justify-start text-center lg:text-start">
                         <h1 className="text-4xl font-bold w-52 md:w-96">
                             Need Help Making Coffee? <span></span>
                             <span className="relative inline-block">
