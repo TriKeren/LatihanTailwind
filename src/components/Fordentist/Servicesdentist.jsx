@@ -52,25 +52,27 @@ const Servicesdentist = () => {
       style={{
         backgroundImage: "url(/assets/Fordentist/bgservicios.png)",
         backgroundSize: "80%",
-        backgroundPosition: "right", // Adjust this value to change the position of the background image
+        backgroundPosition: "right", 
       }}
     >
-      <h2 className="text-xl text-blue-500 mb-8">Especialidades</h2>
-      <h3 className="text-2xl font-semibold text-blue-800 mb-6">
+      <h2 className="text-sm text-blue-500 mb-8">Especialidades</h2>
+      <h3 className="text-4xl font-bold text-blue-800 mb-6 drop-shadow-[6px_6px_0px_rgba(212,228,244,1)]">
         Nuestros Servicios
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-lg shadow-lg shadow-blue-300"
+            className="bg-white p-6 rounded-lg shadow-[1px_1px_10px_0px_rgba(212,228,244,1)]"
           >
             <div className="flex items-start mb-4">
               <div className="mr-4">
                 <img
                   src={service.icon}
                   alt={`${service.title} icon`}
-                  className="w-12 h-12 mb-2"
+                  className="mb-2"
+                  height={60}
+                  width={60}
                 />
                 <h4 className="text-xl font-medium text-blue-500 mb-2">
                   {service.title}
@@ -78,10 +80,10 @@ const Servicesdentist = () => {
                 <p className="text-gray-700 mb-4">{service.description}</p>
                 <a
                   href={service.link}
-                  className="text-blue-500 hover:underline"
-                >
-                  Ver Más &rarr;
-                </a>
+                  className="text-cyan-200 hover:underline flex items-center gap-4"
+                >Ver Mas
+                  <img src="../../../public/assets/Fordentist/Vector.svg" alt="" />
+                  </a>
               </div>
             </div>
           </div>

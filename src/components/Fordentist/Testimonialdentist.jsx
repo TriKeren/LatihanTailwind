@@ -20,21 +20,21 @@ const Testimonialdentist = () => {
   ];
 
   return (
-    <div className="bg-gray-50 py-16 px-5">
+    <div className="bg-white py-16 px-5">
       <div className="max-w-3xl mx-auto text-center">
         <p className="text-cyan-400">Testimonios</p>
-        <h2 className="text-3xl font-bold text-blue-900">
+        <h2 className="text-3xl font-bold text-blue-900 drop-shadow-[6px_6px_0px_rgba(212,228,244,1)]">
           Lo que opinan nuestros Pacientes
         </h2>
       </div>
 
-      <div className="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md mt-8">
+      <div className="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-[1px_1px_10px_0px_rgba(212,228,244,1)] mt-8">
         <div className="flex justify-between items-center mb-4">
           <h3 className="font-bold text-lg md:text-xl">Maria Paz</h3>
-          <div className="flex">
-            <span className="text-cyan-400 text-xl">★</span>
-            <span className="text-cyan-400 text-xl">★</span>
-            <span className="text-cyan-400 text-xl">★</span>
+          <div className="flex gap-3">
+            <span className="text-cyan-400 text-3xl">★</span>
+            <span className="text-cyan-400 text-3xl">★</span>
+            <span className="text-cyan-400 text-3xl">★</span>
           </div>
         </div>
         <p className="text-gray-600 text-sm md:text-base">

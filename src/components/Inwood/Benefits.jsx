@@ -22,7 +22,7 @@ const Benefits = () => {
   return (
     <section className="py-16 bg-blue-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-green-700 mb-8 text-center">Benefits for your expediency</h2>
+        <h2 className="text-4xl font-bold font-serif text-green-700 mb-8 text-center">Benefits for your expediency</h2>
         <div className="flex flex-col lg:flex-row justify-around items-center lg:items-start space-y-6 lg:space-y-0">
           {benefits.map((benefit, index) => (
             <div key={index} className="text-center w-full lg:w-1/3 px-4">

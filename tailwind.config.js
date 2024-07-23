@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        source: ["Source Sans 3", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
       },
     },
   },

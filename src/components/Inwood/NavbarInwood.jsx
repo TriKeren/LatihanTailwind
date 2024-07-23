@@ -15,13 +15,13 @@ const NavbarInwood = () => {
         <div className="flex items-center">
           <img src="../../public/assets/Inwood/inwood-logo.svg" alt="Logo" className="h-20 w-20 mr-2" />
           <h1 className="text-2xl font-bold"></h1>
-        </div>
+      </div>
         <nav className={`hidden lg:flex space-x-4`}>
-          <a href="#home" className="font-bold font-family-playfair-display text-green-700 hover:text-green-900">Home</a>
-          <a href="#products" className="font-family-playfair-display text-green-700 hover:text-green-900">Products</a>
-          <a href="#categories" className="font-family-playfair-display text-green-700 hover:text-green-900">Categories</a>
-          <a href="#about" className="font-family-playfair-display text-green-700 hover:text-green-900">About</a>
-          <a href="#contact" className="font-family-playfair-display text-green-700 hover:text-green-900">Contact Us</a>
+          <a href="#home" className="font-bold font-serif text-green-700 hover:text-green-900">Home</a>
+          <a href="#products" className="font-serif text-green-700 hover:text-green-900">Products</a>
+          <a href="#categories" className="font-serif text-green-700 hover:text-green-900">Categories</a>
+          <a href="#about" className="font-serif text-green-700 hover:text-green-900">About</a>
+          <a href="#contact" className="font-serif text-green-700 hover:text-green-900">Contact Us</a>
         </nav>
         <div className="flex space-x-10 justify-between">
           <button className="text-green-700 hover:text-green-900">

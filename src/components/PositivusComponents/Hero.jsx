@@ -35,7 +35,7 @@ const Hero = () => {
         `}
       </style>
       <section className="font-space-grotesk px-4 md:px-24 lg:mt-3 lg:max-w-screen-xl mx-auto">
-        <div className="container mx-auto flex md:flex-row">
+        <div className="container mx-auto flex flex-col-reverse md:flex-row items-center">
           <div
             className="mt-9 order-2 md:order-1 md:w-1/2 px-0 lg:px-5 flex flex-col"
             style={animationStyles}
@@ -68,13 +68,13 @@ const Hero = () => {
             </div>
           </div>
           <div
-            className="order-1 md:order-2 md:w-1/2 mt-6 md:mt-12 flex justify-center"
+            className="order-1 md:order-2 md:w-1/2 mt-6 md:mt-12 flex justify-center md:mb-12"
             style={animationStyles}
           >
             <img
               src="/public/assets/positivus/hero.png"
               alt="Hero Image"
-              className="hidden md:block w-full md:max-w-lg"
+              className="hidden md:block w-full md:max-w-lg md:ml-24 md:mt-40"
               style={animationStyles}
             />
           </div>
