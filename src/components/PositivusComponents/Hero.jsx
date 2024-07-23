@@ -34,14 +34,14 @@ const Hero = () => {
           }
         `}
       </style>
-      <section className="font-space-grotesk px-4 md:px-24 lg:mt-3 lg:max-w-screen-xl mx-auto">
+      <section className="font-space-grotesk px-4 md:px-24 lg:max-w-screen-xl mx-auto">
         <div className="container mx-auto flex flex-col-reverse md:flex-row items-center">
           <div
-            className="mt-9 order-2 md:order-1 md:w-1/2 px-0 lg:px-5 flex flex-col"
+            className="mt-1 order-2 md:order-1 md:w-1/2 px-0 lg:px-5 flex flex-col"
             style={animationStyles}
           >
             <h1
-              className="text-[40px] md:text-[60px] font-bold mb-4 md:mb-6 w-full md:w-[531px] h-auto md:h-[231px]"
+              className="text-[39px] md:text-[60px] font-bold mb-4 md:mb-[35px] w-full md:w-[531px] h-auto md:h-[231px]"
               style={animationStyles}
             >
               Navigating the digital landscape for success
@@ -53,7 +53,7 @@ const Hero = () => {
               style={animationStyles}
             />
             <p
-              className="text-[20px] mt-6 md:mt-5 mb-6 md:mb-8"
+              className="text-[19px] mt-1 md:mt-5 mb-6 md:mb-[35px]"
               style={animationStyles}
             >
               Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
@@ -74,7 +74,7 @@ const Hero = () => {
             <img
               src="/public/assets/positivus/hero.png"
               alt="Hero Image"
-              className="hidden md:block w-full md:max-w-lg md:ml-24 md:mt-40"
+              className="hidden md:block w-full md:max-w-lg md:ml-24 md:mt-[20px]"
               style={animationStyles}
             />
           </div>
