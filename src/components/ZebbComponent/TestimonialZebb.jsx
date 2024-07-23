@@ -60,18 +60,28 @@ const TestimonialZebb = () => {
 
             .font-merriweather{
                 font-family: 'Merriweather' , sans-serif;
-            }`
             }
+
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            .no-scrollbar::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+            .no-scrollbar {
+                -ms-overflow-style: none;  /*
+                scrollbar-width: none; 
+            }`}
         </style>
-        <div className="max-w-screen-xl mx-auto flex justify-center items-center mt-40 lg:mt-44 font-merriweather">
-            <div className="w-full">
+        <div className="max-w-screen-xl mx-auto flex justify-center items-center mt-44 lg:mt-44 font-merriweather">
+            <div className="w-full relative">
                 <div className="flex flex-col items-center gap-2">
                     <h1 className="text-4xl font-bold">Testimonial</h1>
                     <p>Over 18,000 happy clients.</p>
                 </div>
 
                 <div className="relative w-full mt-10">
-                    <div ref={carouselRef} className="w-full overflow-x-scroll p-4 cursor-pointer">
+                    <div ref={carouselRef} className="w-full overflow-x-scroll p-4 cursor-pointer no-scrollbar">
                         <div className="flex space-x-8 w-max">
                             {['Samantha Kate', 'Samantha Kate', 'Samantha Kate', 'Samantha Kate', 'Samantha Kate'].map((name, index) => (
                                 <div
@@ -95,14 +105,12 @@ const TestimonialZebb = () => {
                         </div>
                     </div>
 
-                    <div className="flex justify-center items-center mt-5 space-x-4">
-                        <button onClick={scrollLeft} className="p-5 px-6 bg-black rounded-full text-white text-3xl shadow-md">
-                            &#8592;
-                        </button>
-                        <button onClick={scrollRight} className="p-5 px-6 bg-black rounded-full text-white text-3xl shadow-md">
-                            &#8594;
-                        </button>
-                    </div>
+                    <button onClick={scrollLeft} className="absolute left-28 lg:left-14 bottom-0 transform translate-y-full p-4 md:p-3 bg-black rounded-full text-white text-3xl shadow-md">
+                        &#8592;
+                    </button>
+                    <button onClick={scrollRight} className="absolute right-28 lg:right-14 bottom-0 transform translate-y-full p-4 md:p-3 bg-black rounded-full text-white text-3xl shadow-md">
+                        &#8594;
+                    </button>
                 </div>
             </div>
         </div>

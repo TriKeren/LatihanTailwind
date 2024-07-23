@@ -48,9 +48,9 @@ const Navbar = () => {
                         <button id="hamburger" name="hamburger" type="button" onClick={toogleMenu} className="block absolute right-4 lg:hidden">
                             
                             <div className="relative w-[30px] h-[23px]">
-                            <span className={`absolute left-0 h-[2px] w-full bg-black transition-transform duration-300  ${isMenuOpen ? `rotate-45 top-1/2 transform -translate-y-1/2` : `top-0`}`}></span>
+                            <span className={`absolute left-0 h-[2px] w-full bg-[#FF5678] transition-transform duration-300  ${isMenuOpen ? `rotate-45 top-1/2 transform -translate-y-1/2` : `top-2`}`}></span>
                             {/* <span className={`absolute left-0 h-[2px] w-full bg-black transition-opacity duration-300  ${isMenuOpen ? `opacity-0` : `top-1/2 transform -translate-y-1/2`}`}></span> */}
-                            <span className={`absolute left-0 h-[2px] w-full bg-black transition-transform duration-300  ${isMenuOpen ? `-rotate-45 top-1/2 transform -translate-y-1/2` : `bottom-0`}`}></span>
+                            <span className={`absolute left-0 h-[2px] w-full bg-[#FF5678]    transition-transform duration-300  ${isMenuOpen ? `-rotate-45 top-1/2 transform -translate-y-1/2` : `top-4`}`}></span>
                             </div>
 
                         </button>
@@ -68,7 +68,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile */}
-            <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden bg-white absolute top-[58px] right-0 w-44 z-10 rounded-lg shadow-sm shadow-black`}>
+            <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden bg-white absolute top-[58px] right-0 w-full z-10 rounded-lg shadow-sm shadow-black`}>
                 <ul className="flex flex-col items-start py-4 px-4">
                     <li className="py-2"><a href="" className="text-[#020E35] font-medium" onClick={closeMenu}>Home</a></li>    
                     <li className="py-2"><a href="" className="text-[#020E35] font-medium" onClick={closeMenu}>About</a></li>    
