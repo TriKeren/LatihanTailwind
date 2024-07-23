@@ -10,46 +10,46 @@ const Contactdentist = () => {
             <h2 className="text-cyan-400 lg:text-4xl font-source">
               Saca un turno
             </h2>
-            <p className="text-blue-800 font-bold text-4xl drop-shadow-[5px_5px_0px_rgba(212,228,244,1)]">
+            <p className="text-blue-800 font-bold text-4xl drop-shadow-[6px_6px_0px_rgba(212,228,244,1)]">
               Contacto
             </p>
           </div>
         </div>
-        <form className="p-8 bg-gradient-to-br text-white from-[rgba(37,37,37,0.21)] to-[rgba(68,198,233,0.35)] w-full max-w-md">
+        <form className="p-8 bg-gradient-to-br text-white from-[rgba(37,37,37,0.21)] to-[rgba(68,198,233,0.35)] w-full max-w-md text-[20px]">
           <h1 className="text-2xl mb-6">
             Ponete en contacto para coordinar un turno
           </h1>
           <div className="mb-4">
             <input
               type="text"
-              className="w-full p-2 font-source border-b border-white bg-transparent placeholder-white outline-none"
+              className="w-full p-2 font-source border-b border-white bg-transparent placeholder-white outline-none text-[15px]"
               placeholder="Nombre"
             />
           </div>
           <div className="mb-4">
             <input
               type="email"
-              className="w-full p-2 border-b border-white bg-transparent placeholder-white outline-none"
+              className="w-full p-2 font-source border-b border-white bg-transparent placeholder-white outline-none text-[15px]"
               placeholder="Email"
             />
           </div>
           <div className="mb-4">
             <input
               type="tel"
-              className="w-full p-2 border-b border-white bg-transparent placeholder-white outline-none"
+              className="w-full p-2 font-source border-b border-white bg-transparent placeholder-white outline-none text-[15px]"
               placeholder="Telefono"
             />
           </div>
           <div className="mb-6">
             <input
               type="text"
-              className="w-full p-2 border-b border-white bg-transparent placeholder-white outline-none"
+              className="w-full p-2 font-source border-b border-white bg-transparent placeholder-white outline-none text-[15px]"
               placeholder="Problema"
             />
           </div>
           <button
             type="submit"
-            className="w-full py-3 bg-white text-black  rounded-lg"
+            className="w-full py-3 font-source bg-white text-black rounded-lg text-[15px]"
           >
             Enviar
           </button>
@@ -79,17 +79,19 @@ const Contactdentist = () => {
             <div className="flex gap-3 border-b-2 border-white pb-10 ">
               <div className="lg:justify-normal">
                 <img
-                  src="/assets/Fordentist/whatshapp.svg"
+                  src="/assets/Fordentist/whatsApp.svg"
                   alt="WhatsApp Icon"
                   width={30}
                   height={30}
                 />
               </div>
               <div className="lg:text-left flex flex-col gap-6">
-                <h2 className="text-black font-light text-[20px">
+                <h2 className="text-black font-light text-[20px]">
                   Chatea con Nosotros
                 </h2>
-                <p className="text-gray-600">+54 35176085XX</p>
+                <p className="text-gray-600 font-raleway text-[13px] ">
+                  +54 35176085XX
+                </p>
               </div>
             </div>
 
@@ -121,14 +123,18 @@ const Contactdentist = () => {
               </div>
               <div className="lg:text-left flex flex-col gap-6">
                 <h2 className="text-black font-light text-[20px]">Visitanos</h2>
-                <p className="text-gray-600">Av. Color 1338, Barrio Alberdi</p>
-                <p className="text-gray-600">Lunes a Viernes 8 a 18</p>
+                <p className="text-gray-600 font-raleway text-[13px]">
+                  Av. Color 1338, Barrio Alberdi
+                </p>
+                <p className="text-gray-600 font-raleway text-[13px]">
+                  Lunes a Viernes 8 a 18
+                </p>
               </div>
             </div>
 
-            <div className="flex gap-10 justify-center">
+            <div className="flex gap-20 justify-center">
               <img
-                src="../../../public/assets/Fordentist/facebook.svg"
+                src="../../../public/assets/Fordentist/facebook1.svg"
                 alt="facebook"
                 width={30}
                 height={30}
@@ -140,7 +146,7 @@ const Contactdentist = () => {
                 height={30}
               />
               <img
-                src="../../../public/assets/Fordentist/instagram.svg"
+                src="../../../public/assets/Fordentist/instagram1.svg"
                 alt="instagram"
                 width={30}
                 height={30}

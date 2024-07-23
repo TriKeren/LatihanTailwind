@@ -20,12 +20,12 @@ const Faqsdentist = () => {
   return (
     <div className=" flex flex-col items-center bg-gradient-to-b from-white to-blue-50 p-4">
       <div className="text-center mt-10">
-        <h2 className="text-blue-500">Sacate las dudas</h2>
+        <h2 className="text-cyan-400">Sacate las dudas</h2>
         <h1 className="text-3xl font-bold text-blue-800 mt-2 drop-shadow-[5px_5px_0px_rgba(212,228,244,1)]">
           Preguntas Frecuentes
         </h1>
       </div>
-      <div className="mt-10 w-full max-w-2xl text-blue-950 drop-shadow-[5px_5px_0px_rgba(212,228,244,1)]">
+      <div className="mt-10 w-full max-w-2xl text-blue-950 drop-shadow-[6px_6px_0px_rgba(212,228,244,1)]">
         {faqs.map((faq, index) => (
           <div key={index} className="mb-4">
             <button

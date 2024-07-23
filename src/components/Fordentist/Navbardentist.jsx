@@ -17,7 +17,7 @@ const Navbardentist = () => {
           </div>
           <div className="flex flex-col text-center items-center lg:text-left">
             <a href="#" className="text-lg   text-center items-center">
-              Odontologia Integral
+            ODONTOLOGIA INTEGRAL
             </a>
             <span className="text-xs">Salud & Estetica Dental</span>
           </div>
@@ -58,16 +58,16 @@ const Navbardentist = () => {
         </div>
 
         {isOpen && (
-          <div className="flex justify-between px-5 py-4">
-          <div className="grid grid-cols-2 gap-5 justify-items-center">
-          <img
-                src="../../../public/assets/Fordentist/facebook.svg"
+          <div className="flex justify-between px-4 py-5">
+            <div className="grid grid-cols-2 gap-5 justify-items-center">
+              <img
+                src="../../../public/assets/Fordentist/linkedin.png"
                 alt="facebook"
                 width={30}
                 height={30}
               />
               <img
-                src="../../../public/assets/Fordentist/linkedin.png"
+                src="../../../public/assets/Fordentist/gmail.svg"
                 alt="linkedin"
                 width={30}
                 height={30}
@@ -79,37 +79,37 @@ const Navbardentist = () => {
                 height={30}
               />
               <img
-                src="../../../public/assets/Fordentist/gmail.svg"
+                src="../../../public/assets/Fordentist/facebook.svg"
                 alt="instagram"
                 width={30}
                 height={30}
               />
-               <button className="px-3 py-3 col-span-2 text-gray-500 bg-white font-semibold rounded-lg mt-2 border border-gray-700 ml-5 hover:text-black">
+              <button className="px-4 py-0 col-span-2 text-gray-500 bg-white font-xs rounded-lg -mt-4 border border-gray-700 ml-2 hover:text-black">
                 Saca tu turno
               </button>
-          </div>
-            <div className="lg:hidden mt-4 px-2 flex flex-col items-end">
+            </div>
+            <div className="lg:hidden -mt-3 px-1  flex flex-col items-end">
               <Link
                 to="/"
-                className="flex items-center text-blue-500 hover:text-black mb-2"
+                className="flex items-center text-blue-500 hover:text-black mb-6"
               >
                 Inicio
               </Link>
               <Link
                 to="/services"
-                className="flex items-center text-blue-500 hover:text-black mb-2"
+                className="flex items-center text-blue-500 hover:text-black mb-6"
               >
                 Servicios
               </Link>
               <Link
                 to="/about"
-                className="flex items-center text-blue-500 hover:text-black mb-2"
+                className="flex items-center text-blue-500 hover:text-black mb-6"
               >
                 Nosotros
               </Link>
               <Link
                 to="/contact"
-                className="flex items-center text-blue-500 hover:text-black mb-2"
+                className="flex items-center text-blue-500 hover:text-black mb-6"
               >
                 Contacto
               </Link>
