@@ -38,7 +38,7 @@ const Features = () => {
 
     return (
         <>
-            <section id="features" className="mt-16 lg:max-w-screen-xl md:px-8 lg:mx-auto" ref={sectionRef}>
+            <section id="features" className="mt-6 lg:pt-20 lg:max-w-screen-xl md:px-8 lg:mx-auto" ref={sectionRef}>
                 <div className="container">
                     <div className="w-full lg:flex items-center justify-center">
                         <div className="text-center feature-title opacity-0 translate-y-10 transition-opacity duration-500 ease-in-out">
