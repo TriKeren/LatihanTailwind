@@ -32,7 +32,7 @@ const TestimonialSlider = () => {
   return (
     <div className="mt-[30px] px-4 md:px-12 lg:px-24 py-2 lg:mt-[30px] lg:max-w-screen-xl mx-auto">
       <header className="flex w-full lg:flex-row flex-col items-center gap-5">
-        <h1 className="lg:text-[40px] text-[36px] bg-[#B9FF66] px-4 text-kanit">Testimonials</h1>
+        <h1 className="lg:text-[40px] text-[36px] bg-[#B9FF66] rounded-[7px] px-4 text-kanit">Testimonials</h1>
         <p className="text-xl mt-[30px] lg:max-w-[50%] lg:text-start text-center font-normal">
           At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:
         </p>
@@ -74,7 +74,7 @@ const TestimonialSlider = () => {
           </div>
         </div>
       </div>
-      <style jsx>{`
+      <style>{`
         .quote-container {
           position: relative;
         }

@@ -16,7 +16,7 @@ const TeamList = ({ icon, imgURL, name, job, desc }) => {
           </div>
         </div>
   
-        <div className="mt-10 border-t-2 text-kenit leading-5" >
+        <div className="mt-10 border-t-2 leading-5" >
           <p className="mt-3">{desc}</p>
         </div>
       </div>
