@@ -22,7 +22,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  
   return (
     <nav
       className={`bg-[#043873] shadow-md py-4 sticky top-0 z-50 transition-all duration-300 ${
