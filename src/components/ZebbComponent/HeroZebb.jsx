@@ -37,7 +37,7 @@ const HeroZebb = () => {
             <div className="lg:max-w-screen-xl mx-auto mt-[60px] md:mt-10 lg:mt-32 overflow-x-hidden overflow-y-hidden font-merriweather">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-24 lg:mx-14">
                     <div className={`flex flex-col items-center lg:mt-12 lg:items-start gap-10 md:gap-12 lg:gap-10 ${isAnimated ? 'slide-up' : ''}`}>
-                        <h1 className="text-5xl md:text-5xl w-96 md:w-96 text-center lg:text-start text-black font-bold leading-snug md:leading-tight lg:leading-snug">
+                        <h1 className="text-5xl md:text-5xl w-96 md:w-96 text-center lg:text-start text-[#020E35] font-bold leading-snug md:leading-tight lg:leading-snug">
                             We help to Create <span className="bg-[#FF5678] text-white inline-block py-0">Brands</span> With Coffee
                         </h1>
                         <button className="p-4 bg-[#020E35] text-white font-medium px-5 lg:px-10 shadow-sm shadow-black">See Our Work</button>

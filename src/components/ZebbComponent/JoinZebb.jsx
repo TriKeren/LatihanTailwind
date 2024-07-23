@@ -56,10 +56,10 @@ const JoinZebb = () => {
                     <img src="/public/assets/ZebbDigitalAgency/meditation.png" className="w-11/12 mx-10 mt-16" alt="Meditation" />
                 </div>
                 <div
-                    className={`mx-14 text-black transform transition-transform duration-700 ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
+                    className={`mx-14 text-[#020E35] transform transition-transform duration-700 ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
                     ref={textRef}
                 >
-                    <div className="text-black flex justify-center lg:justify-start text-center lg:text-start">
+                    <div className="text-[#020E35] flex justify-center lg:justify-start text-center lg:text-start">
                         <h1 className="text-4xl font-bold w-80">
                             Join Our Newsletters & get Coffe 
                             <span className="relative inline-block">
@@ -68,7 +68,7 @@ const JoinZebb = () => {
                         </h1>
                     </div>
 
-                    <div className="mt-14">
+                    <div className="mt-14 text-[#020E35]">
                         <form action="" className="flex flex-col gap-6 lg:mx-1">
                             <div className="flex flex-col">
                                 <label htmlFor="name" className="font-poppins font-medium">Name :</label>

@@ -14,11 +14,11 @@ const FooterZebb = () => {
             <div className="absolute w-full md:left-20 lg:w-4/12 lg:-left-16">
                 <img src="/public/assets/ZebbDigitalAgency/IllustrationFooter.svg" alt="" />
             </div>
-            <div className="absolute w-full lg:w-4/12 top-[850px] md:top-[650px] lg:top-0 md:left-20 lg:left-[900px] lg:top-0 lg:rotate-180">
+            <div className="absolute w-full lg:w-4/12 top-[850px] md:top-[650px] lg:top-0 md:left-20 lg:left-[900px] lg:rotate-180">
                 <img src="/public/assets/ZebbDigitalAgency/IllustrationFooter.svg" alt="" />
             </div>
             <div className="relative max-w-screen-xl mx-auto py-10 px-4 lg:px-8 bg-cover bg-center">
-                <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 text-black">
+                <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 text-[#020E35]">
                     <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-4 lg:mx-6">
                         <div className="flex items-center gap-2">
                             <img src="/public/assets/ZebbDigitalAgency/Logo.svg" alt="Logo" />
@@ -32,7 +32,7 @@ const FooterZebb = () => {
                             <img src="/public/assets/ZebbDigitalAgency/Twitter.svg" className="w-7" alt="" />
                         </div>
                         <div className="flex flex-col text-center lg:text-left gap-1 font-merriweather">
-                            <h1 className="text-2xl font-bold text-black">Address</h1>
+                            <h1 className="text-2xl font-bold text-[#020E35]">Address</h1>
                             <p>+123 456 789</p>
                             <p className="w-36">877 The Bronx, NY 14568 USA</p>
                         </div>
@@ -40,34 +40,34 @@ const FooterZebb = () => {
 
                     <div className="flex flex-col items-center lg:items-start mt-2 lg:mx-14 gap-2 font-merriweather">
                         <h1 className="text-2xl font-bold text-black">Services</h1>
-                        <a href="" className="text-black text-[14px]"><p className="lg:w-72">Web design & development</p></a>
-                        <a href="" className="text-black text-[14px]"><p className="lg:w-72">Social media management</p></a>
-                        <a href="" className="text-black text-[14px]"><p className="lg:w-72">Search Engine Optimization</p></a>
-                        <a href="" className="text-black text-[14px]"><p className="lg:w-72">Social media marketing</p></a>
-                        <a href="" className="text-black text-[14px]"><p className="lg:w-72">Content writing</p></a>
-                        <a href="" className="text-black text-[14px]"><p className="lg:w-72">Video production</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p className="lg:w-72">Web design & development</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p className="lg:w-72">Social media management</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p className="lg:w-72">Search Engine Optimization</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p className="lg:w-72">Social media marketing</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p className="lg:w-72">Content writing</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p className="lg:w-72">Video production</p></a>
                     </div>
 
                     <div className="flex flex-col items-center lg:items-start mt-2 lg:mx-14 gap-2 font-merriweather">
                         <h1 className="text-2xl font-bold text-black">Company</h1>
-                        <a href="" className="text-black text-[14px]"><p>Case Studies</p></a>
-                        <a href="" className="text-black text-[14px]"><p className="lg:w-72">Web design & Services</p></a>
-                        <a href="" className="text-black text-[14px]"><p>About</p></a>
-                        <a href="" className="text-black text-[14px]"><p>Contact Us</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p>Case Studies</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p className="lg:w-72">Web design & Services</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p>About</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p>Contact Us</p></a>
                     </div>
 
                     <div className="flex flex-col items-center lg:items-start mt-2 lg:mx-12 gap-2 font-merriweather">
                         <h1 className="text-2xl font-bold text-black">About Us</h1>
-                        <a href="" className="text-black text-[14px]"><p>Featured artists</p></a>
-                        <a href="" className="text-black text-[14px]"><p>The Portal</p></a>
-                        <a href="" className="text-black text-[14px]"><p>Live events</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p>Featured artists</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p>The Portal</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p>Live events</p></a>
                     </div>
 
                     <div className="flex flex-col items-center lg:items-start mt-2 lg:mx-8 gap-2 font-merriweather">
                         <h1 className="text-2xl font-bold text-black">Legal Stuff</h1>
-                        <a href="" className="text-black text-[14px]"><p>Shipping & Delivery</p></a>
-                        <a href="" className="text-black text-[14px]"><p>Terms & Conditions</p></a>
-                        <a href="" className="text-black text-[14px]"><p>Privacy & Policy</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p>Shipping & Delivery</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p>Terms & Conditions</p></a>
+                        <a href="" className="text-[#020E35] text-[14px]"><p>Privacy & Policy</p></a>
                     </div>
                 </div>
             </div>
