@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <img
             src="public/assets/saaS-landingpages/Logo.svg"
-            className="h-10 w-2/4 md:w-2/3"
+            className="h-10 w-2/4 lg:w-2/3 md:w-[70%]"
           />
         </div>
         <div className="hidden lg:flex space-x-6 items-center gap-10 font-[DM Sans] text-white font-medium">
@@ -81,7 +81,7 @@ const Navbar = () => {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth="2"
+                strokeWidth="3"
                 d="M4 6h16M4 12h16m-7 6h7"
               ></path>
             </svg>
