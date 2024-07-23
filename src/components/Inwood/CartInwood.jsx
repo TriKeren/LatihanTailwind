@@ -5,7 +5,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 const CartInwood = () => {
   return (
     <section className="bg-gray-100">
-    <h2 className="text-4xl font-bold text-center mb-4 text-green-600">Special Package</h2>
+    <h2 className="text-4xl font-bold font-serif text-center mb-4 text-green-600">Special Package</h2>
     <div className="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
       <div className="flex flex-wrap -mx-4">
         {/* Card Larkin Wood Full Set yang lebih besar */}

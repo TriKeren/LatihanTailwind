@@ -50,13 +50,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row w-full mt-10 gap-4">
-          <div className="flex flex-col w-full max-sm:items-center">
+          <div className="flex flex-col w-full max-sm:items-center lg:items-start">
             <div className="bg-[#B9FF66] w-[180px] rounded-[10px] flex justify-center">
               <h1 className="text-[30px] max-sm:text-[28px] font-grotesk">
                 Contact Us:
               </h1>
             </div>
-            <div className="justify-center text-center text-white font-extralight mt-[30px]">
+            <div className="justify-center lg:justify-start text-center lg:text-left text-white font-extralight mt-[30px]">
               <span>Email: info@positivus.com</span>
               <p>Address: 1234 Main St</p>
               <p>Moonstone City, Startbust State 123456</p>

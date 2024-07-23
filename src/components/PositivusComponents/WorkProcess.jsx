@@ -74,22 +74,23 @@ const WorkProcess = () => {
                     }
                 `}
             </style>
-            <section id="WorkProcess" className="font-space-grotesk mt-20 lg:mt-16 lg:max-w-screen-xl lg:mx-auto" ref={sectionRef}>
-                <div className="container">
-                    <div className="w-full items-center px-4 lg:px-24">
-                        <header className="flex w-full lg:flex-row flex-col items-center gap-5 mx-auto text-center">
-                            <h1 className="lg:text-[40px] text-[36px] bg-[#B9FF66] px-4 mt-[30px] mx-11 rounded-[7px]">
-                                Our Working Process 
+            <section id="WorkProcess" className="font-space-grotesk mt-[30px] lg:mt-16 lg:max-w-screen-xl lg:mx-auto" ref={sectionRef}>
+                <div className="container px-4 lg:px-24">
+                    <div className="w-full flex flex-col items-center lg:items-start">
+                        <header className="flex w-full lg:flex-row flex-col items-center gap-5">
+                            <h1 className="text-[32px] lg:text-[40px] bg-[#B9FF66] px-4 py-2 rounded-[10px]">
+                                <span className="block text-center lg:hidden">Our Working <br /> Process</span>
+                                <span className="hidden lg:block">Our Working Process</span>
                             </h1>
-                            <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal mt-[30px]">
+                            <p className="text-xl lg:max-w-[50%] font-normal mt-[10px]">
                                 Step-by-Step Guide to Achieving Your Business Goals
                             </p>
                         </header>
-                        <div className="mt-[30px] md:mx-20 lg:mt-[30px]">
+                        <div className="w-full md:mx-0 lg:mt-[20px]">
                             {[0, 1, 2, 3, 4].map((index) => (
                                 <div
                                     key={index}
-                                    className={`WorkProcess-item border-b-4 border-[#141C24] rounded-[45px] md:px-4 px-4 my-[20px] transition-all duration-500 ease-in-out ${activeIndex === index ? 'bg-[#B9FF66]' : 'bg-white'} opacity100 translate-y-10`}
+                                    className={`WorkProcess-item border-b-4 border-[#141C24] rounded-[45px] md:px-4 px-4 my-[20px] transition-all duration-500 ease-in-out ${activeIndex === index ? 'bg-[#B9FF66]' : 'bg-white'} opacity-100 translate-y-10`}
                                 >
                                     <div className="flex justify-between py-4">
                                         <p className="text-[18px] text-[#141C24] font-bold md:text-xl mt-1">{texts[index]}</p>
