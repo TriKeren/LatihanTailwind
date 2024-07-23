@@ -49,7 +49,7 @@ const Blog = () => {
 
     return (
         <>
-            <section id='blog' className="mt-32 px-4 lg:max-w-screen-xl lg:mx-auto md:px-8 lg:px-24 lg:mt-28">
+            <section id='blog' className="pt-24 px-4 lg:max-w-screen-xl lg:mx-auto md:px-8 lg:px-24 lg:mt-28">
                 <div className="container">
                     <div className="w-full lg:flex items-center justify-center">
                         <div className="text-center">
