@@ -42,13 +42,13 @@ const Hero = () => {
                     style={animationStyles(0)}
                     className="w-full md:w-full flex flex-col items-start space-y-4 lg:space-x-0"
                 >
-                    <h1 className="text-[36px] lg:text-[50px] lg:leading-[70px] md:text-6xl font-bold text-white mb-[24px] md:mb-5 lg:mb-7 text-center lg:text-start">
+                    <h1 className="text-[36px] lg:text-[50px] lg:leading-[70px] md:text-[54px] font-bold text-white mb-[24px] md:mb-5 lg:mb-7 text-center lg:text-start">
                         Get More Done with whitepace
                     </h1>
                     <p
                         ref={textRef}
                         style={animationStyles(0.2)}
-                        className="text-[18px] lg:text-[18px] md:text-lg text-white text-center lg:text-start"
+                        className="text-[18px] lg:text-[18px] md:w-[120%] lg:w-full md:ml-[-55px] md:text-[18px] text-white text-center lg:text-start"
                     >
                         Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks
                     </p>
@@ -57,7 +57,7 @@ const Hero = () => {
                         style={animationStyles(0.4)}
                         className="w-full flex justify-center lg:justify-start"
                     >
-                        <button className="px-[40px] flex items-center text-[18px] lg:px[20px] lg:py-[20px] py-[20px] font-medium bg-[#4F9CF9] text-[#FFE492] rounded-[8px] hover:bg-[#FFE492] hover:text-[#043873] mt-[60px] lg:mt-10 md:mt-10 md:mb-5 transition-colors duration-300">
+                        <button className="px-[40px] flex items-center text-[18px] lg:px[20px] md:px[20px] lg:py-[20px] md:py-[20px] py-[20px] font-medium bg-[#4F9CF9] text-[#FFE492] rounded-[8px] hover:bg-[#FFE492] hover:text-[#043873] mt-[60px] lg:mt-10 md:mt-10 md:mb-5 transition-colors duration-300">
                             Try TasKey Free 
                             <img className='w-4 ml-2' src="public/assets/saaS-landingpages/arrowright.svg" alt="" />
                         </button>

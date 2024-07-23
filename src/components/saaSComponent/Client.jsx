@@ -42,11 +42,17 @@ const Client = () => {
         <div className="bg-white py-12 md:py-16 lg:py-12">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <h1 className="relative text-[36px] w-[80%] ml-[40px] md:text-6xl font-bold text-center text-[#212529] mb-10">
-                <span className="relative z-10">What Our Clients Say</span>
+                <span className="relative z-10 md:hidden text-[54px] ml-[-5%] lg:block">What Our Clients Say</span>
+                <span className="relative z-10 md:block text-[54px] lg:hidden hidden w-[120%] ml-[-5%]">See what our trusted users Say</span>
                     <img
                             src="public/assets/saaS-landingpages/bg-text.svg"
                             alt=""
-                            className="absolute inset-0 w-[40%] lg:w-[10%] lg:h-[60%] lg:ml-[690px] lg:mt-[45px] h-[40%] mt-[80px] ml-[60px] object-cover opacity-100 z-0"
+                            className="absolute inset-0 w-[40%]  md:hidden lg:block lg:w-[10%] lg:h-[60%] lg:ml-[690px] lg:mt-[45px] h-[40%] mt-[80px] ml-[60px] object-cover opacity-100 z-0"
+                    />
+                    <img
+                            src="public/assets/saaS-landingpages/bg-text.svg"
+                            alt=""
+                            className="absolute inset-0 w-[45%] ml-[300px] mt-[40px] md:block lg:hidden hidden  object-cover opacity-100 z-0"
                     />
                 </h1>
                 

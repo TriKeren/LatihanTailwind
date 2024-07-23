@@ -25,8 +25,8 @@ const Your = () => {
     };
 
     return (
-        <div className="relative bg-[#043873] py-20 md:py-16 lg:py-20">
-            <div className="absolute hidden lg:block bottom-[-60px] right-[90px] w-full h-[130%]">
+        <div className="relative bg-[#043873] py-20 md:py-20 lg:py-20">
+            <div className="absolute hidden lg:block md:block opacity-40 bottom-[-60px] right-[90px] w-full h-[130%]">
                 <img src="public/assets/saaS-landingpages/bg-your.png" alt="" className="h-full object-cover" />
             </div>
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8 relative z-10 flex flex-col items-start lg:items-center">
@@ -35,13 +35,13 @@ const Your = () => {
                         <h1
                             ref={ref}
                             style={animationStyles}
-                            className="relative text-[36px] md:text-6xl lg:text-[72px] md:mb-14 font-bold text-white mb-7 lg:mb-10"
+                            className="relative text-[36px] md:text-[54px] md:w-[90%] lg:w-full lg:text-[72px] md:mb-14 font-bold text-white mb-7 lg:mb-10"
                         >
                             <span className="relative z-10">Your work, everywhere you are</span>
                             <img
                                 src="public/assets/saaS-landingpages/bg2-text.svg"
                                 alt=""
-                                className="absolute inset-0 mt-[140px] lg:mt-[50px] ml-0 lg:ml-[860px] w-[90%] lg:w-[25%] h-auto object-cover opacity-100 z-0"
+                                className="absolute inset-0 mt-[140px] md:w-[35%] md:mt-[140px] lg:mt-[70px] ml-0 lg:ml-[860px] w-[90%] lg:w-[25%] h-auto object-cover opacity-100 z-0"
                             />
                         </h1>
                         <p
