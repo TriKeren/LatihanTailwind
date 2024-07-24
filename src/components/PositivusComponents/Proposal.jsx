@@ -23,7 +23,7 @@ const Proposal = () => {
               services can help your business grow and succeed online.
             </p>
             <div className="mt-5 flex justify-center md:justify-start">
-              <button className="w-[290px] h-[68px] lg:w-[288px] lg:h-[68px] text-white bg-black rounded-lg px-3 py-5 hover:bg-green hover:text-dark duration-150 ease">
+              <button className="w-[290px] h-[68px] lg:w-[288px] lg:h-[68px] text-white bg-[#191A23] rounded-[14px] px-3 py-5 hover:bg-green hover:text-dark duration-150 ease">
                 Get your free proposal
               </button>
             </div>

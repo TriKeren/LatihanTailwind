@@ -25,6 +25,14 @@ const Navbar = () => {
     };
   }, []);
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false); 
+    }
+  };
+
   return (
     <>
       <style>
@@ -36,18 +44,18 @@ const Navbar = () => {
           }
         `}
       </style>
-      <nav className={`font-space-grotesk whitespace-nowrap px-4 md:max-w-screen-xl lg:max-w-screen-xl mx-auto ${isSticky ? 'sticky top-0 z-50 backdrop-blur-md bg-white/80 shadow-md' : ''}`}>
+      <nav className={`font-space-grotesk px-4 md:px-4 md:whitespace-nowrap lg:mt-3 lg:px-24 lg:max-w-screen-xl mx-auto ${isSticky ? 'sticky top-0 z-50 backdrop-blur-md bg-white/80 shadow-md' : ''}`}>
         <div className="container mx-auto px-4 flex items-center justify-between h-16">
           <div className="flex items-center">
             <img src="/public/assets/positivus/logo.svg" alt="Logo" className="h-8" />
           </div>
           <div className="hidden md:flex items-center space-x-4 gap-10 font-semibold">
-            <a href="#about" className="hover:text-[#191A23]">About Us</a>
-            <a href="#service" className="hover:text-[#191A23]">Service</a>
-            <a href="#price" className="hover:text-[#191A23]">Use Cases</a>
-            <a href="#price" className="hover:text-[#191A23]">Pricing</a>
-            <a href="#price" className="hover:text-[#191A23]">Blog</a>
-            <button className="border border-gray-500 hover:bg-[#191A23] hover:text-white px-4 py-2 rounded-[14px]">Request a quote</button>
+            <a href="#about" onClick={() => scrollToSection('about')} className="hover:text-[#191A23]">About Us</a>
+            <a href="#service" onClick={() => scrollToSection('service')} className="hover:text-[#191A23]">Service</a>
+            <a href="#Case" onClick={() => scrollToSection('Case')} className="hover:text-[#191A23]">Use Cases</a>
+            <a href="#price" onClick={() => scrollToSection('price')} className="hover:text-[#191A23]">Pricing</a>
+            <a href="#blog" onClick={() => scrollToSection('blog')} className="hover:text-[#191A23]">Blog</a>
+            <button onClick={() => scrollToSection('quote')} className="border border-gray-500 hover:bg-[#191A23] hover:text-white px-4 py-2 rounded-[14px]">Request a quote</button>
           </div>
           <div className="md:hidden">
             <button onClick={toggleMenu} className="text-gray-700 focus:outline-none">
@@ -57,12 +65,12 @@ const Navbar = () => {
         </div>
         {isOpen && (
           <div className="md:hidden bg-white shadow-lg">
-            <a href="#about" className="block px-4 py-2 text-gray-700 hover:bg-gray-200">About Us</a>
-            <a href="#service" className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Service</a>
-            <a href="#price" className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Use Cases</a>
-            <a href="#price" className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Pricing</a>
-            <a href="#price" className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Blog</a>
-            <button className="block w-full text-left bg-[#191A23] hover:bg-[#101116] text-white px-4 py-2 rounded mt-2">Request a quote</button>
+            <a href="#about" onClick={() => scrollToSection('about')} className="block px-4 py-2 text-gray-700 hover:bg-gray-200">About Us</a>
+            <a href="#service" onClick={() => scrollToSection('service')} className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Service</a>
+            <a href="#Case" onClick={() => scrollToSection('Case')} className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Use Cases</a>
+            <a href="#price" onClick={() => scrollToSection('price')} className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Pricing</a>
+            <a href="#blog" onClick={() => scrollToSection('blog')} className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Blog</a>
+            <button onClick={() => scrollToSection('quote')} className="block w-full text-left bg-[#191A23] hover:bg-[#101116] text-white px-4 py-2 rounded mt-2">Request a quote</button>
           </div>
         )}
       </nav>

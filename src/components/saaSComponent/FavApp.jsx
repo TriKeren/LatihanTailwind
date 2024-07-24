@@ -59,14 +59,14 @@ const FavApp = () => {
                     <h1
                         ref={headingRef}
                         style={animationStyles(isHeadingVisible)}
-                        className="text-[36px] md:text-6xl lg:text-[62px] font-bold text-white mb-5 md:mb-5 lg:mb-7 text-center mt-10 md:text-center lg:text-start"
+                        className="text-[36px] lg:leading-[70px] md:text-[55px] lg:text-[62px] font-bold text-white mb-5 md:mb-5 lg:mb-7 text-center mt-10 md:text-center lg:text-start"
                     >
                         Work with Your Favorite Apps Using whitepace
                     </h1>
                     <p
                         ref={paragraphRef}
                         style={animationStyles(isParagraphVisible)}
-                        className="text-[18px] w-[77%] lg:w-full ml-[35px] lg:ml-0 md:font-medium md:text-2xl lg:text-[14.5px] lg:font-medium text-white text-center md:text-center lg:text-start"
+                        className="text-[18px] w-[77%] lg:w-full md:w-[100%] md:ml-[-0%] ml-[35px] lg:ml-0 md:font-medium md:text-[18px] lg:text-[14.5px] lg:font-medium text-white text-center md:text-center lg:text-start"
                     >
                         Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.
                     </p>

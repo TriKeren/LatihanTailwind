@@ -32,7 +32,7 @@ const NewsLetter = () => {
             <section
                 ref={newsLetterRef}
                 id="newsLetter"
-                className="mt-14 lg:mt-16 lg:max-w-screen-xl lg:px-24 lg:mx-auto opacity-0 translate-y-10 transition-all duration-700 ease-in-out"
+                className="mt-14 lg:pt-32 lg:max-w-screen-xl lg:px-24 lg:mx-auto opacity-0 translate-y-10 transition-all duration-700 ease-in-out"
             >
                 <div className="container">
                     <div className="flex justify-center">

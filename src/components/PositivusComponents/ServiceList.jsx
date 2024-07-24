@@ -9,6 +9,7 @@ const ServiceList = () => {
       btn: "learn more",
       colors: "bg-[#F3F3F3]",
       titleColor: "bg-[#B9FF66]",
+      arrow : "/public/assets/positivus/icon1.svg",
     },
     {
       imgURL: "/public/assets/positivus/service2.png",
@@ -16,20 +17,23 @@ const ServiceList = () => {
       btn: "learn more",
       colors: "bg-[#B9FF66]",
       titleColor: "bg-[#F3F3F3]",
+      arrow : "/public/assets/positivus/icon2.svg",
     },
     {
-      imgURL: "/public/assets/positivus/service4.png",
+      imgURL: "/public/assets/positivus/service3.png", 
       title: "Social Media<br>Marketing",
       btn: "learn more",
       colors: "bg-[#191A23]",
       titleColor: 'bg-[#F3F3F3]',
+      arrow : "/public/assets/positivus/icon3.svg",
     },
     {
-      imgURL: "/public/assets/positivus/service3.png",
+      imgURL:  "/public/assets/positivus/service4.png",
       title: "Email<br>Marketing",
       btn: "learn more",
       colors: "bg-[#F3F3F3]",
       titleColor: "bg-[#B9FF66]",
+      arrow : "/public/assets/positivus/icon4.svg",
     },
     {
       imgURL: "/public/assets/positivus/service5.png",
@@ -37,6 +41,7 @@ const ServiceList = () => {
       btn: "learn more",
       colors: "bg-[#B9FF66]",
       titleColor: "bg-[#F3F3F3]",
+      arrow : "/public/assets/positivus/icon5.svg",
     },
     {
       imgURL: "/public/assets/positivus/service6.png",
@@ -44,6 +49,7 @@ const ServiceList = () => {
       btn: "learn more",
       colors: "bg-[#191A23]",
       titleColor: 'bg-[#F3F3F3]',
+      arrow : "/public/assets/positivus/icon6.svg",
     },
   ];
 
@@ -61,7 +67,7 @@ const ServiceList = () => {
       <div className="font-space-grotesk px-4 md:px-24 py-2 lg:mt-3 lg:max-w-screen-xl mx-auto">
         <div className="flex w-full lg:justify-start flex-col" id="service">
           <header className="w-full flex flex-wrap flex-1 gap-7 justify-center lg:justify-start mt-3">
-            <h1 className="lg:text-[40px] text-[36px] px-4 py-2 bg-[#B9FF66] whitespace-nowrap">
+            <h1 className="lg:text-[40px] text-[36px] px-4 py-2 bg-[#B9FF66] rounded-[7px] whitespace-nowrap">
               Services
             </h1>
             <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal">

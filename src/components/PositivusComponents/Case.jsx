@@ -48,9 +48,9 @@ const Case = () => {
           }
         `}
       </style>
-      <div className="font-space-grotesk px-4 md:px-24 py-2 lg:mt-3 lg:max-w-screen-xl mx-auto">
+      <div className="font-space-grotesk px-4 md:px-24 py-2 lg:mt-[30px] lg:max-w-screen-xl mx-auto" id="Case">
         <header className="flex w-full lg:flex-row flex-col items-center gap-5">
-          <h1 className="lg:text-[40px] text-[36px] bg-[#B9FF66] px-4">
+          <h1 className="lg:text-[40px] text-[36px] bg-[#B9FF66] rounded-[7px] px-4">
             Case Studies
           </h1>
           <p className="text-xl lg:max-w-[50%] lg:text-start text-center font-normal">
@@ -63,8 +63,9 @@ const Case = () => {
           <div className="flex flex-row transition-transform duration-300" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
             {caseStudies.map((items, index) => (
               <div key={index} className="flex-shrink-0 w-full lg:w-1/3 px-10 py-6">
-                <div className="text-white cursor-pointer">
+                <div className="text-white cursor-pointer flex items-center">
                   <h1 className="font-light w-[70%] leading-6">{items.title}</h1>
+                  <div className="lg:h-48 lg:border-r-2 border-white ml-4"></div>
                 </div>
                 <div className="flex gap-5 items-center mt-8 hover:scale-110 duration-150">
                   <a href="#" className="text-[#B9FF66] font-light">{items.btnLabel}</a>

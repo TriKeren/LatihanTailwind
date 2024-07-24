@@ -60,7 +60,7 @@ const Faq = () => {
     }, []);
 
     return (
-        <section id="faq" className="mt-24 lg:max-w-screen-xl lg:mx-auto px-4 md:px-8 lg:px-24 flex justify-center">
+        <section id="faq" className="pt-28 lg:max-w-screen-xl lg:mx-auto px-4 md:px-8 lg:px-24 flex justify-center">
             <div className="w-full flex flex-col items-center">
                 <div className="text-center mb-14">
                     <h1 className="text-[#141C24] text-3xl font-semibold">Frequently Asked Questions</h1>

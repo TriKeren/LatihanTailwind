@@ -49,18 +49,18 @@ const Work = () => {
                 <div className="w-[80%] lg:w-full md:w-3/4 flex flex-col items-start lg:items-start space-y-10 lg:space-y-5 order-1 lg:order-2">
                 <h1
                         id="work-title"
-                        className={`relative text-[36px] md:text-7xl lg:text-[72px] font-bold text-[#212529] mb-3 md:mb-5 lg:mb-7 text-center md:text-center lg:text-start transition-all duration-1000 transform ${isTitleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                        className={`relative text-[36px] md:text-[54px] lg:left-0 md:left-[16%] lg:text-[72px] font-bold text-[#212529] mb-3 md:mb-5 lg:mb-7 text-center md:text-center lg:text-start transition-all duration-1000 transform ${isTitleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                     >
                         <span className="relative z-10">Work Together</span>
                         <img
                             src="public/assets/saaS-landingpages/bg-text.svg"
                             alt=""
-                            className="absolute ml-24 lg:ml-[210px] mt-7 lg:mt-[57px] inset-0 w-[80%] lg:w-[70%] lg:h-[40%] h-auto object-cover opacity-100 z-0"
+                            className="absolute ml-24 lg:ml-[210px] md:ml-[150px] mt-7 lg:mt-[70px] md:mt-[50px] inset-0 w-[80%] lg:w-[70%] lg:h-[40%] h-auto object-cover opacity-100 z-0"
                         />
                     </h1>
                     <p
                         id="work-text"
-                        className={`text-[18px] md:font-medium md:text-2xl lg:text-[16px] lg:font-medium text-[#212529] text-center md:text-center lg:text-start transition-all duration-1000 transform ${isTextVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                        className={`text-[18px] md:w-[140%] lg:w-full md:ml-[-20%] lg:ml-0 md:font-medium md:text-[18px] lg:text-[16px] lg:font-medium text-[#212529] text-center md:text-center lg:text-start transition-all duration-1000 transform ${isTextVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                     >
                         With whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.
                     </p>
@@ -68,7 +68,7 @@ const Work = () => {
                         id="work-button"
                         className={`w-full flex justify-center lg:justify-start transition-all duration-1000 transform ${isButtonVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                     >
-                        <button className="px-[40px] flex items-center text-[18px] lg:px[20px] lg:py-[20px] py-[20px] font-medium bg-[#4F9CF9] text-[#FFE492] rounded-[8px] hover:bg-[#FFE492] hover:text-[#043873] mt-[60px] lg:mt-10 md:mt-10 md:mb-5 transition-colors duration-300">
+                        <button className="px-[40px] flex items-center text-[18px] lg:px[20px] lg:py-[20px] py-[20px] font-medium bg-[#4F9CF9] text-[#FFE492] rounded-[8px] hover:bg-[#FFE492] hover:text-[#043873] mt-[60px] lg:mt-10 md:mt-10 md:mb-20 transition-colors duration-300">
                             Try it now 
                             <img className='w-4 ml-2' src="public/assets/saaS-landingpages/arrowright.svg" alt="" />
                         </button>

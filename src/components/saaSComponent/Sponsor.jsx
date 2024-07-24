@@ -36,7 +36,7 @@ const Sponsor = () => {
                     <img
                             src="public/assets/saaS-landingpages/bg-text.svg"
                             alt=""
-                            className="absolute inset-0 w-[54%] lg:w-[25%] mt-[40px] ml-[135px] lg:ml-[570px] h-auto object-cover opacity-100 z-0"
+                            className="absolute inset-0 w-[54%] md:w-[50%] md:ml-[40%] md:mt-[30px] lg:w-[25%] mt-[40px] ml-[135px] lg:ml-[570px] h-auto object-cover opacity-100 z-0"
                         />
                 </h2>
                 <div className="w-full lg:flex lg:flex-wrap justify-center items-center lg:w-10/12 lg:mx-auto">
