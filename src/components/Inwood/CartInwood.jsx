@@ -34,6 +34,7 @@ const CartInwood = () => {
               appearance, function and quality all together, offering you with the best
               experience.
             </p>
+            <hr className="border-[#07484A] group-hover:border-white mb-5"/>
             <a href="#" className="text-blue-600 hover:text-blue-800">
               See More
             </a>
