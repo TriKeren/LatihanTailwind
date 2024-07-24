@@ -68,11 +68,11 @@ const Faq = () => {
                 </div>
                 <div className="items-center w-full lg:w-4/5">
                     {[0, 1, 2, 3, 4].map((index) => (
-                        <div key={index} className={`faq-item border border-[#637083] rounded-lg px-4 my-4 transition-all duration-500 ease-in-out ${paragraph[index] ? 'shadow-md opacity-95' : 'shadow-lg opacity-100'}`}>
+                        <div onClick={() => handleParagraph(index)} key={index} className={`faq-item border border-[#637083] rounded-lg px-4 my-4 transition-all duration-500 ease-in-out ${paragraph[index] ? 'shadow-md opacity-95' : 'shadow-lg opacity-100'}`}>
                             <div className="flex justify-between py-4">
                                 <p className="text-lg text-[#141C24] font-semibold md:text-xl mt-1">{texts[index]}</p>
                                 <button
-                                    onClick={() => handleParagraph(index)}
+                                    
                                     className="py-2 rounded focus:outline-none transition-transform transform-gpu hover:scale-105 active:scale-95"
                                 >
                                     {paragraph[index] ? (

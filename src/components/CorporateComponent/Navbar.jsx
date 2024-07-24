@@ -54,13 +54,13 @@ const Navbar = () => {
                                 onClick={toggleMenu}
                             >
                                 <span
-                                    className={`w-[25px] h-[2px] block bg-[#344051] transition-transform duration-300 ease-in-out transform ${view ? 'rotate-45 translate-y-[6.5px]' : 'rotate-0 translate-y-0'}`}
+                                    className={`w-[25px] h-[2px] block bg-[#344051] transition-transform duration-300 ease-in-out transform ${view ? 'rotate-45 translate-y-[6.5px]' : ''}`}
                                 />
                                 <span
                                     className={`w-[15px] h-[2px] block bg-[#344051] transition-all duration-300 ease-in-out my-1 ${view ? 'opacity-0' : 'opacity-100'}`}
                                 />
                                 <span
-                                    className={`w-[25px] h-[2px] block bg-[#344051] transition-transform duration-300 ease-in-out transform ${view ? '-rotate-45 -translate-y-[5.5px]' : 'rotate-0 translate-y-0'}`}
+                                    className={`w-[25px] h-[2px] block bg-[#344051] transition-transform duration-300 ease-in-out transform ${view ? '-rotate-45 -translate-y-[5.5px]' : ''}`}
                                 />
                             </button>
                             <div
