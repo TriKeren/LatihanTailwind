@@ -19,11 +19,14 @@ const Testimonials = () => {
             &ldquo;
           </div>
           <div className="flex flex-col lg:flex-row items-center lg:items-start">
-            <div className="w-48 h-48 lg:w-80 lg:h-80 bg-gray-300 rounded-lg flex-shrink-0 mb-6 lg:mb-0 lg:mr-6"></div>
+            <div className="w-48 h-48 lg:w-80 lg:h-80 bg-gray-300 rounded-lg flex-shrink-0 mb-6 lg:mb-0 lg:mr-6">
+            <img className="mb-5 -mt-9" src="public/assets/Inwood/quote.svg" alt="Quote" />
+            </div>
             <div className="text-center lg:text-left">
               <p className="text-gray-700 text-lg italic">{testimonials[0].quote}</p>
               <p className="text-green-900 font-semibold mt-4">{testimonials[0].name}</p>
               <p className="text-gray-500">{testimonials[0].title}</p>
+              <hr className="border-[#07484A] group-hover:border-white mb-5"/>
             </div>
           </div>
         </div>
