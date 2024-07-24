@@ -77,8 +77,9 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Copyright dekstop */}
-                <div className="flex-col md:hidden lg:flex-row justify-between items-center border-t hidden  border-[#6C757D] pt-8">
+                {/* Copyright Dekstop */}
+                <div className="lg:block md:hidden hidden">
+                <div className="flex flex-col md:flex-row justify-between items-center border-t border-[#6C757D] pt-8">
                     <div className="flex flex-col md:flex-row items-center gap-4 lg:gap-10 text-center md:text-left space-y-2 md:space-y-0 md:space-x-8 mb-10 md:mb-0">
                         <a href="#" className="text-white flex gap-2 text-[16px] hover:text-[#FFE492]"><img src="public/assets/saaS-landingpages/bahasa.svg" alt="" />English</a>
                         <a href="#" className="text-white text-[16px] lg:text-sm md:text-base hover:text-[#FFE492]">Terms & Privacy</a>
@@ -92,6 +93,7 @@ const Footer = () => {
                         <img src="public/assets/saaS-landingpages/twitter.svg" alt="Twitter" className="w-[17px] lg:w-full h-[13.81px]" />
                         <img src="public/assets/saaS-landingpages/linkedin.svg" alt="LinkedIn" className="w-[17px] lg:w-full h-[13.81px]" />
                     </div>
+                </div>
                 </div>
 
                 {/* Copyright Tablet */}
@@ -115,7 +117,7 @@ const Footer = () => {
                 </div>
 
                 {/* Copyright mobile */}
-                <div className="flex-col justify-between items-center border-t lg:hidden md:hidden pt-8">
+                <div className="flex-col justify-between items-center lg:hidden md:hidden pt-8">
                     <div className="flex flex-col md:flex-row items-center gap-4 lg:gap-10 text-center md:text-left space-y-2 md:space-y-0 md:space-x-8 mb-10 md:mb-0">
                         <a href="#" className="text-white flex gap-2 text-[16px] hover:text-[#FFE492]"><img src="public/assets/saaS-landingpages/bahasa.svg" alt="" />English</a>
                         <a href="#" className="text-white text-[16px] lg:text-sm md:text-base hover:text-[#FFE492]">Terms & Privacy</a>
