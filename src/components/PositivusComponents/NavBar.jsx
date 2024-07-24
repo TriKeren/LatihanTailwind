@@ -29,7 +29,7 @@ const Navbar = () => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false); // Close the menu if it's open (for mobile view)
+      setIsOpen(false); 
     }
   };
 
