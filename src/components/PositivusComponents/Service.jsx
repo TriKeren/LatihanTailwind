@@ -24,7 +24,7 @@ const Service = ({ imgURL, title, btn, titleColor, arrow }) => {
             </div>
             <div className="w-full flex items-center justify-start pt-10">
                 <div className="relative flex items-center">
-                    <img src={arrow} alt="arrow" className="w-[48px] h-[48px] px-3 py-3 bg-black rounded-full group-hover:rotate-90 duration-200" />
+                    <img src={arrow} alt="arrow" className="w-[61px] h-[61px] px-3 py-3 group-hover:rotate-90 duration-200" />
                     <button className="ml-3 text-sm font-bold border-none cursor-pointer hidden lg:inline-block group-hover:inline-block group-hover:ml-5 group-hover:bg-black group-hover:text-white transition-all duration-200 px-4 py-2 rounded-md">
                         {btn}
                     </button>

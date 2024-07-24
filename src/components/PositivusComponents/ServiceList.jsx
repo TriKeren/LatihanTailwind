@@ -79,7 +79,7 @@ const ServiceList = () => {
             {services.map((item, index) => (
               <div
                 key={index}
-                className={`group flex flex-col justify-between p-[40px] border rounded-[30px] border-b-4 border-r-4 border-black ${item.colors}`}
+                className={`group flex flex-col justify-between p-[40px] border rounded-[30px] border-b-4 border-r-4 ${item.colors}`}
               >
                 <Service {...item} />
               </div>
