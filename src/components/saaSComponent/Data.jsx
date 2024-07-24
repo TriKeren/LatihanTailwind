@@ -45,7 +45,7 @@ const Data = () => {
                 >
                     <img
                         src="public/assets/saaS-landingpages/data.png"
-                        className="w-5/6 md:w-4/5 lg:w-3/4 h-auto"
+                        className="w-5/6 md:w-[70%] lg:w-3/4 h-auto"
                         alt="Visual Element"
                     />
                 </div>
@@ -55,7 +55,7 @@ const Data = () => {
                     className="w-full md:w-3/4 flex flex-col order-2 lg:order-1 items-start lg:items-start space-y-4"
                 >
                     <h1
-                        className="relative text-[36px] ml-7 lg:ml-0 md:text-7xl lg:text-6xl font-bold text-[#212529] mb-5 md:mb-5 lg:mb-7 text-center lg:text-start"
+                        className="relative text-[36px] md:ml-[15%] ml-7 lg:ml-0 md:text-[54px] lg:text-6xl font-bold text-[#212529] mb-5 md:mb-5 lg:mb-7 text-center lg:text-start"
                     >
                         <span className="block lg:inline">
                             100% your data
@@ -63,10 +63,10 @@ const Data = () => {
                         <img
                             src="public/assets/saaS-landingpages/bg-text.svg"
                             alt=""
-                            className="absolute inset-0 w-[80%] ml-24 lg:ml-[160px] mt-8 h-auto object-cover opacity-100 z-[-1]"
+                            className="absolute inset-0 w-[80%] md:w-[80%] md:mt-[45px] md:ml-[150px] ml-24 lg:ml-[160px] mt-8 h-auto object-cover opacity-100 z-[-1]"
                         />
                     </h1>
-                    <p className="text-[18px] md:font-medium md:text-2xl lg:text-lg text-[#212529] text-center md:text-center lg:text-start">
+                    <p className="text-[18px] md:w-[130%] md:ml-[-15%] lg:ml-0 lg:w-full md:font-medium md:text-[18px] lg:text-lg text-[#212529] text-center md:text-center lg:text-start">
                         The app is open source and your notes are saved to an open format, so you ll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
                     </p>
                     <div className="w-full flex justify-center lg:justify-start">

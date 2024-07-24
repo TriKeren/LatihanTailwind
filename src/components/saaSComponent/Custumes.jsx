@@ -55,18 +55,18 @@ const Custumes = () => {
                 <div className="w-[75%] lg:w-[100%] md:w-full flex flex-col items-start lg:items-start space-y-4 lg:order-2 order-2">
                     <h1
                         id="custumes-title"
-                        className={`relative text-[36px] md:text-6xl lg:text-[72px] font-bold text-[#212529] mb-5 md:mb-5 lg:mb-7 text-center mt-10 md:text-center lg:text-start transition-all duration-1000 transform ${isTitleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                        className={`relative text-[36px] md:text-[54px] md:ml-[5%] lg:ml-0 lg:text-[72px] font-bold text-[#212529] mb-5 md:mb-5 lg:mb-7 text-center mt-10 md:text-center lg:text-start transition-all duration-1000 transform ${isTitleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                     >
                          <span className="relative z-10">Customise it to your needs</span>
                          <img
                             src="public/assets/saaS-landingpages/bg-text.svg"
                             alt=""
-                            className="absolute inset-0 w-[60%] lg:w-[70%] mt-[92px] lg:mt-[115px] ml-[130px] lg:ml-[0px] h-auto object-cover opacity-100 z-0"
+                            className="absolute inset-0 w-[60%] lg:w-[70%] md:w-[35%] md:ml-[75%] md:mt-[50px] mt-[92px] lg:mt-[160px] ml-[130px] lg:ml-[0px] h-auto object-cover opacity-100 z-0"
                         />
                     </h1>
                     <p
                         id="custumes-text"
-                        className={`text-[18px] md:font-medium md:text-2xl lg:text-[17px] lg:font-medium text-[#212529] text-center md:text-center lg:text-start transition-all duration-1000 transform ${isTextVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                        className={`text-[18px] md:font-medium md:text-[18px] lg:text-[17px] lg:font-medium text-[#212529] text-center md:text-center lg:text-start transition-all duration-1000 transform ${isTextVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                     >
                         Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
                     </p>
